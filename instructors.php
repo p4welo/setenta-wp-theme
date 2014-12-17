@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Instruktorzy
+*/
+?>
+
 <?php get_header(); ?>
     <div class="page">
         <div class="animated fadeIn">
