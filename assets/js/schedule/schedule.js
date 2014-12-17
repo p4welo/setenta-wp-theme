@@ -1,4 +1,23 @@
-angular.module("schedule", ['ngResource'])
+angular.module("schedule", ['ngResource', 'ngTranslate'])
+
+    .config(function ($translateProvider) {
+        $translateProvider.translations('pl', {
+
+            PN: 'Poniedziałek',
+            WT: 'Wtorek',
+            SR: 'Środa',
+            CZ: 'Czwartek',
+            PT: 'Piątek',
+            SB: 'Sobota',
+            ND: 'Niedziela',
+
+            BEGINNER: "Początkujący",
+            INTERMEDIATE: "Średniozaawansowany",
+            ADVANCED: "Zaawansowany",
+            OPEN: "Otwarty"
+        });
+        $translateProvider.preferredLanguage('pl');
+    })
 
     .controller('scheduleCtrl', function ($scope, $filter, courseHttpClient, courseService) {
         $scope.courseList = [];
