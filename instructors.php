@@ -136,7 +136,7 @@ Template Name: Instruktorzy
                                     <h4>MARTYNA OLSZEWSKA</h4>
 
                                     <div>
-                                        <h6>Balet dla dzieci,Balet z elementami gimnastyki artystycznej</h6>
+                                        <h6>Balet dla dzieci, Balet z elementami gimnastyki artystycznej</h6>
                                     </div>
                                 </div>
                             </div>
