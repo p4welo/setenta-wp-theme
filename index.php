@@ -28,7 +28,7 @@
                                     <legend>
                                         <h4>
                                             <a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                            <small class="pull-right"><?php the_time('d-m-Y'); ?></small>
+                                            <small class="pull-right"><?php the_time('Y-m-d hh:MM'); ?></small>
                                         </h4>
                                     </legend>
                                     <div class="media">
