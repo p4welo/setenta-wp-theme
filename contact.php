@@ -47,7 +47,7 @@ Template Name: Kontakt
         </div>
     </div>
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-    <script src="assets/js/contact/gmap.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/contact/gmap.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
             init("mapka", "<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png");
