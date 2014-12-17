@@ -4,7 +4,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
-    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+<!--    <link rel="profile" href="http://gmpg.org/xfn/11"/>-->
 
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
           media="screen"/>

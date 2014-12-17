@@ -40,6 +40,14 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
 
     .factory('courseHttpClient', function ($resource) {
 
+        var SERVER_URL = "http://91.218.78.136/public";
+
+        var utils = {
+            getRestUrl: function (uri) {
+                return SERVER_URL + uri;
+            }
+        }
+
         var FUTURE_CLASS_LIST_KEY = utils.getRestUrl("/course/registration.json");
         var FIND_SCHEDULE_KEY = utils.getRestUrl("/course/list.json");
 
