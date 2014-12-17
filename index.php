@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="page">
+    <div class="page index-page">
         <div class="img-header team-header jumbotron">
             <div class="container">
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/1.png" alt="salsa wrocław"
