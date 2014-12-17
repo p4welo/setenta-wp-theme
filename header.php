@@ -71,10 +71,8 @@
         $defaults = array(
             'menu' => 'main-menu',
             'container' => 'div',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id' => 'navbar-collapsible',
-            'menu_class' => 'nav navbar-nav navbar-right',
-            'menu_id' => 'main-menu',
+            'container_class' => 'nav navbar-nav navbar-right',
+            'menu_class' => 'collapse navbar-collapse',
             'echo' => true,
             'fallback_cb' => 'wp_page_menu',
             'before' => '',

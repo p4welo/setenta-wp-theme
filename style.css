@@ -905,8 +905,8 @@ a {
     border-top: 4px solid white;
 }
 
-/*#main-menu a:hover {*/
 .navbar-nav a:hover {
+/*#main-menu a:hover {*/
     margin-top: -8px;
 }
 
@@ -923,6 +923,7 @@ a {
 }
 
 .navbar-nav li:hover {
+/*#main-menu li:hover {*/
     cursor: pointer;
 }
 
