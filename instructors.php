@@ -20,7 +20,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/bk.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/bk.jpg" class="col-xs-12 img-circle"
                                              alt="BARBARA KARPIŃSKA" title="BARBARA KARPIŃSKA">
                                     </a>
                                     <h4>BARBARA RADOMSKA (KARPIŃSKA)</h4>
@@ -36,7 +36,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/pr.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr.jpg" class="col-xs-12 img-circle"
                                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                                     </a>
                                     <h4>PAWEŁ RADOMSKI</h4>
@@ -49,7 +49,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/mm2.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mm2.jpg" class="col-xs-12 img-circle"
                                              alt="MAGDA MRÓZ"
                                              title="MAGDA MRÓZ">
                                     </a>
@@ -63,7 +63,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/mostek.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mostek.jpg" class="col-xs-12 img-circle"
                                              alt="MARTA 'MOSTEK' MOŚCICKA" title="MARTA 'MOSTEK' MOŚCICKA">
                                     </a>
                                     <h4>MARTA "MOSTEK" MOŚCICKA</h4>
@@ -78,7 +78,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/julia2.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/julia2.jpg" class="col-xs-12 img-circle"
                                              alt="JULIA UTIG" title="JULIA UTIG">
                                     </a>
                                     <h4>JULIA UTIG</h4>
@@ -91,7 +91,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/marta.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/marta.jpg" class="col-xs-12 img-circle"
                                              alt="MARTA BRENDEL" title="MARTA BRENDEL">
                                     </a>
                                     <h4>MARTA BRENDEL</h4>
@@ -104,7 +104,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/ania2.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/ania2.jpg" class="col-xs-12 img-circle"
                                              alt="ANNA FAŚCISZEWSKA" title="ANNA FAŚCISZEWSKA">
                                     </a>
                                     <h4>ANNA FAŚCISZEWSKA</h4>
@@ -117,7 +117,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="assets/img/photos/kasia.jpg" class="col-xs-12 img-circle"
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/kasia.jpg" class="col-xs-12 img-circle"
                                              alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">
                                     </a>
                                     <h4>KATARZYNA MICHALAK</h4>
