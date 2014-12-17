@@ -1359,20 +1359,17 @@ a {
 .nav-pills-setenta > li.active > a,
 .nav-pills-setenta > li.active > a:hover,
 .nav-pills-setenta > li.active > a:focus {
-    /*background-color: #d31266;*/
     background-color: #c0045a;
 }
 
 .nav-pills-setenta > li > a {
     color: #c0045a;
-    /*color: #d31266;*/
     cursor: pointer;
 }
 
 .nav-pills-setenta-inv > li.active > a,
 .nav-pills-setenta-inv > li.active > a:hover,
 .nav-pills-setenta-inv > li.active > a:focus {
-    /*background-color: #d31266;*/
     background-color: #0d9696;
 }
 

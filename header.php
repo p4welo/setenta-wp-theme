@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
-    <title><?php wp_title(); ?></title>
+    <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
 
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
@@ -72,7 +72,7 @@
             'menu' => 'main-menu',
             'container' => 'div',
             'container_class' => 'collapse navbar-collapse',
-            'container_id' => 'bs-example-navbar-collapse-1',
+            'container_id' => 'navbar-collapsible',
             'menu_class' => 'nav navbar-nav navbar-right',
             'menu_id' => 'main-menu',
             'echo' => true,
@@ -87,5 +87,49 @@
         );
         wp_nav_menu($defaults);
         ?>
+
+<!--        <div class="nav navbar-nav navbar-right">-->
+<!--            <ul>-->
+<!--                <li class="page_item page-item-2">-->
+<!--                    <a href="http://setenta.webd.pl/wordpress/?page_id=2">Przykładowa strona</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+<!--        <div class="collapse navbar-collapse" id="navbar-collapsible">-->
+<!--            <ul id="main-menu" class="nav navbar-nav navbar-right">-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Aktualności-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Instruktorzy-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Grafik-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Cennik-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Pokazy tańca-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a>-->
+<!--                        Kontakt-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
     </nav>
 </header>
