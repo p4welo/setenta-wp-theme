@@ -6,15 +6,10 @@
     <title><?php wp_title(); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/hover/css/hover-min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/assets/css/fonts.css" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen"/>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
@@ -25,37 +20,35 @@
 <body>
 <section id="top-header">
     <div class="container">
-        <div class="col-sm-9 col-xs-6">
+        <div class="col-sm-8 col-xs-5">
             <p>
                 <i class="fa fa-phone"></i>
-                695 081 437
-            </p>
+                695 081 437 </p>
         </div>
-        <div class="col-sm-3 col-xs-6 pull-right icon-toolbar">
+        <div class="col-sm-4 col-xs-7 pull-right social">
             <div class="animated fadeInDown animation-delay-1">
-                <a class="" href="https://www.facebook.com/setenta.taniec"
-                   target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/img/youtube.png"/>
+                <a title="Subskrybuj nasz kanał na Youtube!" data-placement="left"
+                   href="http://www.youtube.com/channel/UCKV_dE-yr7d7k1SeBW_-ikg" target="_blank">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/you.png"/>
                 </a>
             </div>
             <div class="animated fadeInDown animation-delay-2">
-                <a title="Nasz profil w Google+!" data-placement="left"
-                   href="https://www.google.com/+Szko%C5%82aTa%C5%84caSetentaWroc%C5%82aw" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/img/twitter.png"/>
+                <a title="Nasz profil na Twitterze!" data-placement="left" href="https://twitter.com/SetentaTaniec"
+                   target="_blank">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/twi.png"/>
                 </a>
             </div>
 
             <div class="animated fadeInDown animation-delay-3">
-                <a title="Nasz profil na Twitterze!" data-placement="left" href="https://twitter.com/SetentaTaniec"
-                   target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/img/gplus.png"/>
+                <a title="Nasz profil w Google+!" data-placement="left"
+                   href="https://www.google.com/+Szko%C5%82aTa%C5%84caSetentaWroc%C5%82aw" target="_blank">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gpl.png"/>
                 </a>
             </div>
 
             <div class="animated fadeInDown animation-delay-4">
-                <a title="Subskrybuj nasz kanał na Youtube!" data-placement="left"
-                   href="http://www.youtube.com/channel/UCKV_dE-yr7d7k1SeBW_-ikg" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/img/facebook.png"/>
+                <a class="" href="https://www.facebook.com/setenta.taniec" target="_blank">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/fac.png"/>
                 </a>
             </div>
         </div>
@@ -64,15 +57,14 @@
 <header id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <nav class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+            <button type="button" id="nav-toggle-button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
                 <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand animated tada" href=".">
-                <img src="<?php bloginfo('template_url'); ?>/img/logo2.png"/>
+            <a class="navbar-brand" href=".">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/logo2.png"/>
             </a>
         </div>
         <?php

@@ -1,92 +1,80 @@
 <?php get_header(); ?>
 
-
-
-    <!--<div class="row subheader">-->
-    <!--    <div class="container">-->
-    <!--    <div class="">-->
-    <!--        <div class="box-image col-md-3">-->
-    <!--            <img src="http://setenta.wroclaw.pl/img/sys/1.png"/>-->
-    <!---->
-    <!--        </div>-->
-    <!--        dupa-->
-    <!--    </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators-down animated bounce">
-            <a href="#" id="slide-down" class="wobble-vertical">
-                <i class="glyphicon glyphicon-chevron-down"></i>
-            </a>
-        </div>
-        <!--    <ol class="carousel-indicators">-->
-        <!--        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
-        <!--        <li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-        <!--        <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-        <!--    </ol>-->
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="<?php bloginfo('template_url'); ?>/img/slide-ballroom.jpg" alt="dupa">
-
-<!--                <div class="carousel-caption animated bounceInLeft">-->
-<!--                    ddasasd-->
-<!--                </div>-->
-            </div>
-            <div class="item">
-                <img src="<?php bloginfo('template_url'); ?>/img/slide-solo.jpg" alt="dupa">
-
-<!--                <div class="carousel-caption">-->
-<!--                    adqeqwe-->
-<!--                </div>-->
+    <div class="page">
+        <div class="img-header team-header jumbotron">
+            <div class="container">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/1.png" alt="salsa wrocław" class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/2.png" alt="taniec towarzyski wrocław" class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/3.png" alt="taniec dzieci wrocław" class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4.png" alt="pierwszy taniec wrocław" class="hidden-xs"/>
             </div>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
+        <div class="body-cover">
+            <div class="container main-content staff-content">
+                <div class="body-content news-content">
+                    <h2>&nbsp;</h2>
 
-    <div id="main-content" style="width: 100%; background-color: white;">
-        <div class="container">
-            <div class="col-md-7">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <div class="panel post">
-                        <div class="post-thumbnail">
-                            <?php
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail();
-                            }
-                            ?>
-                        </div>
-                        <div class="panel-body">
-                            <legend>
-                                <h2>
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <div class="col-sm-7">
+                        <h2>
+                            <i class="glyphicon glyphicon-fire"></i>
+                            Aktualności
+                            <span class="col-xs-6 pull-right">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Szukaj..."
+                                           ng-model="filterText"/>
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </span>
+                        </h2>
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <legend>
+                                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                            <small class="pull-right">23:12.2014</small>
+                                        </h4>
+                                    </legend>
+                                    <div class="media">
+                                <span class="thumbnail">
+<!--                                    <img class="media-object" ng-src="assets/{{new.imageSrc}}" alt="{{new.imageAlt}}"/>-->
+                                    <?php
+                                    if (has_post_thumbnail()) {
+                                        the_post_thumbnail();
+                                    }
+                                    ?>
+                                </span>
 
-                                </h2>
-                            </legend>
-                            <div class="media">
-                                <?php
-                                the_content('Czytaj dalej &rarr;');
-                                ?>
+                                        <div class="media-body">
+                                            <?php
+                                            the_content('Czytaj dalej &rarr;');
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        <?php endwhile;
+                        else: ?>
+                            <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+                        <?php endif; ?>
                     </div>
 
-                <?php endwhile;
-                else: ?>
-                    <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
-                <?php endif; ?>
+                    <div class="col-sm-5 text-right">
+                        <h2>
+                            <i class="glyphicon glyphicon-gift"></i>
+                            Honorujemy:
+                        </h2>
+
+                        <div class="row">
+                            <a target="_blank" href="http://www.oksystem.pl">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/oksystem.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-3"></div>
         </div>
     </div>
 <?php get_footer(); ?>

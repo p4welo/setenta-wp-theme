@@ -1,10 +1,9 @@
 {
-    "name": "setenta-theme",
-    "version": "1.0.0",
-    "dependencies": {
-        "bootstrap": "latest",
-        "font-awesome": "latest",
-        "scrollr" : "latest",
-        "animate.css": "latest"
-    }
+  "name": "setenta-theme",
+  "version": "1.0.0",
+  "dependencies": {
+    "animate.css": "~3.2.0",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0"
+  }
 }
