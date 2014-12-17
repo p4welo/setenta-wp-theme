@@ -38,7 +38,7 @@
                                 <div class="panel-body">
                                     <legend>
                                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                            <small class="pull-right">23:12.2014</small>
+                                            <small class="pull-right"><?php the_time('d-m-Y'); ?></small>
                                         </h4>
                                     </legend>
                                     <div class="media">
