@@ -29,9 +29,31 @@
         </div>
         <div class="col-sm-4 col-xs-7 pull-right social">
             <div class="animated fadeInDown">
+                <div class="animated fadeInDown animation-delay-1">
+                    <a title="Subskrybuj nasz kanał na Youtube!" data-placement="left"
+                       href="http://www.youtube.com/channel/UCKV_dE-yr7d7k1SeBW_-ikg" target="_blank">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/you.png"/>
+                    </a>
+                </div>
+                <div class="animated fadeInDown animation-delay-2">
+                    <a title="Nasz profil na Twitterze!" data-placement="left" href="https://twitter.com/SetentaTaniec"
+                       target="_blank">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/twi.png"/>
+                    </a>
+                </div>
+
+                <div class="animated fadeInDown animation-delay-3">
+                    <a title="Nasz profil w Google+!" data-placement="left"
+                       href="https://www.google.com/+Szko%C5%82aTa%C5%84caSetentaWroc%C5%82aw" target="_blank">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gpl.png"/>
+                    </a>
+                </div>
+
+                <div class="animated fadeInDown animation-delay-4">
                 <a class="" href="https://www.facebook.com/setenta.taniec" target="_blank">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/fac.png"/>
                 </a>
+            </div>
             </div>
         </div>
     </div>
