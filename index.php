@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
     <div class="page">
         <div class="img-header team-header jumbotron">
             <div class="container">
@@ -18,26 +17,17 @@
             <div class="container main-content staff-content">
                 <div class="body-content news-content">
                     <h2>&nbsp;</h2>
-
                     <div class="col-sm-7">
                         <h2>
                             <i class="glyphicon glyphicon-fire"></i>
                             Aktualności
-                            <span class="col-xs-6 pull-right">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Szukaj..."
-                                           ng-model="filterText"/>
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                </div>
-                            </span>
                         </h2>
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <legend>
-                                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        <h4>
+                                            <a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                             <small class="pull-right"><?php the_time('d-m-Y'); ?></small>
                                         </h4>
                                     </legend>

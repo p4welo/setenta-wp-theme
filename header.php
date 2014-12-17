@@ -6,9 +6,12 @@
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
 
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/bower/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/bower/animate.css/animate.min.css" rel="stylesheet"
+          media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/assets/css/fonts.css" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen"/>
 
@@ -26,27 +29,7 @@
                 695 081 437 </p>
         </div>
         <div class="col-sm-4 col-xs-7 pull-right social">
-            <div class="animated fadeInDown animation-delay-1">
-                <a title="Subskrybuj nasz kanał na Youtube!" data-placement="left"
-                   href="http://www.youtube.com/channel/UCKV_dE-yr7d7k1SeBW_-ikg" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/you.png"/>
-                </a>
-            </div>
-            <div class="animated fadeInDown animation-delay-2">
-                <a title="Nasz profil na Twitterze!" data-placement="left" href="https://twitter.com/SetentaTaniec"
-                   target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/twi.png"/>
-                </a>
-            </div>
-
-            <div class="animated fadeInDown animation-delay-3">
-                <a title="Nasz profil w Google+!" data-placement="left"
-                   href="https://www.google.com/+Szko%C5%82aTa%C5%84caSetentaWroc%C5%82aw" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gpl.png"/>
-                </a>
-            </div>
-
-            <div class="animated fadeInDown animation-delay-4">
+            <div class="animated fadeInDown">
                 <a class="" href="https://www.facebook.com/setenta.taniec" target="_blank">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/fac.png"/>
                 </a>
@@ -57,7 +40,8 @@
 <header id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <nav class="container">
         <div class="navbar-header">
-            <button type="button" id="nav-toggle-button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+            <button type="button" id="nav-toggle-button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar-collapsible">
                 <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -87,49 +71,5 @@
         );
         wp_nav_menu($defaults);
         ?>
-
-<!--        <div class="nav navbar-nav navbar-right">-->
-<!--            <ul>-->
-<!--                <li class="page_item page-item-2">-->
-<!--                    <a href="http://setenta.webd.pl/wordpress/?page_id=2">Przykładowa strona</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-
-<!--        <div class="collapse navbar-collapse" id="navbar-collapsible">-->
-<!--            <ul id="main-menu" class="nav navbar-nav navbar-right">-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Aktualności-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Instruktorzy-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Grafik-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Cennik-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Pokazy tańca-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a>-->
-<!--                        Kontakt-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-
     </nav>
 </header>
