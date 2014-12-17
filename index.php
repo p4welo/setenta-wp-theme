@@ -3,10 +3,14 @@
     <div class="page">
         <div class="img-header team-header jumbotron">
             <div class="container">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/1.png" alt="salsa wrocław" class="hidden-xs"/>
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/2.png" alt="taniec towarzyski wrocław" class="hidden-xs"/>
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/3.png" alt="taniec dzieci wrocław" class="hidden-xs"/>
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4.png" alt="pierwszy taniec wrocław" class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/1.png" alt="salsa wrocław"
+                     class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/2.png" alt="taniec towarzyski wrocław"
+                     class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/3.png" alt="taniec dzieci wrocław"
+                     class="hidden-xs"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4.png" alt="pierwszy taniec wrocław"
+                     class="hidden-xs"/>
             </div>
         </div>
 
@@ -38,14 +42,14 @@
                                         </h4>
                                     </legend>
                                     <div class="media">
-                                <span class="thumbnail">
-<!--                                    <img class="media-object" ng-src="assets/{{new.imageSrc}}" alt="{{new.imageAlt}}"/>-->
-                                    <?php
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail();
-                                    }
-                                    ?>
-                                </span>
+                                    <span class="thumbnail">
+                                        <img src="http://setenta.wroclaw.pl/assets/img/photos/news/dzieci2.jpg" class="media-object" alt="zajęcia taneczne dla dzieci">
+                                        <?php
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail();
+                                        }
+                                        ?>
+                                    </span>
 
                                         <div class="media-body">
                                             <?php
