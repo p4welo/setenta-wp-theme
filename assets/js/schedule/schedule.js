@@ -1,4 +1,4 @@
-angular.module("schedule", ['ngResource'])
+angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
 
     .config(function ($translateProvider) {
         $translateProvider.translations('pl', {
