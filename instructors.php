@@ -56,7 +56,7 @@ Template Name: Instruktorzy
                                     <h4>MAGDA MRÓZ</h4>
 
                                     <div>
-                                        <h6>Balet dla dzieci, mix dance, zouk</h6>
+                                        <h6>Balet dla dzieci, Mix dance, Zouk</h6>
                                     </div>
                                 </div>
                             </div>
@@ -88,32 +88,32 @@ Template Name: Instruktorzy
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="team_member">
-                                    <a class="grayHover" href="javascript:void(0)">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/marta.jpg" class="col-xs-12 img-circle"
-                                             alt="MARTA BRENDEL" title="MARTA BRENDEL">
-                                    </a>
-                                    <h4>MARTA BRENDEL</h4>
-
-                                    <div>
-                                        <h6>Balet, taniec współczesny</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="team_member">
-                                    <a class="grayHover" href="javascript:void(0)">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/ania2.jpg" class="col-xs-12 img-circle"
-                                             alt="ANNA FAŚCISZEWSKA" title="ANNA FAŚCISZEWSKA">
-                                    </a>
-                                    <h4>ANNA FAŚCISZEWSKA</h4>
-
-                                    <div>
-                                        <h6>Taniec towarzyski</h6>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div class="col-sm-6 col-lg-3">-->
+<!--                                <div class="team_member">-->
+<!--                                    <a class="grayHover" href="javascript:void(0)">-->
+<!--                                        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/photos/marta.jpg" class="col-xs-12 img-circle"-->
+<!--                                             alt="MARTA BRENDEL" title="MARTA BRENDEL">-->
+<!--                                    </a>-->
+<!--                                    <h4>MARTA BRENDEL</h4>-->
+<!---->
+<!--                                    <div>-->
+<!--                                        <h6>Balet, taniec współczesny</h6>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6 col-lg-3">-->
+<!--                                <div class="team_member">-->
+<!--                                    <a class="grayHover" href="javascript:void(0)">-->
+<!--                                        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/photos/ania2.jpg" class="col-xs-12 img-circle"-->
+<!--                                             alt="ANNA FAŚCISZEWSKA" title="ANNA FAŚCISZEWSKA">-->
+<!--                                    </a>-->
+<!--                                    <h4>ANNA FAŚCISZEWSKA</h4>-->
+<!---->
+<!--                                    <div>-->
+<!--                                        <h6>Taniec towarzyski</h6>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
@@ -123,7 +123,20 @@ Template Name: Instruktorzy
                                     <h4>KATARZYNA MICHALAK</h4>
 
                                     <div>
-                                        <h6>Taniec towarzyski, taniec użytkowy, taniec towarzyski dla dzieci</h6>
+                                        <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="team_member">
+                                    <a class="grayHover" href="javascript:void(0)">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/martyna.jpg" class="col-xs-12 img-circle"
+                                             alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
+                                    </a>
+                                    <h4>MARTYNA OLSZEWSKA</h4>
+
+                                    <div>
+                                        <h6>Balet dla dzieci,Balet z elementami gimnastyki artystycznej</h6>
                                     </div>
                                 </div>
                             </div>
