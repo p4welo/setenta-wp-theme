@@ -33,7 +33,7 @@
                                     </legend>
                                     <div class="media">
                                     <span class="thumbnail">
-                                        <?php the_post_thumbnail('thumbnail', array('class' => 'media-object')); ?>
+                                        <?php the_post_thumbnail('full', array('class' => 'media-object'));  ?>
                                     </span>
 
                                         <div class="media-body">
