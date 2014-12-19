@@ -28,17 +28,11 @@
                                     <legend>
                                         <h4>
                                             <a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                            <small class="pull-right"><?php the_time('Y-m-d hh:MM'); ?></small>
+                                            <small class="pull-right"><?php the_time('Y-M-d h:m'); ?></small>
                                         </h4>
                                     </legend>
                                     <div class="media">
                                     <span class="thumbnail">
-<!--                                        <img src="http://setenta.wroclaw.pl/assets/img/photos/news/dzieci2.jpg" class="media-object" alt="zajęcia taneczne dla dzieci">-->
-<!--                                        --><?php
-//                                        if (has_post_thumbnail()) {
-//                                            the_post_thumbnail();
-//                                        }
-//                                        ?>
                                         <?php the_post_thumbnail('thumbnail', array('class' => 'media-object')); ?>
                                     </span>
 
