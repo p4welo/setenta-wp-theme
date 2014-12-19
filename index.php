@@ -27,8 +27,9 @@
                                 <div class="panel-body">
                                     <legend>
                                         <h4>
-                                            <a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                            <small class="pull-right"><?php the_time('Y-M-d h:m'); ?></small>
+                                            <?php the_title(); ?>
+<!--                                            <a class="post-link" href="--><?php //the_permalink(); ?><!--">--><?php //the_title(); ?><!--</a>-->
+                                            <small class="pull-right"><?php the_time('Y-m-d'); ?></small>
                                         </h4>
                                     </legend>
                                     <div class="media">
