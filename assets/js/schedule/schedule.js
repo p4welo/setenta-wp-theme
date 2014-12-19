@@ -247,7 +247,7 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
                         }
                         else if (!event.canJoin) {
                             element.addClass("course-ban");
-                            ap += "<em>" + event.level + "</em><span class='schedule-icon'><i class='fa fa-ban'></i></span>";
+                            ap += "<span class='schedule-icon'><i class='fa fa-ban'></i></span>";
                                 ap += "<em>" + event.level + "</em><br/><span class='badge badge-error'>BRAK MIEJSC</span>";
                         }
                         else {
