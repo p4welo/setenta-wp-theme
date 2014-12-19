@@ -33,12 +33,13 @@
                                     </legend>
                                     <div class="media">
                                     <span class="thumbnail">
-                                        <img src="http://setenta.wroclaw.pl/assets/img/photos/news/dzieci2.jpg" class="media-object" alt="zajęcia taneczne dla dzieci">
-                                        <?php
-                                        if (has_post_thumbnail()) {
-                                            the_post_thumbnail();
-                                        }
-                                        ?>
+<!--                                        <img src="http://setenta.wroclaw.pl/assets/img/photos/news/dzieci2.jpg" class="media-object" alt="zajęcia taneczne dla dzieci">-->
+<!--                                        --><?php
+//                                        if (has_post_thumbnail()) {
+//                                            the_post_thumbnail();
+//                                        }
+//                                        ?>
+                                        <?php the_post_thumbnail('thumbnail', array('class' => 'media-object')); ?>
                                     </span>
 
                                         <div class="media-body">
