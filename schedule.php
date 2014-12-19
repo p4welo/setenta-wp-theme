@@ -19,14 +19,20 @@ Template Name: Grafik
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h4 class="text-center">Duża sala</h4>
-
+                                <div class="row text-center" ng-if="loadingView">
+                                    <i class="fa fa-spin fa-spinner"></i>
+                                    <span>Ładowanie...</span>
+                                </div>
                                 <div id='bigSchedule'></div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h4 class="text-center">Mała sala</h4>
-
+                                <div class="row text-center" ng-if="loadingView">
+                                    <i class="fa fa-spin fa-spinner"></i>
+                                    <span>Ładowanie...</span>
+                                </div>
                                 <div id='smallSchedule'></div>
                             </div>
                         </div>

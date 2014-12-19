@@ -20,6 +20,7 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
     })
 
     .controller('scheduleCtrl', function ($scope, $filter, courseHttpClient, courseService) {
+        $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
 
@@ -33,6 +34,8 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
 
                     var smallOptions = courseService.getScheduleOptionsByRoom('m', result);
                     $('#smallSchedule').fullCalendar(smallOptions);
+
+                    $scope.loadingView = false;
                 }
             )
         }
