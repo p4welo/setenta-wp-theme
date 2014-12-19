@@ -243,12 +243,12 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
                         if (event.canRegister) {
                             element.addClass("course-register");
                             ap += "<span class='schedule-icon'><i class='fa fa-pencil'></i></span>";
-//                                ap += '<span class="badge badge-danger">ZAPISY</span>';
+                                ap += '<span class="badge badge-danger">ZAPISY</span>';
                         }
                         else if (!event.canJoin) {
                             element.addClass("course-ban");
                             ap += "<em>" + event.level + "</em><span class='schedule-icon'><i class='fa fa-ban'></i></span>";
-//                                ap += "<em>" + event.level + "</em><br/><span class='badge badge-error'>BRAK MIEJSC</span>";
+                                ap += "<em>" + event.level + "</em><br/><span class='badge badge-error'>BRAK MIEJSC</span>";
                         }
                         else {
                             ap += "<em>" + event.level + "</em>";
