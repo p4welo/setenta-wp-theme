@@ -57,7 +57,8 @@ a {
 }
 
 .img-header {
-    background-color: #0D9696;
+    background-color: #530369;
+    /*background-color: #0D9696;*/
     padding-top: 0;
     margin-top: 130px;
 }
@@ -83,7 +84,7 @@ a {
 }
 
 .team-header {
-    height: 20px !important;
+    height: 30px !important;
     padding-bottom: 20px;
     margin-bottom: 0 !important;
 }
