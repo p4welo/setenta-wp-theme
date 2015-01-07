@@ -19,6 +19,7 @@ Template Name: Grafik
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h4 class="text-center">Duża sala</h4>
+
                                 <div class="row text-center" ng-if="loadingView">
                                     <i class="fa fa-spin fa-spinner"></i>
                                     <span>Ładowanie...</span>
@@ -29,6 +30,7 @@ Template Name: Grafik
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h4 class="text-center">Mała sala</h4>
+
                                 <div class="row text-center" ng-if="loadingView">
                                     <i class="fa fa-spin fa-spinner"></i>
                                     <span>Ładowanie...</span>
@@ -40,11 +42,9 @@ Template Name: Grafik
                     <div class="panel panel-default visible-sm-block visible-xs-block">
                         <div class="panel-body">
                             <div ng-repeat="d in days">
-                                <p>
-                                    <strong>
-                                        {{ d | translate }}
-                                    </strong>
-                                </p>
+                                <legend>
+                                    {{ d | translate }}
+                                </legend>
                                 <table class="table table-condensed">
                                     <thead>
                                     <tr>
@@ -52,7 +52,7 @@ Template Name: Grafik
                                         <th>nazwa</th>
                                         <th>poziom</th>
                                         <th>sala</th>
-                                        <th>status</th>
+                                        <th>&nbsp;</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -82,11 +82,15 @@ Template Name: Grafik
             </div>
         </div>
     </div>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/angularjs/angular.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-resource/angular-resource.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-translate/angular-translate.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/moment/moment.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/fullcalendar.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/lang-all.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/js/schedule/schedule.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angularjs/angular.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-resource/angular-resource.min.js"
+            type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-translate/angular-translate.min.js"
+            type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/moment/moment.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/fullcalendar.js"
+            type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/lang-all.js"
+            type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/schedule/schedule.js" type="text/javascript"></script>
 <?php get_footer(); ?>
