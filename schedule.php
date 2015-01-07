@@ -5,7 +5,7 @@ Template Name: Grafik
 ?>
 
 <?php get_header(); ?>
-    <div class="page" ng-app="schedule">
+    <div class="page schedule-page" ng-app="schedule">
         <div class="animated fadeIn" ng-cloak ng-controller="scheduleCtrl">
             <div class="img-header jumbotron team-header"></div>
             <div class="body-cover" ng-init="initCalendar()">

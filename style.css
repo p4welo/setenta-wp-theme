@@ -985,6 +985,7 @@ a {
     border: 1px solid #ffffff;
     background-color: #0D9696;
     padding-top: 5px;
+    font-size: 0.73em;
 }
 
 .fc-event:hover {
@@ -1030,6 +1031,12 @@ a {
 
 .badge-join {
     background-color: #8CE413;
+}
+
+.schedule-page .badge {
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 #loading-bar-spinner {
