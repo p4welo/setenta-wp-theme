@@ -64,6 +64,11 @@
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/oksystem.png"/>
                                 </a>
                             </div>
+                            <div class="row">
+                                <a target="_blank" href="https://www.4youcard.pl/">
+                                    <img style="background-color: black; padding: 10px" src="<?php bloginfo('template_url'); ?>/assets/img/4ucard.png"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
