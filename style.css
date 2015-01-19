@@ -984,13 +984,13 @@ a {
 .fc-event {
     border-radius: 0;
     border: 1px solid #ffffff;
-    background-color: #0D9696;
+    background-color: #549100;
     padding-top: 5px;
     font-size: 0.73em;
 }
 
 .fc-event:hover {
-    background-color: #237171;
+    background-color: #417000;
 }
 
 .schedule-icon {
