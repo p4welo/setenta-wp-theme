@@ -279,12 +279,6 @@ legend small {
     text-align: center;
 }
 
-.news-content .thumbnail {
-    /*max-height: 150px;*/
-    padding: 0;
-    /*overflow: hidden;*/
-}
-
 .thumbnail img {
     width: 100%;
 }
