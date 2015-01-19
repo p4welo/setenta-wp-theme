@@ -32,7 +32,7 @@ Template Name: Instruktorzy
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team_member">
                                     <a class="grayHover" href="javascript:void(0)">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr.jpg" class="col-xs-12 img-circle" alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr2.jpg" class="col-xs-12 img-circle" alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                                     </a>
                                     <h4>PAWEŁ RADOMSKI</h4>
                                     <div>
