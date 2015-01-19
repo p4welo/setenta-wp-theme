@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
-    <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+    <title><?php wp_title(); ?></title>
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
           media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/lib/bower/font-awesome/css/font-awesome.min.css" rel="stylesheet"
