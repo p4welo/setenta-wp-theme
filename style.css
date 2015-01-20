@@ -978,13 +978,13 @@ a {
 .fc-event {
     border-radius: 0;
     border: 1px solid #ffffff;
-    background-color: #549100;
+    background-color: #0D9696;
     padding-top: 5px;
     font-size: 0.73em;
 }
 
 .fc-event:hover {
-    background-color: #417000;
+    background-color: #237171;
 }
 
 .schedule-icon {
@@ -994,13 +994,13 @@ a {
     color: #D31266;
 }
 
-/*.course-register {*/
-    /*background-color: #65CBCB;*/
-/*}*/
-
-/*.course-ban {*/
-    /*background-color: #046262;*/
-/*}*/
+.course-register {
+    background-color: #65CBCB;
+}
+/**/
+.course-ban {
+    background-color: #046262;
+}
 
 .fc-content {
     text-align: center;
