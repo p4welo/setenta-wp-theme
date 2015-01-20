@@ -73,7 +73,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href=".">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png"/>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/logo2.png"/>
             </a>
         </div>
         <?php
