@@ -1,3 +1,10 @@
+<div class="hidden-xs" ng-app="feedback">
+<div ng-controller="feedbackCtrl">
+    <button type="button" class="btn btn-lg btn-setenta-inv btn-feedback" ng-click="feedbackModal()">
+        <i class="glyphicon glyphicon-comment"></i>
+    </button>
+</div>
+</div>
 
 <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 <script>

@@ -82,15 +82,5 @@ Template Name: Grafik
             </div>
         </div>
     </div>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angularjs/angular.min.js" type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-resource/angular-resource.min.js"
-            type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/angular-translate/angular-translate.min.js"
-            type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/moment/moment.js" type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/fullcalendar.js"
-            type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/lang-all.js"
-            type="text/javascript"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/schedule/schedule.js" type="text/javascript"></script>
 <?php get_footer(); ?>

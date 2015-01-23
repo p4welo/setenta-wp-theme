@@ -4,14 +4,11 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <title><?php wp_title(); ?></title>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/font-awesome/css/font-awesome.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/animate.css/animate.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/lib/bower/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet"
-          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/lib/vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" media="screen"/>
+
     <link href="<?php bloginfo('template_url'); ?>/assets/css/fonts.css" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen"/>
 
@@ -19,8 +16,15 @@
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <?php wp_head(); ?>
 
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/jquery/dist/jquery.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/lib/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/angularjs/angular.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/angular-ui-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/angular-translate/angular-translate.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/moment/moment.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/fullcalendar/dist/fullcalendar.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/lib/vendor/fullcalendar/dist/lang-all.js" type="text/javascript"></script>
 </head>
 
 <body>
