@@ -2,7 +2,7 @@ angular.module("feedback", ['ui.bootstrap','ngResource'])
 .controller("feedbackCtrl", function ($scope,$modal) {
         $scope.feedbackModal = function () {
             var modalInstance = $modal.open({
-                templateUrl: 'app/feedback/feedbackModal.html',
+                templateUrl: "<?php bloginfo('template_url'); ?>/app/feedback/feedbackModal.html",
                 controller: function ($scope, $modalInstance) {
                     $scope.feedback = {};
                     $scope.ratings = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
