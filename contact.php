@@ -20,6 +20,7 @@ Template Name: Kontakt
                         <address>
                             <strong>Szkoła tańca Setenta<br/>
                                 Barbara Radomska</strong><br/>
+                            NIP: 6972131230<br/>
                             ul. Sienkiewicza 6A<br/>
                             50-335 Wrocław<br/>
 
@@ -34,6 +35,15 @@ Template Name: Kontakt
                                 </a>
                             </h4>
                         </address>
+                        <h2 style="margin-top: 50px">
+                            <i class="fa fa-credit-card"></i>
+                            Konto bankowe
+                        </h2>
+
+                        <div>
+                            <strong>23 1050 1575 1000 0091 4397 2439</strong>
+                            <p>ING Bank Śląski</p>
+                        </div>
                     </div>
                     <div class="col-sm-6 col-xs-12 pull-right right-container">
                         <a class="thumbnail">
