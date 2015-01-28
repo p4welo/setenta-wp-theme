@@ -25,7 +25,7 @@ Template Name: Pokazy
                                 mody w
                                 galeriach handlowych. </p>
 
-                            <div class="embed-responsive embed-responsive-16by9">
+                            <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 50px">
                                 <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/6hhJmD-My5g"></iframe>
                             </div>
 
