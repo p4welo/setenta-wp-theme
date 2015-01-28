@@ -25,10 +25,12 @@ Template Name: Pokazy
                                 mody w
                                 galeriach handlowych. </p>
 
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/6hhJmD-My5g"></iframe>
+                            </div>
+
                             <p>
-                                Zachęcamy również do obejrzenia jednej z naszych ostatnich realizacji - profesjonalnego pokazu
-                                mody
-                                z elementami akrobatyki i tańca: </p>
+                                Organizujemy również pokazy mody urozmaicane pokazami artystów, akrobatów, tancerzy: </p>
 
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/hUYLxSIiNbA"></iframe>
