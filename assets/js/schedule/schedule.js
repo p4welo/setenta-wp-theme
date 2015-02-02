@@ -174,12 +174,12 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
             }
             result += "<tr>" +
                 "<td><strong>Sala: </strong></td><td>";
-            if (c.room.code == 'd') {
-                result += "duża";
-            }
-            else {
-                result += "mała";
-            }
+//            if (c.room.code == 'd') {
+                result += c.room.name;
+//            }
+//            else {
+//                result += "mała";
+//            }
             result += "</td>" +
                 "</tr>";
             result += "</table>";
@@ -242,12 +242,10 @@ angular.module("schedule", ['ngResource', 'pascalprecht.translate'])
                         ap += "<br/><input type='hidden' name='sid' value='" + event.sid + "'>";
                         if (event.canRegister) {
                             element.addClass("course-register");
-//                            ap += "<span class='schedule-icon'><i class='fa fa-pencil'></i></span>";
                                 ap += '<span class="badge badge-danger">ZAPISY</span>';
                         }
                         else if (!event.canJoin) {
                             element.addClass("course-ban");
-//                            ap += "<span class='schedule-icon'><i class='fa fa-ban'></i></span>";
                                 ap += "<em>" + event.level + "</em><br/><span class='badge badge-error'>BRAK MIEJSC</span>";
                         }
                         else {
