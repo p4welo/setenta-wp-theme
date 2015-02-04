@@ -82,5 +82,5 @@ Template Name: Grafik
             </div>
         </div>
     </div>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/schedule/schedule.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/schedule/schedule.js" type="text/javascript"></script>
 <?php get_footer(); ?>
