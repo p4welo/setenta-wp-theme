@@ -11,10 +11,10 @@ Template Name: New INDEX
 
     <link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
-    <link href="vendor/skippr/css/jquery.skippr.css" rel="stylesheet" media="screen"/>
-    <link href="assets/css/style.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -27,7 +27,7 @@ Template Name: New INDEX
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="assets/img/logo.png">
+                <img alt="Brand" src="<?php bloginfo('template_url'); ?>/new/assets/img/logo.png">
             </a>
         </div>
 
@@ -75,13 +75,13 @@ Template Name: New INDEX
     </div>
     <div u="slides" class="slider-slides">
         <div>
-            <img u="image" src="assets/img/carousel/3.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/3.jpg"/>
         </div>
         <div>
-            <img u="image" src="assets/img/carousel/1.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/1.jpg"/>
         </div>
         <div>
-            <img u="image" src="assets/img/carousel/2.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/2.jpg"/>
         </div>
     </div>
     <div u="navigator" class="jssorb21">
@@ -96,7 +96,7 @@ Template Name: New INDEX
 
         <div class="registration-grid text-center row">
             <figure class="col-sm-2">
-                <img src="assets/img/1.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/1.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Salsa</h3>
@@ -109,7 +109,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="assets/img/2.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/2.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Taniec towarzyski</h3>
@@ -122,7 +122,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="assets/img/3.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/3.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Balet 3-latki</h3>
@@ -135,7 +135,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="assets/img/4.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/4.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Pierwszy taniec</h3>
@@ -148,7 +148,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="assets/img/5.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/5.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Latino solo</h3>
@@ -180,7 +180,7 @@ Template Name: New INDEX
 
         <div class="col-sm-8">
             <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12" src="assets/img/carousel/3.jpg"/>
+                <img class="thumbnail col-sm-12 col-xs-12" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/3.jpg"/>
 
                 <div class="col-sm-12">
                     <small class="date-area">
@@ -210,7 +210,7 @@ Template Name: New INDEX
                 </div>
             </div>
             <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12" src="assets/img/carousel/2.jpg"/>
+                <img class="thumbnail col-sm-12 col-xs-12" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/2.jpg"/>
 
                 <div class="col-sm-12">
                     <small class="date-area">
@@ -240,7 +240,7 @@ Template Name: New INDEX
                 </div>
             </div>
             <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12" src="assets/img/carousel/1.jpg"/>
+                <img class="thumbnail col-sm-12 col-xs-12" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/1.jpg"/>
 
                 <div class="col-sm-12">
                     <small class="date-area">
@@ -297,28 +297,28 @@ Template Name: New INDEX
         <h2 class="col-sm-12">INSTRUKTORZY</h2>
 
         <div class="row">
-            <img src="assets/img/instructors/barbara-radomska.jpg" alt="barbara radomska karpińska"
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg" alt="barbara radomska karpińska"
                  class="img-circle col-sm-2"/>
-            <img src="assets/img/instructors/pawel-radomski.jpg" alt="paweł radomski" class="img-circle col-sm-2"/>
-            <img src="assets/img/instructors/magda-mroz.jpg" alt="magda mróz" class="img-circle col-sm-2"/>
-            <img src="assets/img/instructors/kasia-michalak.jpg" alt="kasia michalak" class="img-circle col-sm-2"/>
-            <img src="assets/img/instructors/marta-wegrzynowska.jpg" alt="marta węgrzynowska"
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg" alt="paweł radomski" class="img-circle col-sm-2"/>
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz" class="img-circle col-sm-2"/>
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg" alt="kasia michalak" class="img-circle col-sm-2"/>
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg" alt="marta węgrzynowska"
                  class="img-circle col-sm-2"/>
-            <img src="assets/img/instructors/martyna-olszewska.jpg" alt="martyna olszewska"
+            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg" alt="martyna olszewska"
                  class="img-circle col-sm-2"/>
         </div>
     </div>
 </div>
 </div>
-<script src="vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
-<script src="vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 
-<script src="vendor/skippr/js/jquery.skippr.min.js" type="text/javascript"></script>
-<script src="vendor/jssor/js/jssor.js" type="text/javascript"></script>
-<script src="vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
-<script src="vendor/angularjs/angular.min.js" type="text/javascript"></script>
-<script src="vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
-<script src="assets/js/app.js" type="text/javascript"></script>
-<script src="assets/js/news.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/skippr/js/jquery.skippr.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>
 </body>
 </html>
