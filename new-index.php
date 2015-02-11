@@ -169,7 +169,7 @@ Template Name: New INDEX
                 <i class="fa fa-spin fa-spinner"></i>
                 Ładowanie...
             </div>
-            <div class="col-sm-12 panel panel-default post-panel animated fadeIn" ng:repeat="post in posts">
+            <div class="col-sm-12 panel panel-default post-panel animated fadeIn" ng:repeat="post in posts | filter: searchText | limitTo: 10">
                 <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                 <div class="col-sm-12">
@@ -197,7 +197,7 @@ Template Name: New INDEX
         <div class="col-sm-4">
             <div class="form-group has-feedback search-container">
                 <input type="text" class="form-control" placeholder="Szukaj..."
-                       aria-describedby="inputSuccess2Status">
+                       aria-describedby="inputSuccess2Status" ng:model="searchText">
                 <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
             </div>
             <h3>Kategorie</h3>
@@ -218,7 +218,6 @@ Template Name: New INDEX
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="col-sm-12 panel panel-default post-panel">
                 <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
-<!--                <img class="thumbnail col-sm-12 col-xs-12" src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/carousel/3.jpg"/>-->
 
                 <div class="col-sm-12">
                     <small class="date-area">
