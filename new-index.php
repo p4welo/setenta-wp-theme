@@ -215,7 +215,7 @@ Template Name: New INDEX
         </div>
     </div>
 
-<!--    <noscript>-->
+    <noscript>
     <div class="container">
 
         <div class="col-sm-8">
@@ -249,24 +249,8 @@ Template Name: New INDEX
                 <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
             <?php endif; ?>
         </div>
-
-        <div class="col-sm-4">
-            <div class="form-group has-feedback search-container">
-                <input type="text" class="form-control" placeholder="Szukaj..."
-                       aria-describedby="inputSuccess2Status">
-                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-            </div>
-            <h3>Kategorie</h3>
-
-            <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
-            </div>
-        </div>
     </div>
-    <!--</noscript>-->
+    </noscript>
 </div>
 
 <div class="instructor-row row">
@@ -296,7 +280,10 @@ Template Name: New INDEX
 </div>
 </div>
 <footer>
-    <div class="row">
+    <div class="row first-line">
+        dupa
+    </div>
+    <div class="row second-line">
         dupa
     </div>
 </footer>

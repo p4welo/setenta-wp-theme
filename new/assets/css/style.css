@@ -118,9 +118,13 @@ ul.nav li.dropdown:hover > .dropdown-menu {
 /* ================================ */
 /* ========== FOOTER END ========== */
 /* ================================ */
-footer > div {
+footer > div.first-line {
     background-color: #333;
     height: 300px;
+}
+footer div.second-line {
+    background-color: #111;
+    height: 100px;
 }
 
 /* ================================ */
