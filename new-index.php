@@ -185,7 +185,7 @@ Template Name: New INDEX
 
                     <h2>
                         <a ng-href="post.link" href="javascript:void(0)">
-                            {{ post | uppercase }}
+                            {{ post.title | uppercase }}
                         </a>
                     </h2>
 
