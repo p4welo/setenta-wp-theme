@@ -12,7 +12,8 @@ angular.module('newsWidget', ["ngResource"])
         return $resource(null, null, {
             findPosts: {
                 url: "/wp-json/posts",
-                method: 'GET'
+                method: 'GET',
+                isArray: true
             }
         });
     })
