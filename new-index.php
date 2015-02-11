@@ -184,13 +184,13 @@ Template Name: New INDEX
                     </small>
 
                     <h2>
-                        <a ng-href="post.link" href="javascript:void(0)" ng:bind:html="post.title"></a>
+                        <a ng-href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                     </h2>
 
                     <p ng:bind:html="post.content"></p>
 
                     <div class="text-right more-button-container">
-                        <a ng-href="post.link" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
+                        <a ng-href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                     </div>
                 </div>
             </div>
