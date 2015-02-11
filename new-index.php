@@ -189,7 +189,7 @@ Template Name: New INDEX
                         </a>
                     </h2>
 
-                    <p ng:bind="post.content"></p>
+                    <p ng:bind:html="post.content"></p>
 
                     <div class="text-right more-button-container">
                         <a ng-href="post.link" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
