@@ -210,13 +210,15 @@ Template Name: New INDEX
             </div>
         </div>
     </div>
-    <!--<noscript>-->
+
+<!--    <noscript>-->
     <div class="container">
 
         <div class="col-sm-8">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12"
-                     src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/3.jpg"/>
+                <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+<!--                <img class="thumbnail col-sm-12 col-xs-12" src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/carousel/3.jpg"/>-->
 
                 <div class="col-sm-12">
                     <small class="date-area">
@@ -229,86 +231,20 @@ Template Name: New INDEX
                     </small>
 
                     <h2>
-                        ZAJĘCIA Z PIERWSZEGO TAŃCA
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </h2>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna lacinia, congue enim
-                        et,
-                        dignissim
-                        ante. Nam gravida sit amet odio eu tincidunt. Sed eros tellus, fringilla in eleifend sit
-                        amet,
-                        tristique sed
-                        justo. Quisque semper iaculis velit, vel…</p>
-
-                    <div class="text-right more-button-container">
-                        <button class="btn btn-default">WIĘCEJ...</button>
-                    </div>
+                    <p>
+                        <?php
+                        the_content('Czytaj dalej &rarr;');
+                        ?>
+                    </p>
                 </div>
             </div>
-            <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12"
-                     src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/2.jpg"/>
-
-                <div class="col-sm-12">
-                    <small class="date-area">
-                        <i class="fa fa-calendar-o text-danger"></i>
-                        21 cze 2015
-                    </small>
-                    <small class="category-area">
-                        <i class="fa fa-folder-open-o text-danger"></i>
-                        NOWE GRUPY
-                    </small>
-
-                    <h2>
-                        ZAJĘCIA Z PIERWSZEGO TAŃCA
-                    </h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna lacinia, congue enim
-                        et,
-                        dignissim
-                        ante. Nam gravida sit amet odio eu tincidunt. Sed eros tellus, fringilla in eleifend sit
-                        amet,
-                        tristique sed
-                        justo. Quisque semper iaculis velit, vel…</p>
-
-                    <div class="text-right more-button-container">
-                        <button class="btn btn-default">WIĘCEJ...</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 panel panel-default post-panel">
-                <img class="thumbnail col-sm-12 col-xs-12"
-                     src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/1.jpg"/>
-
-                <div class="col-sm-12">
-                    <small class="date-area">
-                        <i class="fa fa-calendar-o text-danger"></i>
-                        21 cze 2015
-                    </small>
-                    <small class="category-area">
-                        <i class="fa fa-folder-open-o text-danger"></i>
-                        NOWE GRUPY
-                    </small>
-
-                    <h2>
-                        ZAJĘCIA Z PIERWSZEGO TAŃCA
-                    </h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna lacinia, congue enim
-                        et,
-                        dignissim
-                        ante. Nam gravida sit amet odio eu tincidunt. Sed eros tellus, fringilla in eleifend sit
-                        amet,
-                        tristique sed
-                        justo. Quisque semper iaculis velit, vel…</p>
-
-                    <div class="text-right more-button-container">
-                        <button class="btn btn-default">WIĘCEJ...</button>
-                    </div>
-                </div>
-            </div>
-
-
+            <?php endwhile;
+            else: ?>
+                <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+            <?php endif; ?>
         </div>
 
         <div class="col-sm-4">
@@ -332,7 +268,7 @@ Template Name: New INDEX
 
 <div class="instructor-row row">
     <div class="container">
-        <h2 class="col-sm-12">INSTRUKTORZY</h2>
+        <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
 
         <div class="row">
             <div class="col-sm-12">
