@@ -171,7 +171,7 @@ Template Name: New INDEX
                 Ładowanie...
             </div>
             <div class="col-sm-12 panel panel-default post-panel" ng:repeat="post in posts">
-                <img class="thumbnail col-sm-12 col-xs-12" ng:src="post.featured_image.source"/>
+                <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                 <div class="col-sm-12">
                     <small class="date-area">
