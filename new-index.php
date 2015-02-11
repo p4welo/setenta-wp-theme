@@ -95,7 +95,7 @@ Template Name: New INDEX
 
         <div class="registration-grid text-center row">
             <figure class="col-sm-2">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/1.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/bachata.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Salsa</h3>
@@ -108,7 +108,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/2.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/ballroom.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Taniec towarzyski</h3>
@@ -121,7 +121,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/3.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/kids.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Balet 3-latki</h3>
@@ -134,7 +134,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/4.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/first-dance.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Pierwszy taniec</h3>
@@ -147,7 +147,7 @@ Template Name: New INDEX
                 </figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/5.png" alt="img21">
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/ladies-latino.png" alt="img21">
                 <figcaption>
                     <div>
                         <h3>Latino solo</h3>
@@ -179,7 +179,11 @@ Template Name: New INDEX
                     </small>
                     <small class="category-area">
                         <i class="fa fa-folder-open-o text-danger"></i>
-                        NOWE GRUPY
+                        <span ng:repeat="cat in post.terms.category">{{cat.name | uppercase}}</span>
+                    </small>
+                    <small class="author-area">
+                        <i class="fa fa-user text-danger"></i>
+                        <span ng:bind="post.author.first_name"></span>
                     </small>
 
                     <h2>

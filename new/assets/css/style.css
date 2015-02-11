@@ -494,7 +494,8 @@ footer > div {
     margin-right: 5px;
 }
 
-.news-page .news-content .post-panel .category-area {
+.news-page .news-content .post-panel .category-area,
+.news-page .news-content .post-panel .author-area {
     margin-left: 15px;
 }
 
