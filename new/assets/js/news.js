@@ -3,7 +3,7 @@ angular.module('newsWidget', ["ngResource"])
         $scope.newsLoading = true;
         newsFactory.findPosts().$promise.then(
             function (result) {
-                $scope.test = result;
+                $scope.posts = result;
                 $scope.newsLoading = false;
             }
         )

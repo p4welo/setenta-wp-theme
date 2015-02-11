@@ -170,8 +170,31 @@ Template Name: New INDEX
                 <i class="fa fa-spin fa-spinner"></i>
                 Ładowanie...
             </div>
-            <div>
-                {{test}}
+            <div class="col-sm-12 panel panel-default post-panel" ng:repeat="post in posts">
+                <img class="thumbnail col-sm-12 col-xs-12" ng:src="post.featured_image.source"/>
+
+                <div class="col-sm-12">
+                    <small class="date-area">
+                        <i class="fa fa-calendar-o text-danger"></i>
+                        21 cze 2015
+                    </small>
+                    <small class="category-area">
+                        <i class="fa fa-folder-open-o text-danger"></i>
+                        NOWE GRUPY
+                    </small>
+
+                    <h2>
+                        <a ng-href="post.link" href="javascript:void(0)">
+                            {{ post | uppercase }}
+                        </a>
+                    </h2>
+
+                    <p ng:bind="post.content"></p>
+
+                    <div class="text-right more-button-container">
+                        <a ng-href="post.link" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
+                    </div>
+                </div>
             </div>
     </div>
     </div>
