@@ -176,7 +176,7 @@ Template Name: New INDEX
                 <div class="col-sm-12">
                     <small class="date-area">
                         <i class="fa fa-calendar-o text-danger"></i>
-                        21 cze 2015
+                        {{ post.date  | date:'dd-MM-yyyy' }}
                     </small>
                     <small class="category-area">
                         <i class="fa fa-folder-open-o text-danger"></i>
@@ -184,9 +184,7 @@ Template Name: New INDEX
                     </small>
 
                     <h2>
-                        <a ng-href="post.link" href="javascript:void(0)">
-                            {{ post.title | uppercase }}
-                        </a>
+                        <a ng-href="post.link" href="javascript:void(0)" ng:bind:html="post.title"></a>
                     </h2>
 
                     <p ng:bind:html="post.content"></p>

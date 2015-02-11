@@ -470,7 +470,8 @@ ul.nav li.dropdown:hover > .dropdown-menu {
 }
 
 .news-page .news-content .post-panel h2 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .news-page .news-content .post-panel .more-button-container {
