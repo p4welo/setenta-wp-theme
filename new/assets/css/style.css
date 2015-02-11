@@ -494,7 +494,8 @@ footer div.second-line {
 }
 
 .news-page .news-content .post-panel .date-area i,
-.news-page .news-content .post-panel .category-area i {
+.news-page .news-content .post-panel .category-area i,
+.news-page .news-content .post-panel .author-area i {
     margin-right: 5px;
 }
 

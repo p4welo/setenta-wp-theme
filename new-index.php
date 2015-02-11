@@ -9,10 +9,14 @@ Template Name: New INDEX
     <meta charset="UTF-8"/>
     <title>Szkoła tańca Setenta</title>
 
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet" media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet"
+          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet"
+          media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
@@ -169,7 +173,8 @@ Template Name: New INDEX
                 <i class="fa fa-spin fa-spinner"></i>
                 Ładowanie...
             </div>
-            <div class="col-sm-12 panel panel-default post-panel animated fadeIn" ng:repeat="post in posts | filter: searchText | limitTo: 10">
+            <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
+                 ng:repeat="post in posts | filter: { title: searchText } | limitTo: 10">
                 <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                 <div class="col-sm-12">
@@ -177,13 +182,13 @@ Template Name: New INDEX
                         <i class="fa fa-calendar-o text-danger"></i>
                         {{ post.date | date:'dd-MM-yyyy' }}
                     </small>
+                    <small class="author-area">
+                        <i class="fa fa-user text-danger"></i>
+                        {{post.author.first_name | uppercase}}
+                    </small>
                     <small class="category-area">
                         <i class="fa fa-folder-open-o text-danger"></i>
                         <span ng:repeat="cat in post.terms.category">{{cat.name | uppercase}}</span>
-                    </small>
-                    <small class="author-area">
-                        <i class="fa fa-user text-danger"></i>
-                        <span ng:bind="post.author.first_name"></span>
                     </small>
 
                     <h2>
@@ -216,40 +221,40 @@ Template Name: New INDEX
     </div>
 
     <noscript>
-    <div class="container">
+        <div class="container">
 
-        <div class="col-sm-8">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="col-sm-12 panel panel-default post-panel">
-                <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+            <div class="col-sm-8">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="col-sm-12 panel panel-default post-panel">
+                        <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
 
-                <div class="col-sm-12">
-                    <small class="date-area">
-                        <i class="fa fa-calendar-o text-danger"></i>
-                        21 cze 2015
-                    </small>
-                    <small class="category-area">
-                        <i class="fa fa-folder-open-o text-danger"></i>
-                        NOWE GRUPY
-                    </small>
+                        <div class="col-sm-12">
+                            <small class="date-area">
+                                <i class="fa fa-calendar-o text-danger"></i>
+                                21 cze 2015
+                            </small>
+                            <small class="category-area">
+                                <i class="fa fa-folder-open-o text-danger"></i>
+                                NOWE GRUPY
+                            </small>
 
-                    <h2>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
+                            <h2>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h2>
 
-                    <p>
-                        <?php
-                        the_content('Czytaj dalej &rarr;');
-                        ?>
-                    </p>
-                </div>
+                            <p>
+                                <?php
+                                the_content('Czytaj dalej &rarr;');
+                                ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php endwhile;
+                else: ?>
+                    <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+                <?php endif; ?>
             </div>
-            <?php endwhile;
-            else: ?>
-                <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
-            <?php endif; ?>
         </div>
-    </div>
     </noscript>
 </div>
 
@@ -259,22 +264,24 @@ Template Name: New INDEX
 
         <div class="row">
             <div class="col-sm-12">
-            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
-                 alt="barbara radomska karpińska"
-                 class="img-circle col-sm-3 col-xs-6"/>
-            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
-                 alt="paweł radomski" class="img-circle col-sm-3 col-xs-6"/>
-            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz"
-                 class="img-circle col-sm-3 col-xs-6"/>
-            <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
-                 alt="kasia michalak" class="img-circle col-sm-3 col-xs-6"/>
-<!--            <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
-<!--                 alt="marta węgrzynowska"-->
-<!--                 class="img-circle col-sm-2"/>-->
-<!--            <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
-<!--                 alt="martyna olszewska"-->
-<!--                 class="img-circle col-sm-2"/>-->
-        </div>
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
+                     alt="barbara radomska karpińska"
+                     class="img-circle col-sm-3 col-xs-6"/>
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
+                     alt="paweł radomski" class="img-circle col-sm-3 col-xs-6"/>
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz"
+                     class="img-circle col-sm-3 col-xs-6"/>
+                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                     alt="kasia michalak" class="img-circle col-sm-3 col-xs-6"/>
+                <!--            <img src="-->
+                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
+                <!--                 alt="marta węgrzynowska"-->
+                <!--                 class="img-circle col-sm-2"/>-->
+                <!--            <img src="-->
+                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
+                <!--                 alt="martyna olszewska"-->
+                <!--                 class="img-circle col-sm-2"/>-->
+            </div>
         </div>
     </div>
 </div>
