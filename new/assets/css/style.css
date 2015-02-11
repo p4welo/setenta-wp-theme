@@ -16,6 +16,10 @@ h3, h2 {
     font-family: 'Oswald', sans-serif;
 }
 
+h2 > a {
+    color: #333;
+}
+
 .text-danger {
     color: #D31266;
 }
