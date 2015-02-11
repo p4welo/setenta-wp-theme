@@ -283,7 +283,7 @@ footer div.second-line {
     clear: both;
     margin: 0 auto;
     list-style: none;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     text-align: center;
 }
 
@@ -424,6 +424,10 @@ footer div.second-line {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.registration-grid h4 {
+    color: white;
 }
 
 /* =========================================== */

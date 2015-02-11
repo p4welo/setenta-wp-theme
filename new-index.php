@@ -163,6 +163,9 @@ Template Name: New INDEX
                     </div>
                 </figcaption>
             </figure>
+            <h4 class="col-sm-12">
+                Zapisy telefoniczne: 695 081 437
+            </h4>
         </div>
     </div>
 </div>
