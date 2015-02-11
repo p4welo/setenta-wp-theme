@@ -340,6 +340,7 @@ Template Name: New INDEX
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>

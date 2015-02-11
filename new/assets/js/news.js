@@ -1,4 +1,4 @@
-angular.module('newsWidget', ["ngResource"])
+angular.module('newsWidget', ["ngResource", "ngSanitize"])
     .controller('newsCtrl', function ($scope, newsFactory) {
         $scope.newsLoading = true;
         newsFactory.findPosts().$promise.then(
