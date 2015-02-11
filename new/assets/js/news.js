@@ -11,7 +11,7 @@ angular.module('newsWidget', ["ngResource", "ngSanitize"])
     .factory("newsFactory", function ($resource) {
         return $resource(null, null, {
             findPosts: {
-                url: "/wp-json/posts",
+                url: "/wp-json/posts?filter[posts_per_page]=50",
                 method: 'GET',
                 isArray: true
             }
