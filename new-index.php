@@ -67,7 +67,7 @@ Template Name: New INDEX
         </div>
     </div>
 </nav>
-<div class="news-page">
+<div class="news-page" ng:app="newsWidget">
 <div id="slider-container" class="slider-container">
     <div u="loading" class="slider-loading">
         <div class="slider-back">
@@ -93,11 +93,15 @@ Template Name: New INDEX
     <span u="arrowleft" class="jssora21l"></span>
     <span u="arrowright" class="jssora21r"></span>
 </div>
-<div class="registration-row row">
+<div class="registration-row row" ng:controller="registrationCtrl">
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
         <div class="registration-grid text-center row">
+            <div ng:if="courseLoading" class="text-center">
+                <i class="fa fa-spin fa-spinner"></i>
+                Ładowanie...
+            </div>
             <figure class="col-sm-2">
                 <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/bachata.png" alt="img21">
                 <figcaption>
@@ -169,7 +173,7 @@ Template Name: New INDEX
         </div>
     </div>
 </div>
-<div class="news-content row" ng:app="newsWidget">
+<div class="news-content row">
     <div class="container" ng:controller="newsCtrl">
         <div class="col-sm-8">
             <div ng:if="newsLoading" class="text-center">

@@ -283,8 +283,7 @@ footer div.second-line {
     clear: both;
     margin: 0 auto;
     list-style: none;
-    /*padding-bottom: 20px;*/
-    text-align: center;
+    padding-bottom: 20px;
 }
 
 .registration-grid figure {
