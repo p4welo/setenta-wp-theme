@@ -94,7 +94,7 @@ Template Name: New INDEX
     <span u="arrowright" class="jssora21r"></span>
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
-    <span ng-bind="result" style="color: white"></span>
+    <span style="color: white">{{result |json}}</span>
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
