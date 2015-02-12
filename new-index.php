@@ -157,10 +157,9 @@ Template Name: New INDEX
                             <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 panel panel-default post-panel">
-                        <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
-                    </div>
+                </div>
+                <div class="col-sm-12 panel panel-default post-panel">
+                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
                 </div>
             </div>
             <div class="col-sm-4 search-container">
