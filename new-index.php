@@ -271,19 +271,19 @@ Template Name: New INDEX
         <a href="mailto:p4welo@gmail.com">Paweł</a>
     </div>
 </footer>
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/bootstrap/dist/js/bootstrap.min.js"-->
-<!--        type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-sanitize/angular-sanitize.min.js"-->
-<!--        type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-resource/angular-resource.min.js"-->
-<!--        type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-translate/angular-translate.min.js"-->
-<!--        type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>-->
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
 </body>
 </html>
