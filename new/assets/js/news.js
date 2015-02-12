@@ -4,9 +4,10 @@ angular.module('newsWidget', ["ngResource", "ngSanitize"])
         $scope.courseLoading = true;
         newsFactory.registrationCourses().$promise.then(
             function (result) {
-                $scope.courses = result;
+//                $scope.courses = result;
                 $scope.courseLoading = false;
-                $scope.result = _.groupBy(result, function(course) { return course.style.sid; });
+                var grouped = _.groupBy(result, function(course) { return course.style.sid; });
+                $scope.courseGroups = _.values(grouped);
             }
         )
     })
