@@ -94,6 +94,7 @@ Template Name: New INDEX
     <span u="arrowright" class="jssora21r"></span>
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
+    {{courses}}
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
@@ -167,9 +168,6 @@ Template Name: New INDEX
                     </div>
                 </figcaption>
             </figure>
-            <h4 class="col-sm-12">
-                Zapisy telefoniczne: 695 081 437
-            </h4>
         </div>
     </div>
 </div>
@@ -301,11 +299,14 @@ Template Name: New INDEX
         dupa
     </div>
     <div class="row second-line text-center">
-        <span id="year-copy"></span>
+
         &copy;
         <a href="http://setenta.wroclaw.pl">
             Szkoła tańca Wrocław
         </a>
+        <span id="year-copy"></span>
+        - Designed & Developed by
+        <a href="mailto:p4welo@gmail.com">Paweł</a>
     </div>
 </footer>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
