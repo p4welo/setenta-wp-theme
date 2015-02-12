@@ -159,15 +159,8 @@ Template Name: New INDEX
                     </div>
                 </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        Basic panel example
-                    </div>
-                </div>
-                <div ng:if="postLimit < posts.length" class="panel panel-default">
-                    <div class="panel-body text-center">
-                        <a href="javascript:void(0)" ng:click="loadMore()">Więcej...</a>
-                    </div>
+                <div ng:if="postLimit < posts.length" class="list-group">
+                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
                 </div>
             </div>
             <div class="col-sm-4 search-container">
