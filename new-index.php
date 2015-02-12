@@ -157,6 +157,10 @@ Template Name: New INDEX
                             <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                         </div>
                     </div>
+
+                    <div class="col-sm-12 panel panel-default post-panel">
+                        <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4 search-container">
@@ -185,13 +189,6 @@ Template Name: New INDEX
                     <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
                         <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
                     </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="container">
-                <div class="list-group">
-                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
                 </div>
             </div>
         </div>
