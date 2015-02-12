@@ -309,7 +309,7 @@ footer div.second-line {
 }
 
 .registration-grid figure figcaption {
-    padding: 2em;
+    padding-left: 5px;
     color: #fff;
     vertical-align: bottom;
 }
