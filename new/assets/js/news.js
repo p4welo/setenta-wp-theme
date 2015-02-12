@@ -1,10 +1,12 @@
 angular.module('newsWidget', ["ngResource", "ngSanitize"])
+
     .controller('registrationCtrl', function ($scope, newsFactory) {
         $scope.courseLoading = true;
         newsFactory.registrationCourses().$promise.then(
             function (result) {
                 $scope.courses = result;
                 $scope.courseLoading = false;
+                $scope.result = _.groupBy(result, function(course) { return course.style.sid; });
             }
         )
     })

@@ -94,7 +94,6 @@ Template Name: New INDEX
     <span u="arrowright" class="jssora21r"></span>
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
-    {{courses}}
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
@@ -173,6 +172,7 @@ Template Name: New INDEX
 </div>
 <div class="news-content row">
     <div class="container" ng:controller="newsCtrl">
+        {{result}}
         <div class="col-sm-8">
             <div ng:if="newsLoading" class="text-center">
                 <i class="fa fa-spin fa-spinner"></i>
@@ -310,18 +310,13 @@ Template Name: New INDEX
     </div>
 </footer>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js"
-        type="text/javascript"></script>
-
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/skippr/js/jquery.skippr.min.js"
-        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js"
-        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>
 </body>
