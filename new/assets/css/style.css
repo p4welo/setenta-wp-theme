@@ -31,7 +31,7 @@ h2 > a {
     color: #D31266;
 }
 
-.active {
+.list-group-item.active {
     background-color: #AA024C;
     border-color: #AA024C;
 }
