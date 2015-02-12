@@ -190,7 +190,7 @@ Template Name: New INDEX
         </div>
         <div class="row">
             <div class="container">
-                <div ng:if="postLimit < posts.length" class="list-group">
+                <div class="list-group">
                     <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
                 </div>
             </div>
