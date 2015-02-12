@@ -95,7 +95,8 @@ Template Name: New INDEX
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
     <div class="row" style="color: white" ng:repeat="group in courseGroups">
-        {{ group | json }}
+        <h3>{{ group[0].style.name }}</h3>
+        <p ng:repeat="course in group">{{course.startTime</p>
     </div>
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
