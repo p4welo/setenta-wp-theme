@@ -94,10 +94,6 @@ Template Name: New INDEX
     <span u="arrowright" class="jssora21r"></span>
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
-    <div class="row" style="color: white" ng:repeat="group in courseGroups">
-        <h3>{{ group[0].style.name }}</h3>
-        <p ng:repeat="course in group">{{course.startTime</p>
-    </div>
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
@@ -106,6 +102,22 @@ Template Name: New INDEX
                 <i class="fa fa-spin fa-spinner"></i>
                 Ładowanie...
             </div>
+
+            <figure class="col-sm-2" ng:repeat="group in courseGroups">
+                <img ng:src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/{{resolveStyleImage(group[0].style)}}" alt="img21">
+                <figcaption>
+                    <div>
+                        <h3 ng:bind="group[0].style.name"></h3>
+
+                        <p ng:repeat="course in group">
+                            {{course.day}}
+                            {{ course.startTime}}
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+
+
             <figure class="col-sm-2">
                 <img src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/bachata.png" alt="img21">
                 <figcaption>

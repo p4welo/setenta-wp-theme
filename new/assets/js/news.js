@@ -4,12 +4,16 @@ angular.module('newsWidget', ["ngResource", "ngSanitize"])
         $scope.courseLoading = true;
         newsFactory.registrationCourses().$promise.then(
             function (result) {
-//                $scope.courses = result;
-                $scope.courseLoading = false;
                 var grouped = _.groupBy(result, function(course) { return course.style.sid; });
                 $scope.courseGroups = _.values(grouped);
+                $scope.courseLoading = false;
             }
         )
+        $scope.resolveStyleImage = function (style) {
+            if (style.name.indexOf("Balet") > -1) {
+                return "ballet.png";
+            }
+        }
     })
     .controller('newsCtrl', function ($scope, newsFactory) {
         $scope.newsLoading = true;
