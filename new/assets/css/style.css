@@ -124,7 +124,8 @@ footer > div.first-line {
 }
 footer div.second-line {
     background-color: #111;
-    height: 100px;
+    height: 50px;
+    color: white;
 }
 
 /* ================================ */
@@ -445,6 +446,11 @@ footer div.second-line {
 
 .news-page .instructor-row {
     background-color: #AA024C;
+}
+
+.news-page .registration-row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .news-page .registration-row > .container > h2,

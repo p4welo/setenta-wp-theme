@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $("#carousel").skippr({transition: 'fade', navType: 'bubble', autoPlay: true})
+
+    var yearCopy = $('#year-copy'), d = new Date();
+    if (d.getFullYear() === 2013) { yearCopy.html('2013'); } else { yearCopy.html('2013-' + d.getFullYear().toString().substr(2,2)); }
 })
 
 $(document).ready(function ($) {

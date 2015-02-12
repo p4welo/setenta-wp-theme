@@ -224,6 +224,9 @@ Template Name: New INDEX
                 <a href="#" class="list-group-item">Porta ac consectetur ac</a>
                 <a href="#" class="list-group-item">Vestibulum at eros</a>
             </div>
+
+            <h3>Honorujemy</h3>
+
         </div>
     </div>
 
@@ -297,8 +300,12 @@ Template Name: New INDEX
     <div class="row first-line">
         dupa
     </div>
-    <div class="row second-line">
-        dupa
+    <div class="row second-line text-center">
+        <span id="year-copy"></span>
+        &copy;
+        <a href="http://setenta.wroclaw.pl">
+            Szkoła tańca Wrocław
+        </a>
     </div>
 </footer>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
