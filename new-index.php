@@ -118,78 +118,6 @@ Template Name: New INDEX
                     </div>
                 </figcaption>
             </figure>
-
-
-            <!--            <figure class="col-sm-2">-->
-            <!--                <img src="-->
-            <?php //bloginfo('template_url'); ?><!--/new/assets/img/styles/bachata.png" alt="img21">-->
-            <!--                <figcaption>-->
-            <!--                    <div>-->
-            <!--                        <h3>Salsa</h3>-->
-            <!---->
-            <!--                        <p class="btn btn-xs btn-default">Wtorek 12:00</p>-->
-            <!--                        <br/>-->
-            <!---->
-            <!--                        <p>Środa 13:00</p>-->
-            <!--                    </div>-->
-            <!--                </figcaption>-->
-            <!--            </figure>-->
-            <!--            <figure class="col-sm-2">-->
-            <!--                <img src="-->
-            <?php //bloginfo('template_url'); ?><!--/new/assets/img/styles/ballroom.png" alt="img21">-->
-            <!--                <figcaption>-->
-            <!--                    <div>-->
-            <!--                        <h3>Taniec towarzyski</h3>-->
-            <!---->
-            <!--                        <p>Wtorek 12:00</p>-->
-            <!--                        <br/>-->
-            <!---->
-            <!--                        <p>Środa 13:00</p>-->
-            <!--                    </div>-->
-            <!--                </figcaption>-->
-            <!--            </figure>-->
-            <!--            <figure class="col-sm-2">-->
-            <!--                <img src="-->
-            <?php //bloginfo('template_url'); ?><!--/new/assets/img/styles/kids.png" alt="img21">-->
-            <!--                <figcaption>-->
-            <!--                    <div>-->
-            <!--                        <h3>Balet 3-latki</h3>-->
-            <!---->
-            <!--                        <p>Wtorek 12:00</p>-->
-            <!--                        <br/>-->
-            <!---->
-            <!--                        <p>Środa 13:00</p>-->
-            <!--                    </div>-->
-            <!--                </figcaption>-->
-            <!--            </figure>-->
-            <!--            <figure class="col-sm-2">-->
-            <!--                <img src="-->
-            <?php //bloginfo('template_url'); ?><!--/new/assets/img/styles/first-dance.png" alt="img21">-->
-            <!--                <figcaption>-->
-            <!--                    <div>-->
-            <!--                        <h3>Pierwszy taniec</h3>-->
-            <!---->
-            <!--                        <p>Wtorek 12:00</p>-->
-            <!--                        <br/>-->
-            <!---->
-            <!--                        <p>Środa 13:00</p>-->
-            <!--                    </div>-->
-            <!--                </figcaption>-->
-            <!--            </figure>-->
-            <!--            <figure class="col-sm-2">-->
-            <!--                <img src="-->
-            <?php //bloginfo('template_url'); ?><!--/new/assets/img/styles/ladies-latino.png" alt="img21">-->
-            <!--                <figcaption>-->
-            <!--                    <div>-->
-            <!--                        <h3>Latino solo</h3>-->
-            <!---->
-            <!--                        <p>Wtorek 12:00</p>-->
-            <!--                        <br/>-->
-            <!---->
-            <!--                        <p>Środa 13:00</p>-->
-            <!--                    </div>-->
-            <!--                </figcaption>-->
-            <!--            </figure>-->
         </div>
     </div>
 </div>
@@ -355,7 +283,6 @@ Template Name: New INDEX
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
         type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
 </body>
 </html>
