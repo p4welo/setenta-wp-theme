@@ -110,7 +110,7 @@ Template Name: New INDEX
                         <h3 ng:bind="group[0].style.name"></h3>
 
                         <p ng:repeat="course in group">
-                            {{course.day}}
+                            {{course.day | translate}}
                             {{ course.startTime}}
                         </p>
                     </div>
@@ -331,6 +331,7 @@ Template Name: New INDEX
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>

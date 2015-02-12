@@ -1,4 +1,18 @@
-angular.module('newsWidget', ["ngResource", "ngSanitize"])
+angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translate"])
+
+    .config(function ($translateProvider) {
+        $translateProvider.translations('pl', {
+            PN: 'Poniedziałek',
+            WT: 'Wtorek',
+            SR: 'Środa',
+            CZ: 'Czwartek',
+            PT: 'Piątek',
+            SB: 'Sobota',
+            ND: 'Niedziela'
+        });
+
+        $translateProvider.preferredLanguage('pl');
+    })
 
     .controller('registrationCtrl', function ($scope, newsFactory) {
         $scope.courseLoading = true;
