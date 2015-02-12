@@ -158,7 +158,10 @@ Template Name: New INDEX
                     </div>
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
-                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Załaduj więcej postów...</a>
+                    <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
+                        <i class="fa fa-cog fa-spin"></i>
+                        Załaduj więcej postów...
+                    </a>
                 </div>
             </div>
             <div class="col-sm-4 search-container">

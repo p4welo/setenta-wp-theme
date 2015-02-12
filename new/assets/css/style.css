@@ -31,6 +31,11 @@ h2 > a {
     color: #D31266;
 }
 
+.active {
+    background-color: #AA024C;
+    border-color: #AA024C;
+}
+
 .panel,
 .btn {
     border-radius: 0;
