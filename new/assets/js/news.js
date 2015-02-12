@@ -36,6 +36,12 @@ angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translat
             else if (style.name.indexOf("Reggaeton") > -1) {
                 return "reggaeton.png";
             }
+            else if (style.name.indexOf("Hip hop") > -1) {
+                return "hip-hop.png";
+            }
+            else if (style.name.indexOf("towarzyski") > -1) {
+                return "ballroom.png";
+            }
         }
     })
     .controller('newsCtrl', function ($scope, newsFactory) {
