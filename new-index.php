@@ -94,6 +94,7 @@ Template Name: New INDEX
     <span u="arrowright" class="jssora21r"></span>
 </div>
 <div class="registration-row row" ng:controller="registrationCtrl">
+    <span ng-bind="result" style="color: white"></span>
     <div class="container">
         <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
@@ -172,7 +173,6 @@ Template Name: New INDEX
 </div>
 <div class="news-content row">
     <div class="container" ng:controller="newsCtrl">
-        {{result}}
         <div class="col-sm-8">
             <div ng:if="newsLoading" class="text-center">
                 <i class="fa fa-spin fa-spinner"></i>
