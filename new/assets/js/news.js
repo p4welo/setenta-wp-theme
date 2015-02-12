@@ -10,13 +10,13 @@ angular.module('newsWidget', ["ngResource", "ngSanitize"])
             }
         )
         $scope.resolveStyleImage = function (style) {
-            if (style.name.lowercase.indexOf("balet") > -1) {
+            if (style.name.indexOf("Balet") > -1) {
                 return "ballet.png";
             }
-            else if (style.name.lowercase.indexOf("taniec użytkowy") > -1) {
+            else if (style.name.indexOf("użytkowy") > -1) {
                 return "pair.png";
             }
-            else if (style.name.lowercase.indexOf("mix dance") > -1) {
+            else if (style.name.indexOf("Mix dance") > -1) {
                 return "mix-dance.png";
             }
         }

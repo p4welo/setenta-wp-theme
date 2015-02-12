@@ -298,6 +298,10 @@ footer div.second-line {
     cursor: pointer;
 }
 
+.registration-grid i {
+    color: white;
+}
+
 .registration-grid figure img {
     position: relative;
     display: block;
