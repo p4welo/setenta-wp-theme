@@ -86,7 +86,9 @@ $(document).ready(function ($) {
         $scope.courseLoading = true;
         newsFactory.registrationCourses().$promise.then(
             function (result) {
-                var grouped = _.groupBy(result, function(course) { return course.style.sid; });
+                var grouped = _.groupBy(result, function (course) {
+                    return course.style.sid;
+                });
                 $scope.courseGroups = _.values(grouped);
                 $scope.courseLoading = false;
             }
@@ -114,12 +116,16 @@ $(document).ready(function ($) {
     }])
     .controller('newsCtrl', ['$scope', 'newsFactory', function ($scope, newsFactory) {
         $scope.newsLoading = true;
+        $scope.postLimit = 5;
         newsFactory.findPosts().$promise.then(
             function (result) {
                 $scope.posts = result;
                 $scope.newsLoading = false;
             }
         );
+        $scope.loadMore = function () {
+            $scope.postLimit += 5;
+        };
     }])
     .factory("newsFactory", ['$resource', function ($resource) {
         return $resource(null, null, {

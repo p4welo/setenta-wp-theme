@@ -57,7 +57,7 @@ angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translat
         );
         $scope.loadMore = function () {
             $scope.postLimit += 5;
-        }
+        };
     }])
     .factory("newsFactory", ['$resource', function ($resource) {
         return $resource(null, null, {
