@@ -152,14 +152,13 @@ Template Name: New INDEX
                         </h2>
 
                         <p ng:bind:html="post.content"></p>
-{{postLimit}} < {{posts.length}}
                         <div class="text-right more-button-container">
                             <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 panel panel-default post-panel" ng:if="postLimit < posts.length">
-                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Więcej...</a>
+                <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
+                    <a href="javascript:void(0)" class="list-group-item" ng:click="loadMore()">Załaduj więcej postów...</a>
                 </div>
             </div>
             <div class="col-sm-4 search-container">
