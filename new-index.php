@@ -230,8 +230,8 @@ Template Name: New INDEX
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="form-group has-feedback search-container">
+        <div class="col-sm-4 search-container">
+            <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Szukaj..."
                        aria-describedby="inputSuccess2Status" ng:model="searchText">
                 <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
@@ -246,7 +246,16 @@ Template Name: New INDEX
             </div>
 
             <h3>Honorujemy</h3>
-
+            <div class="col-sm-12">
+                <a target="_blank" href="http://www.oksystem.pl">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
+                </a>
+            </div>
+            <div class="col-sm-12">
+                <a target="_blank" href="https://www.4youcard.pl/">
+                    <img style="background-color: black; padding: 17px; margin-top: 20px" src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
+                </a>
+            </div>
         </div>
     </div>
 
