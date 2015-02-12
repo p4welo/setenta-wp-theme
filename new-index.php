@@ -111,10 +111,11 @@ Template Name: New INDEX
                     <div>
                         <h3 ng:bind="group[0].style.name"></h3>
 
-                        <p ng:repeat="course in group">
+                        <p ng:repeat:start="course in group">
                             {{course.day | translate}}
                             {{ course.startTime}}
                         </p>
+                        <br ng:repeat:end />
                     </div>
                 </figcaption>
             </figure>
