@@ -103,7 +103,7 @@ Template Name: New INDEX
                 Ładowanie...
             </div>
 
-            <figure class="col-sm-2" ng:repeat="group in courseGroups">
+            <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
                 <img
                     ng:src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
                     alt="img21">
