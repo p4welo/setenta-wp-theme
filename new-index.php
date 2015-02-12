@@ -247,13 +247,13 @@ Template Name: New INDEX
 
             <h3>Honorujemy</h3>
             <div class="col-sm-12">
-                <a target="_blank" href="http://www.oksystem.pl">
+                <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
                 </a>
             </div>
             <div class="col-sm-12">
-                <a target="_blank" href="https://www.4youcard.pl/">
-                    <img style="background-color: black; padding: 17px; margin-top: 20px" src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
+                <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
                 </a>
             </div>
         </div>
@@ -303,23 +303,16 @@ Template Name: New INDEX
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="col-sm-3 col-xs-6">
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
                          alt="barbara radomska karpińska"
-                         class="img-circle"/>
-                </div>
-                <div class="col-sm-3 col-xs-6">
+                         class="img-circle col-sm-3 col-xs-6"/>
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
-                         alt="paweł radomski" class="img-circle"/>
-                </div>
-                <div class="col-sm-3 col-xs-6">
+                         alt="paweł radomski" class="img-circle col-sm-3 col-xs-6"/>
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
                          alt="magda mróz"
-                         class="img-circle"/>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
-                         alt="kasia michalak" class="img-circle"/>
+                         class="img-circle col-sm-3 col-xs-6"/>
+                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                         alt="kasia michalak" class="img-circle col-sm-3 col-xs-6"/>
                 </div>
                 <!--            <img src="-->
                 <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->

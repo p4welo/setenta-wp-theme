@@ -122,6 +122,7 @@ footer > div.first-line {
     background-color: #333;
     height: 300px;
 }
+
 footer div.second-line {
     background-color: #111;
     height: 50px;
@@ -472,6 +473,7 @@ footer div.second-line {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
 .news-page .instructor-row img:hover {
     border-radius: 0;
     /*padding: 0;*/
@@ -490,7 +492,7 @@ footer div.second-line {
     padding-top: 20px
 }
 
-.news-page .news-content .search-container h3{
+.news-page .news-content .search-container h3 {
     margin-top: 50px;
 }
 
@@ -524,6 +526,16 @@ footer div.second-line {
 
 .news-page .news-content .post-panel .more-button-container {
     margin-bottom: 20px
+}
+
+.news-page .foryoucard > img,
+.news-page .oksystem > img {
+    margin-top: 50px;
+}
+
+.news-page .foryoucard > img {
+    background-color: black;
+    padding: 17px;
 }
 
 /* =================================== */
