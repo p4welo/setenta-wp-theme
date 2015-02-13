@@ -6,11 +6,8 @@ module.exports = function (grunt) {
             tasks: ['jshint']
         },
         jshint: {
-            // define the files to lint
             files: ['Gruntfile.js', 'assets/**/*.js'],
-            // configure JSHint (documented at http://www.jshint.com/docs/)
             options: {
-                // more options here if you want to override JSHint defaults
                 globals: {
                     jQuery: true,
                     console: true,
@@ -20,11 +17,9 @@ module.exports = function (grunt) {
         },
         concat: {
             options: {
-                // define a string to put between each file in the concatenated output
                 separator: ';'
             },
             dist: {
-                // the files to concatenate
                 src: [
                     'vendor/jquery/dist/jquery.js',
                     'vendor/bootstrap/dist/js/bootstrap.js',
@@ -35,13 +30,11 @@ module.exports = function (grunt) {
                     'vendor/angular-resource/angular-resource.js',
                     'vendor/angular-translate/angular-translate.js',
                     'assets/**/*.js'],
-                // the location of the resulting JS file
                 dest: 'dist/<%= pkg.name %>.js'
             }
         },
         uglify: {
             options: {
-                // the banner is inserted at the top of the output
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
             dist: {

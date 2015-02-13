@@ -32,15 +32,15 @@ h2 > a {
 }
 
 .list-group-item.active {
-    background-color: #AA024C;
-    border-color: #AA024C;
+    background-color: #D31266;
+    border-color: #D31266;
 }
 
 .list-group-item.active:focus,
 .list-group-item.active:active,
 .list-group-item.active:hover {
-    background-color: #D31266;
-    border-color: #D31266;
+    background-color: #AA024C;
+    border-color: #AA024C;
 }
 
 .panel,
