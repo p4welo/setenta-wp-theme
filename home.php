@@ -1,76 +1,71 @@
-<?php
-/*
-Template Name: New HOME
-*/
-?>
-<!doctype html>
-<html>
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>"/>
-    <title><?php wp_title(); ?></title>
-
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
-
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
-    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
-    <?php wp_head(); ?>
-</head>
-<body>
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img alt="Brand" src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/logo.png">
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active">
-                    <a href="#">Aktualności</a>
-                </li>
-                <li>
-                    <a href="#">Zapisy</a>
-                </li>
-                <li>
-                    <a href="#">Grafik</a>
-                </li>
-                <li>
-                    <a href="#">Rodzaje tańca</a>
-                </li>
-                <li>
-                    <a href="#">Instruktorzy</a>
-                </li>
-                <li>
-                    <a href="#">Cennik</a>
-                </li>
-                <li>
-                    <a href="#">Wynajem</a>
-                </li>
-                <li>
-                    <a href="#">Formacja</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="--><?php //bloginfo('charset'); ?><!--"/>-->
+<!--    <title>--><?php //wp_title(); ?><!--</title>-->
+<!---->
+<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          media="screen"/>-->
+<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"-->
+<!--          media="screen"/>-->
+<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet"-->
+<!--          media="screen"/>-->
+<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/new/vendor/animate.css/animate.min.css" rel="stylesheet"-->
+<!--          media="screen"/>-->
+<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/new/assets/css/style.css" rel="stylesheet" media="screen"/>-->
+<!---->
+<!--    <link rel="pingback" href="--><?php //bloginfo('pingback_url'); ?><!--"/>-->
+<!--    --><?php //if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
+<!--    --><?php //wp_head(); ?>
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-default">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+<!--            <a class="navbar-brand" href="#">-->
+<!--                <img alt="Brand" src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/sys/logo.png">-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="collapse navbar-collapse" id="navbar-collapse">-->
+<!--            <ul class="nav navbar-nav navbar-right">-->
+<!--                <li class="active">-->
+<!--                    <a href="#">Aktualności</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Zapisy</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Grafik</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Rodzaje tańca</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Instruktorzy</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Cennik</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Wynajem</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Formacja</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Kontakt</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
 <div class="news-page" ng:app="newsWidget">
     <div id="slider-container" class="slider-container">
         <div u="loading" class="slider-loading">
@@ -264,33 +259,4 @@ Template Name: New HOME
     </div>
 </div>
 </div>
-<footer>
-    <div class="row first-line">
-        dupa
-    </div>
-    <div class="row second-line text-center">
-        &copy;
-        <a href="http://setenta.wroclaw.pl">
-            Szkoła tańca Wrocław
-        </a>
-        <span id="year-copy"></span>
-        - Designed & Developed by
-        <a href="mailto:p4welo@gmail.com">Paweł</a>
-    </div>
-</footer>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
-</body>
-</html>
+<?php get_footer(); ?>
