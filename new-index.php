@@ -144,7 +144,7 @@ Template Name: New INDEX
                         </small>
                         <small class="category-area">
                             <i class="fa fa-folder-open-o text-danger"></i>
-                            <span ng:repeat="cat in post.terms.category">{{cat.name | uppercase}}</span>
+                            <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
                         </small>
 
                         <h2>
