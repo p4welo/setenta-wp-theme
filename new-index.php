@@ -130,7 +130,7 @@ Template Name: New INDEX
                     Ładowanie...
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                     ng:repeat="post in posts | filter: searchText | limitTo: postLimit">
+                     ng:repeat="post in posts | filter: {title: searchText} | limitTo: postLimit">
                     <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                     <div class="col-sm-12">
@@ -173,10 +173,7 @@ Template Name: New INDEX
                 <h3>Kategorie</h3>
 
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item">Morbi leo risus</a>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                    <a href="#" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"></a>
                 </div>
 
                 <h3>Honorujemy</h3>

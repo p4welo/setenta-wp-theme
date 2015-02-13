@@ -36,6 +36,8 @@ h2 > a {
     border-color: #AA024C;
 }
 
+.list-group-item.active:focus,
+.list-group-item.active:active,
 .list-group-item.active:hover {
     background-color: #D31266;
     border-color: #D31266;

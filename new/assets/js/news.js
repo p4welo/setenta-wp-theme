@@ -58,12 +58,22 @@ angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translat
         $scope.loadMore = function () {
             $scope.postLimit += 5;
         };
+        newsFactory.findTags().$promise.then(
+            function (result) {
+                $scope.tags = result;
+            }
+        );
     }])
     .factory("newsFactory", ['$resource', function ($resource) {
         return $resource(null, null, {
             findPosts: {
                 url: "/wp-json/posts?filter[posts_per_page]=50",
                 method: 'GET',
+                isArray: true
+            },
+            findTags: {
+                url: "/wp-json/taxonomies/post_tag/terms",
+                method: "GET",
                 isArray: true
             },
             registrationCourses: {
