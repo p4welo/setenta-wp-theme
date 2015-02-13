@@ -3,7 +3,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <title><?php wp_title(); ?></title>
-<!--    <link href="--><?php //bloginfo('template_url'); ?><!--/assets/css/vendor.css" rel="stylesheet" media="screen"/>-->
     <link href="<?php bloginfo('template_url'); ?>/lib/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/lib/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/lib/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
