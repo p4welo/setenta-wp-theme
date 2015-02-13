@@ -1,7 +1,6 @@
 <footer>
-    <div class="row first-line">
-        dupa
-    </div>
+<!--    <div class="row first-line">-->
+<!--    </div>-->
     <div class="row second-line text-center">
         &copy;
         <a href="http://setenta.wroclaw.pl">
