@@ -123,71 +123,12 @@ Template Name: New INDEX
         </div>
     </div>
     <div class="news-content row">
-        <div class="container" ng:controller="newsCtrl">
+        <div class="container">
             <div class="col-sm-8">
-                <div ng:if="newsLoading" class="text-center">
-                    <i class="fa fa-spin fa-spinner"></i>
-                    Ładowanie...
-                </div>
-                <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                     ng:repeat="post in posts | filter: {'title': searchText} | limitTo: postLimit">
-                    <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
-
-                    <div class="col-sm-12">
-                        <small class="date-area">
-                            <i class="fa fa-calendar-o text-danger"></i>
-                            {{ post.date | date:'dd-MM-yyyy' }}
-                        </small>
-                        <small class="author-area">
-                            <i class="fa fa-user text-danger"></i>
-                            {{post.author.first_name | uppercase}}
-                        </small>
-                        <small class="category-area" ng-if="post.terms.post_tag.length>0">
-                            <i class="fa fa-tag text-danger"></i>
-                            <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
-                        </small>
-
-                        <h2>
-                            <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
-                        </h2>
-
-                        <p ng:bind:html="post.content"></p>
-
-                        <div class="text-right more-button-container">
-                            <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
-                    <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
-                        <i class="fa fa-cog fa-spin"></i>
-                        Załaduj więcej postów...
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <noscript>
-            <div class="container">
-
-                <div class="col-sm-8">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-sm-12 panel panel-default post-panel">
                         <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
                         <div class="col-sm-12">
-<!--                            <small class="date-area">-->
-<!--                                <i class="fa fa-calendar-o text-danger"></i>-->
-<!--                                {{ post.date | date:'dd-MM-yyyy' }}-->
-<!--                            </small>-->
-<!--                            <small class="author-area">-->
-<!--                                <i class="fa fa-user text-danger"></i>-->
-<!--                                {{post.author.first_name | uppercase}}-->
-<!--                            </small>-->
-<!--                            <small class="category-area" ng-if="post.terms.post_tag.length>0">-->
-<!--                                <i class="fa fa-tag text-danger"></i>-->
-<!--                                <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>-->
-<!--                            </small>-->
-
                             <h2>
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h2>
@@ -199,13 +140,12 @@ Template Name: New INDEX
                             </p>
                         </div>
                     </div>
-                    <?php endwhile;
-                    else: ?>
-                        <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
-                    <?php endif; ?>
-                </div>
+                <?php endwhile;
+                else: ?>
+                    <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+                <?php endif; ?>
             </div>
-        </noscript>
+        </div>
     </div>
 
     <div class="instructor-row row">
