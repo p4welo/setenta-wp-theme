@@ -130,7 +130,7 @@ Template Name: New INDEX
                     Ładowanie...
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                     ng:repeat="post in posts | filter: {title: searchText} | limitTo: postLimit">
+                     ng:repeat="post in posts | filter: {'title': searchText} | limitTo: postLimit">
                     <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                     <div class="col-sm-12">
