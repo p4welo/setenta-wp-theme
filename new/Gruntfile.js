@@ -20,16 +20,7 @@ module.exports = function (grunt) {
                 separator: ';'
             },
             dist: {
-                src: [
-                    'vendor/jquery/dist/jquery.js',
-                    'vendor/bootstrap/dist/js/bootstrap.js',
-                    'vendor/jssor/js/jssor.js',
-                    'vendor/jssor/js/jssor.slider.js',
-                    'vendor/angularjs/angular.js',
-                    'vendor/angular-sanitize/angular-sanitize.js',
-                    'vendor/angular-resource/angular-resource.js',
-                    'vendor/angular-translate/angular-translate.js',
-                    'assets/**/*.js'],
+                src: ['assets/**/*.js'],
                 dest: 'dist/<%= pkg.name %>.js'
             }
         },
