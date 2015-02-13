@@ -142,8 +142,8 @@ Template Name: New INDEX
                             <i class="fa fa-user text-danger"></i>
                             {{post.author.first_name | uppercase}}
                         </small>
-                        <small class="category-area">
-                            <i class="fa fa-folder-open-o text-danger"></i>
+                        <small class="category-area" ng-if="post.terms.post_tag.length>0">
+                            <i class="fa fa-tag text-danger"></i>
                             <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
                         </small>
 
@@ -152,6 +152,7 @@ Template Name: New INDEX
                         </h2>
 
                         <p ng:bind:html="post.content"></p>
+
                         <div class="text-right more-button-container">
                             <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                         </div>
