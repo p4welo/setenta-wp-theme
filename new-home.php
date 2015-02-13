@@ -6,8 +6,8 @@ Template Name: New HOME
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <title>Szkoła tańca Setenta</title>
+    <meta charset="<?php bloginfo('charset'); ?>"/>
+    <title><?php wp_title(); ?></title>
 
     <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
           media="screen"/>
@@ -18,6 +18,10 @@ Template Name: New HOME
     <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet"
           media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
+
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
+    <?php wp_head(); ?>
 </head>
 <body>
 <nav class="navbar navbar-default">
