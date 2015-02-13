@@ -66,6 +66,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</nav>-->
+<?php get_header(); ?>
 <div class="news-page" ng:app="newsWidget">
     <div id="slider-container" class="slider-container">
         <div u="loading" class="slider-loading">
