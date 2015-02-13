@@ -48479,6 +48479,7 @@ $(document).ready(function ($) {
     .controller('newsCtrl', ['$scope', 'newsFactory', function ($scope, newsFactory) {
         $scope.newsLoading = true;
         $scope.postLimit = 5;
+        $scope.searchText = "";
         newsFactory.findPosts().$promise.then(
             function (result) {
                 $scope.posts = result;
