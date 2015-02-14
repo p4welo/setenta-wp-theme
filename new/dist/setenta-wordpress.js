@@ -131,6 +131,7 @@ $(document).ready(function ($) {
             function (result) {
                 $scope.tags = result;
             }
+
         );
         $scope.toggleTag = function (tag) {
             if ($scope.selectedTag == tag) {

@@ -63,6 +63,7 @@ angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translat
             function (result) {
                 $scope.tags = result;
             }
+
         );
         $scope.toggleTag = function (tag) {
             if ($scope.selectedTag == tag) {
