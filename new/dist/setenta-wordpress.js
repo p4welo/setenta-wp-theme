@@ -132,6 +132,13 @@ $(document).ready(function ($) {
                 $scope.tags = result;
             }
         );
+        $scope.toggleTag = function (tag) {
+            if ($scope.selectedTag == tag) {
+                $scope.selectedTag = null;
+                return;
+            }
+            $scope.selectedTag = tag;
+        };
     }])
     .factory("newsFactory", ['$resource', function ($resource) {
         return $resource(null, null, {

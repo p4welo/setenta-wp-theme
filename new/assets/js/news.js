@@ -70,7 +70,7 @@ angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translat
                 return;
             }
             $scope.selectedTag = tag;
-        }
+        };
     }])
     .factory("newsFactory", ['$resource', function ($resource) {
         return $resource(null, null, {
