@@ -174,7 +174,7 @@
                 <h3>Kategorie</h3>
 
                 <div class="list-group">
-                    <a href="#" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"></a>
+                    <a href="#" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name" ng:click="toggleTag(tag)" ng:class="{'active': selectedTag == tag}"></a>
                 </div>
 
                 <h3>Honorujemy</h3>
