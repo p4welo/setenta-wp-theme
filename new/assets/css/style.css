@@ -27,7 +27,7 @@ h2 > a {
     color: #333;
 }
 
-.text-danger {
+.text-danger, a {
     color: #D31266;
 }
 
@@ -41,6 +41,12 @@ h2 > a {
 .list-group-item.active:hover {
     background-color: #AA024C;
     border-color: #AA024C;
+}
+
+a:focus,
+a:active,
+a:hover {
+    color: #AA024C;
 }
 
 .panel,
