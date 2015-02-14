@@ -565,19 +565,18 @@ footer div.second-line {
 /* ============================================ */
 /* ========== INSTRUCTORS PAGE START ========== */
 /* ============================================ */
-.team-member .img-circle {
+.instrucors-page .team-member .img-circle {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 0.9;
 }
 
-.team-member:hover .img-circle {
+.instrucors-page .team-member:hover .img-circle {
     border-radius: 0;
     opacity: 1;
 }
 
-.team-member {
-
+.instrucors-page .team-member {
     padding: 0 0 5px;
     position: relative;
     -webkit-transition: all 0.2s ease-out;
@@ -586,31 +585,30 @@ footer div.second-line {
     transition: all 0.2s ease-out;
 }
 
-.team-member:hover {
+.instrucors-page .team-member:hover {
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 
-.team-member .details {
-    border-top: 1px solid #e5e5e5;
-    padding: 20px 20px 0;
-    overflow: hidden;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    visibility: hidden;
-    position: absolute;
-    background: #fff;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    font-size: 11px;
-    max-height: 250px;
-    overflow: auto;
-
-}
+/*.instrucors-page .team-member .details {*/
+    /*border-top: 1px solid #e5e5e5;*/
+    /*padding: 20px 20px 0;*/
+    /*overflow: hidden;*/
+    /*opacity: 0;*/
+    /*filter: alpha(opacity=0);*/
+    /*visibility: hidden;*/
+    /*position: absolute;*/
+    /*background: #fff;*/
+    /*box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);*/
+    /*-webkit-transition: all 0.2s ease-out;*/
+    /*-moz-transition: all 0.2s ease-out;*/
+    /*-o-transition: all 0.2s ease-out;*/
+    /*transition: all 0.2s ease-out;*/
+    /*font-size: 11px;*/
+    /*max-height: 250px;*/
+    /*overflow: auto;*/
+/*}*/
 
 /*.team-member:hover .details {*/
     /*opacity: 1;*/
@@ -618,16 +616,16 @@ footer div.second-line {
     /*visibility: visible;*/
 /*}*/
 
-.team-member:hover {
+.instrucors-page .team-member:hover {
     z-index: 2;
 }
 
-.team-member h4,
-.team-member h6 {
+.instrucors-page .team-member h4,
+.instrucors-page .team-member h6 {
     padding: 0 20px;
 }
 
-.team-member div {
+.instrucors-page .team-member div {
     height: 50px;
 }
 
