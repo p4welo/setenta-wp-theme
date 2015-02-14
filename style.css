@@ -422,13 +422,13 @@ table.table-schedule th {
     margin-top: 50px;
 }
 
-.team_member .col-xs-12 {
+.team-member .col-xs-12 {
     padding-left: 0;
     padding-right: 0;
 }
 
 /* team members */
-.team_member {
+.team-member {
 
     padding: 0 0 5px;
     position: relative;
@@ -438,13 +438,13 @@ table.table-schedule th {
     transition: all 0.2s ease-out;
 }
 
-.team_member:hover {
+.team-member:hover {
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 
-.team_member .details {
+.team-member .details {
     border-top: 1px solid #e5e5e5;
     padding: 20px 20px 0;
     overflow: hidden;
@@ -464,26 +464,26 @@ table.table-schedule th {
 
 }
 
-.team_member:hover .details {
+.team-member:hover .details {
     opacity: 1;
     filter: alpha(opacity=100);
     visibility: visible;
 }
 
-.team_member:hover {
+.team-member:hover {
     z-index: 2;
 }
 
-.team_member h4,
-.team_member h6 {
+.team-member h4,
+.team-member h6 {
     padding: 0 20px;
 }
 
-.team_member div {
+.team-member div {
     height: 50px;
 }
 
-.team_member img {
+.team-member img {
     margin-bottom: 10px;
 }
 
@@ -1044,13 +1044,13 @@ a {
     border-left-color: #F31455;
 }
 
-.team_member .img-circle {
+.team-member .img-circle {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 0.9;
 }
 
-.team_member:hover .img-circle {
+.team-member:hover .img-circle {
     border-radius: 0;
     opacity: 1;
 }
