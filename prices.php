@@ -5,8 +5,8 @@ Template Name: NEW  Cennik
 ?>
 
 <?php get_header(); ?>
-    <div class="registration-row row" ng:controller="registrationCtrl">
-        <div class="container">
+    <div class="registration-row row" ng:app="setenta">
+        <div class="container" ng:controller="registrationCtrl">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
             <div class="registration-grid text-center row">
