@@ -78554,7 +78554,7 @@ $(document).ready(function ($) {
         });
     }]);;angular.module("scheduleWidget", ['ngResource', 'pascalprecht.translate'])
 
-    .config(function ($translateProvider) {
+    .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {
             PN: 'Poniedziałek',
             WT: 'Wtorek',
@@ -78570,10 +78570,9 @@ $(document).ready(function ($) {
             OPEN: "Otwarty"
         });
         $translateProvider.preferredLanguage('pl');
-    })
+    }])
 
     .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', function ($scope, courseHttpClient, courseService) {
-//    .controller('scheduleCtrl', ['$scope', '$filter','courseHttpClient','courseService', function ($scope, $filter, courseHttpClient, courseService) {
         $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
@@ -78596,14 +78595,12 @@ $(document).ready(function ($) {
     }])
 
     .factory('courseHttpClient', ['$resource', function ($resource) {
-
         var SERVER_URL = "http://91.218.78.136/public";
         var utils = {
             getRestUrl: function (uri) {
                 return SERVER_URL + uri;
             }
         };
-
         var FUTURE_CLASS_LIST_KEY = utils.getRestUrl("/course/registration.json");
         var FIND_SCHEDULE_KEY = utils.getRestUrl("/course/list.json");
 
