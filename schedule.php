@@ -48,7 +48,7 @@ Template Name: NEW Grafik
                 </ul>
                 </div>
                 <div class="visible-md-block visible-lg-block">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" ng:show="scheduleId==0">
                         <div class="panel-body">
                             <h2>Duża sala</h2>
 
@@ -59,7 +59,7 @@ Template Name: NEW Grafik
                             <div id='bigSchedule'></div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" ng:show="scheduleId==1">
                         <div class="panel-body">
                             <h2>Mała sala</h2>
 
