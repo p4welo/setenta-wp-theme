@@ -104,7 +104,8 @@ ul.nav li.dropdown:hover > .dropdown-menu {
         padding: 30px 15px !important;
     }
 
-    .navbar-nav > .active > a {
+    .navbar-nav > .active > a,
+    .navbar-nav > .current-menu-item > a {
         background-color: #d31266 !important;
         color: #f8f8f8 !important;
     }
@@ -476,12 +477,12 @@ footer div.second-line {
 /* ===================================== */
 
 .registration-row,
-.news-page .instructor-row {
+.instructor-row {
     padding-top: 20px;
     background-color: #530369
 }
 
-.news-page .instructor-row {
+.instructor-row {
     background-color: #AA024C;
 }
 
@@ -492,26 +493,23 @@ footer div.second-line {
 }
 
 .registration-row > .container > h2,
-.news-page .instructor-row > .container > h2 {
+.instructor-row > .container > h2 {
     color: white;
 }
 
-/*.news-page .instructor-row {*/
-    /*padding-bottom: 50px;*/
-/*}*/
-
-.news-page .instructor-row img {
-    border-radius: 50%;
+.instructor-row img {
+    border-radius: 0;
+    /*border-radius: 50%;*/
     border: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    /*-webkit-transition: all 0.2s ease-in-out;*/
+    /*transition: all 0.2s ease-in-out;*/
 }
 
-.news-page .instructor-row img:hover {
-    border-radius: 0;
+/*.news-page .instructor-row img:hover {*/
+    /*border-radius: 0;*/
     /*padding: 0;*/
     /*border: 4px solid white;*/
-}
+/*}*/
 
 .news-page .instructor-row h2 {
     margin-bottom: 40px;
@@ -570,6 +568,7 @@ footer div.second-line {
 .news-page .foryoucard > img {
     background-color: black;
     padding: 17px;
+    margin-bottom: 50px;
 }
 
 /*#owl-demo .item{*/
@@ -608,11 +607,11 @@ footer div.second-line {
     transition: all 0.2s ease-out;
 }
 
-.instrucors-page .team-member:hover {
-    background: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
+/*.instrucors-page .team-member:hover {*/
+    /*background: #fff;*/
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 4px;*/
+/*}*/
 .instrucors-page .team-member:hover {
     z-index: 2;
 }
