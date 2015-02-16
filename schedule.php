@@ -106,7 +106,7 @@ Template Name: NEW Grafik
         </div>
         <div class="instructor-row row">
             <div class="container">
-                <h2 class="col-sm-12">INSTRUKTORZY</h2>
+                <h2>INSTRUKTORZY</h2>
             </div>
         </div>
         <div class="instructor-row row">
