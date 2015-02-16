@@ -368,10 +368,10 @@ Template Name: New INDEX
     </div>
 </div>
 
-<div class="page schedule-page" ng-app="scheduleWidget">
-    <div class="animated fadeIn" ng-cloak ng-controller="scheduleCtrl">
+<div class="page schedule-page" ng:app="scheduleWidget">
+    <div class="animated fadeIn" ng:controller="scheduleCtrl">
         <div class="img-header jumbotron team-header"></div>
-        <div class="body-cover" ng-init="initCalendar()">
+        <div class="body-cover" ng:init="initCalendar()">
             <div class="container main-content staff-content">
                 <h2>
                     <i class="glyphicon glyphicon-calendar"></i>
@@ -383,7 +383,7 @@ Template Name: New INDEX
                         <div class="panel-body">
                             <h4 class="text-center">Duża sala</h4>
 
-                            <div class="row text-center" ng-if="loadingView">
+                            <div class="row text-center" ng:if="loadingView">
                                 <i class="fa fa-spin fa-spinner"></i>
                                 <span>Ładowanie...</span>
                             </div>
@@ -394,7 +394,7 @@ Template Name: New INDEX
                         <div class="panel-body">
                             <h4 class="text-center">Mała sala</h4>
 
-                            <div class="row text-center" ng-if="loadingView">
+                            <div class="row text-center" ng:if="loadingView">
                                 <i class="fa fa-spin fa-spinner"></i>
                                 <span>Ładowanie...</span>
                             </div>
@@ -459,21 +459,21 @@ Template Name: New INDEX
         <a href="mailto:p4welo@gmail.com">Paweł</a>
     </div>
 </footer>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/js/bootstrap.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angularjs/angular.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-sanitize/angular-sanitize.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-resource/angular-resource.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
-        type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/moment/min/moment-with-locales.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.js" type="text/javascript"></script>
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/bootstrap/dist/js/bootstrap.min.js"-->
+<!--        type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jssor/js/jssor.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/jssor/js/jssor.slider.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angularjs/angular.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-sanitize/angular-sanitize.min.js"-->
+<!--        type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-resource/angular-resource.min.js"-->
+<!--        type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/angular-translate/angular-translate.min.js"-->
+<!--        type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/moment/min/moment-with-locales.min.js" type="text/javascript"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/vendor/fullcalendar/dist/fullcalendar.min.js" type="text/javascript"></script>-->
 <script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
 </body>
 </html>

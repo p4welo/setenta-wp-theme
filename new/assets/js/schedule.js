@@ -18,7 +18,8 @@ angular.module("scheduleWidget", ['ngResource', 'pascalprecht.translate'])
         $translateProvider.preferredLanguage('pl');
     })
 
-    .controller('scheduleCtrl', ['$scope', '$filter','courseHttpClient','courseService', function ($scope, $filter, courseHttpClient, courseService) {
+    .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', function ($scope, courseHttpClient, courseService) {
+//    .controller('scheduleCtrl', ['$scope', '$filter','courseHttpClient','courseService', function ($scope, $filter, courseHttpClient, courseService) {
         $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
@@ -43,7 +44,6 @@ angular.module("scheduleWidget", ['ngResource', 'pascalprecht.translate'])
     .factory('courseHttpClient', ['$resource', function ($resource) {
 
         var SERVER_URL = "http://91.218.78.136/public";
-
         var utils = {
             getRestUrl: function (uri) {
                 return SERVER_URL + uri;
