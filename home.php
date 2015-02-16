@@ -54,8 +54,8 @@
             </div>
         </div>
     </div>
-    <div ng:controller="newsCtrl">
-        <div class="news-content row">
+    <div>
+        <div class="news-content row" ng:controller="newsCtrl">
             <div class="container">
                 <div class="col-sm-8">
                     <div ng:if="newsLoading" class="text-center">
@@ -170,76 +170,50 @@
             <div class="container">
                 <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
 
-                <div class="owl-carousel">
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg"-->
-                    <!--                         alt="barbara radomska karpińska"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg"-->
-                    <!--                         alt="paweł radomski"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg"-->
-                    <!--                         alt="magda mróz"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg"-->
-                    <!--                         alt="kasia michalak"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/julia-utig.jpg"-->
-                    <!--                         alt="julia utig"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
-                    <!--                         alt="marta węgrzynowska"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-moscicka.jpg"-->
-                    <!--                         alt="marta mostek mościcka"/>-->
-                    <!--                </div>-->
-                    <!--                <div class="item">-->
-                    <!--                    <img src="-->
-                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
-                    <!--                         alt="martyna olszewska"/>-->
-                    <!--                </div>-->
-                    <div class="item">
-                        1
-                    </div>
-                    <div class="item">
-                        2
-                    </div>
-                    <div class="item">
-                        3
-                    </div>
-                    <div class="item">
-                        4
-                    </div>
-                    <div class="item">
-                        5
-                    </div>
+                <div class="">
+<!--                <div class="owl-carousel">-->
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
+                                             alt="barbara radomska karpińska"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
+                                             alt="paweł radomski"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
+                                             alt="magda mróz"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                                             alt="kasia michalak"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg"
+                                             alt="julia utig"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg"
+                                             alt="marta węgrzynowska"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg"
+                                             alt="marta mostek mościcka"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
+                                             alt="martyna olszewska"/>
+                                    </div>
 
                 </div>
-                <!--            <div class="row">-->
-                <!--                <div class="col-sm-12">-->
-                <!--                    <img src="-->
-                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg" alt="barbara radomska karpińska" class="col-sm-3 col-xs-6"/>-->
-                <!--                    <img src="-->
-                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg" alt="paweł radomski" class="col-sm-3 col-xs-6"/>-->
-                <!--                    <img src="-->
-                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz" class="col-sm-3 col-xs-6"/>-->
-                <!--                    <img src="-->
-                <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg" alt="kasia michalak" class="col-sm-3 col-xs-6"/>-->
-                <!--                </div>-->
-                <!--            </div>-->
             </div>
         </div>
     </div>
