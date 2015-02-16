@@ -80,8 +80,8 @@
                             <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
                         </small>
 
-                        <h2>
-                            <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
+                        <h2 ng:bind:html="post.title">
+<!--                            <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>-->
                         </h2>
 
                         <p ng:bind:html="post.content"></p>
