@@ -1,4 +1,4 @@
-angular.module("scheduleWidget", ['ngResource', 'pascalprecht.translate'])
+angular.module("scheduleWidget")
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {
