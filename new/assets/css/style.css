@@ -15,6 +15,10 @@
 /* ========================== */
 /* ========== CORE ========== */
 /* ========================== */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none;
+}
+
 body {
     font-family: Lato, "Helvetica Neue", Arial, Helvetica, "sans-serif" !important;
 }
@@ -492,9 +496,9 @@ footer div.second-line {
     color: white;
 }
 
-.news-page .instructor-row {
-    padding-bottom: 50px;
-}
+/*.news-page .instructor-row {*/
+    /*padding-bottom: 50px;*/
+/*}*/
 
 .news-page .instructor-row img {
     border-radius: 50%;
@@ -633,6 +637,10 @@ footer div.second-line {
 /* ========================================= */
 /* ========== SCHEDULE PAGE START ========== */
 /* ========================================= */
+
+.schedule-page {
+    margin-top: 50px;
+}
 
 .schedule-page .fc-event {
     border-radius: 0;

@@ -5,7 +5,7 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng:app="setenta">
+    <div ng:app="setenta" ng-cloak>
         <div class="registration-row row" ng:controller="registrationCtrl">
             <div class="container">
                 <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>

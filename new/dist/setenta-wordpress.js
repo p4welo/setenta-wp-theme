@@ -81621,7 +81621,7 @@ fcViews.agendaDay = {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true
     });
     var yearCopy = $('#year-copy'), d = new Date();

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="news-page" ng:app="setenta">
+<div class="news-page" ng:app="setenta" ng-cloak>
 <div id="slider-container" class="slider-container">
     <div u="loading" class="slider-loading">
         <div class="slider-back">

@@ -4,7 +4,7 @@ Template Name: NEW Instruktorzy
 */
 ?>
 <?php get_header(); ?>
-    <div class="registration-row row" ng:app="setenta">
+    <div class="registration-row row" ng:app="setenta" ng-cloak>
         <div class="container" ng:controller="registrationCtrl">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
