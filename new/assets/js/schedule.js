@@ -22,6 +22,7 @@ angular.module("setenta")
         $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
+        $scope.scheduleId = 0;
 
         $scope.initCalendar = function () {
             courseHttpClient.findSchedule().$promise.then(
@@ -37,6 +38,10 @@ angular.module("setenta")
                     $scope.loadingView = false;
                 }
             );
+        };
+
+        $scope.showSchedule = function (scheduleId) {
+            $scope.scheduleId = scheduleId;
         };
     }])
 

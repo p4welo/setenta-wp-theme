@@ -43,6 +43,7 @@ h4 {
     color: #D31266;
 }
 
+.nav-pills .active a,
 .list-group-item.active,
 .list-group-item:hover {
     background-color: #D31266 !important;
@@ -503,6 +504,10 @@ footer div.second-line {
 .registration-row > .container > h2,
 .instructor-row > .container > h2 {
     color: white;
+}
+
+.more-posts-panel {
+    border: 0;
 }
 
 .instructor-row img {

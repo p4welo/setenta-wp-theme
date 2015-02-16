@@ -92,7 +92,7 @@
 <!--                        </div>-->
                     </div>
                 </div>
-                <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
+                <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel" ng:if="postLimit < posts.length">
                     <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
                         <i class="fa fa-cog fa-spin"></i>
                         Załaduj więcej postów...
