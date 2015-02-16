@@ -69,7 +69,7 @@ Template Name: New INDEX
         </div>
     </div>
 </nav>
-<div class="news-page" ng:app="newsWidget">
+<div class="news-page" ng:app="setenta">
 <div id="slider-container" class="slider-container">
     <div u="loading" class="slider-loading">
         <div class="slider-back">
@@ -368,7 +368,7 @@ Template Name: New INDEX
     </div>
 </div>
 
-<div class="page schedule-page" ng:app="scheduleWidget">
+<div class="page schedule-page">
     <div class="animated fadeIn" ng:controller="scheduleCtrl">
         <div class="img-header jumbotron team-header"></div>
         <div class="body-cover" ng:init="initCalendar()">

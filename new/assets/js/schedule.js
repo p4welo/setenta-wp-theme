@@ -1,4 +1,4 @@
-angular.module("scheduleWidget")
+angular.module('setenta')
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {

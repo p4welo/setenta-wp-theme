@@ -1,4 +1,4 @@
-angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translate"])
+angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"])
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {
