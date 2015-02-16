@@ -36,6 +36,7 @@ Template Name: NEW  Cennik
     </div>
     <div class="pricelist-page row">
         <div class="container">
+            <h2>CENNIK</h2>
             <div class="col-sm-8 col-xs-12 col-sm-offset-2">
                 <div class="alert alert-danger">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch tygodni</u>
                     podczas

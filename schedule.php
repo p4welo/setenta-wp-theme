@@ -37,7 +37,7 @@ Template Name: NEW Grafik
         </div>
         <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
             <div class="container">
-
+                <h2>GRAFIK</h2>
                 <div class="visible-md-block visible-lg-block">
                     <div class="panel panel-default">
                         <div class="panel-body">
