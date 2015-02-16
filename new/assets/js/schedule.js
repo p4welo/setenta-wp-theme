@@ -1,4 +1,4 @@
-angular.module('setenta')
+angular.module("setenta")
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {

@@ -78458,7 +78458,7 @@ $(document).ready(function ($) {
     $(window).bind("load", ScaleSlider);
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
-});;angular.module('newsWidget', ["ngResource", "ngSanitize", "pascalprecht.translate"])
+});;angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"])
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {
@@ -78552,7 +78552,7 @@ $(document).ready(function ($) {
                 isArray: true
             }
         });
-    }]);;angular.module("scheduleWidget", ['ngResource', 'pascalprecht.translate'])
+    }]);;angular.module('setenta')
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {
