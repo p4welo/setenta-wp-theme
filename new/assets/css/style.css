@@ -677,6 +677,11 @@ footer div.second-line {
     font-weight: 100;
 }
 
+.alert-popover {
+    margin-top: 25px;
+    background-color: white !important;
+}
+
 /* ======================================= */
 /* ========== SCHEDULE PAGE END ========== */
 /* ======================================= */

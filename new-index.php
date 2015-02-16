@@ -478,7 +478,7 @@ Template Name: New INDEX
 </div>
 <div class="pricelist-page row">
     <div class="container">
-        <div class="col-md-8 col-sm-7 col-xs-12 col-sm-offset-3 col-md-offset-2">
+        <div class="col-sm-8 col-xs-12 col-sm-offset-2">
             <div class="alert alert-danger">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch tygodni</u> podczas
                 zajęć w dowolnej technice.
             </div>
