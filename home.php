@@ -87,7 +87,8 @@
                             <p ng:bind:html="post.content"></p>
 
                             <div class="text-right more-button-container">
-                                <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
+                                <a ng:href="{{post.link}}" href="javascript:void(0)"
+                                   class="btn btn-default">WIĘCEJ...</a>
                             </div>
                         </div>
                     </div>
@@ -171,35 +172,43 @@
 
                 <div class="owl-carousel">
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg"-->
                     <!--                         alt="barbara radomska karpińska"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg"-->
                     <!--                         alt="paweł radomski"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg"-->
                     <!--                         alt="magda mróz"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg"-->
                     <!--                         alt="kasia michalak"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/julia-utig.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/julia-utig.jpg"-->
                     <!--                         alt="julia utig"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
                     <!--                         alt="marta węgrzynowska"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-moscicka.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-moscicka.jpg"-->
                     <!--                         alt="marta mostek mościcka"/>-->
                     <!--                </div>-->
                     <!--                <div class="item">-->
-                    <!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
+                    <!--                    <img src="-->
+                    <?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
                     <!--                         alt="martyna olszewska"/>-->
                     <!--                </div>-->
                     <div class="item">
@@ -239,7 +248,8 @@
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/bk.jpg" class="col-xs-12 img-circle"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/bk.jpg"
+                             class="col-xs-12 img-circle"
                              alt="BARBARA KARPIŃSKA" title="BARBARA KARPIŃSKA">
                     </a>
                     <h4>BARBARA RADOMSKA (KARPIŃSKA)</h4>
@@ -253,7 +263,8 @@
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr2.jpg" class="col-xs-12 img-circle"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr2.jpg"
+                             class="col-xs-12 img-circle"
                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                     </a>
                     <h4>PAWEŁ RADOMSKI</h4>
@@ -266,7 +277,8 @@
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mm2.jpg" class="col-xs-12 img-circle"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mm2.jpg"
+                             class="col-xs-12 img-circle"
                              alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
                     </a>
                     <h4>MAGDA MRÓZ</h4>
@@ -420,104 +432,6 @@
             </div>
         </div>
     </div>
-    <div class="pricelist-page row">
-        <div class="container">
-            <div class="col-sm-8 col-xs-12 col-sm-offset-2">
-                <div class="alert alert-danger">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch tygodni</u> podczas
-                    zajęć w dowolnej technice.
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <legend>Dorośli</legend>
-                        <dl class="dl-horizontal">
-                            <dt>20 zł</dt>
-                            <dd>Pojedyncze wejście (1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal emphasize">
-                            <dt>70 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>110 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>180 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> OPEN na wszystkie zajęcia</dd>
-                        </dl>
-                    </div>
-                </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <legend>Dzieci</legend>
-                        <dl class="dl-horizontal">
-                            <dt>18 zł</dt>
-                            <dd>Pojedyncze wejście (45min)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 45min)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>100 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h) - formacja taneczna</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>110 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 45min)</dd>
-                        </dl>
-                        <dl class="dl-horizontal emphasize">
-                            <dt>150 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> OPEN na wszystkie zajęcia <u>oprócz formacji
-                                    tanecznej</u></dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <legend>Studenci (za okazaniem legitymacji)</legend>
-                        <dl class="dl-horizontal">
-                            <dt>18 zł</dt>
-                            <dd>Pojedyncze wejście (1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <legend>Seniorzy (zajęcia dedykowane)</legend>
-                        <dl class="dl-horizontal">
-                            <dt>12 zł</dt>
-                            <dd>Pojedyncze wejście (1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>40 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <legend>Zajęcia indywidualne</legend>
-                        <dl class="dl-horizontal">
-                            <dt>70 zł</dt>
-                            <dd>Lekcja indywidualna (1h)</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>250 zł</dt>
-                            <dd>Pierwszy taniec - karnet na 4 wejścia (4 x 1h) do wykorzystania w dowolnym okresie</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 <?php get_footer(); ?>
