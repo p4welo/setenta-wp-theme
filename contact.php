@@ -6,15 +6,14 @@ Template Name: Kontakt
 
 <?php get_header(); ?>
     <div class="page">
-        <div class="animated fadeIn">
             <div class="map" id="mapka"></div>
 
-            <div class="body-cover">
-                <div class="container contact-content main-content staff-content">
-                    <h2>
-                        <i class="glyphicon glyphicon-map-marker"></i>
-                        Kontakt
-                    </h2>
+            <div>
+                <div class="container">
+<!--                    <h2>-->
+<!--                        <i class="glyphicon glyphicon-map-marker"></i>-->
+<!--                        Kontakt-->
+<!--                    </h2>-->
 
                     <div class="col-sm-6 col-xs-12 body-content">
                         <address>
