@@ -175,13 +175,13 @@ angular.module("setenta")
                 "</tr>";
             result += "</table>";
             if (c.canRegister) {
-                result += "<div class='alert-danger alert-popover'><i class='fa fa-pencil'></i> ZAPISY</div>";
+                result += "<div class='alert-danger alert-popover text-center'><i class='fa fa-pencil'></i> ZAPISY</div>";
             }
             else if (!c.canJoin) {
-                result += "<div class='alert-danger alert-popover'><i class='fa fa-ban'></i> BRAK MIEJSC</div>";
+                result += "<div class='alert-danger alert-popover text-center'><i class='fa fa-ban'></i> BRAK MIEJSC</div>";
             }
             if (c.canJoin) {
-                result += "<div class='alert-danger alert-popover'><i class='fa fa-plug'></i> WOLNE MIEJSCA</div>";
+                result += "<div class='alert-danger alert-popover text-center'><i class='fa fa-plug'></i> WOLNE MIEJSCA</div>";
             }
             return result;
         };

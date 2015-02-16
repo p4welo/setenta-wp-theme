@@ -27,13 +27,17 @@ h2 > a {
     color: #333;
 }
 
+h4 {
+    color: #D31266;
+}
+
 .text-danger, a {
     color: #D31266;
 }
 
 .list-group-item.active,
 .list-group-item:hover {
-    background-color: #D31266;
+    background-color: #D31266 !important;
     border-color: #D31266;
 }
 

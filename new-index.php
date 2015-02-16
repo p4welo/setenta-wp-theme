@@ -19,8 +19,8 @@ Template Name: New INDEX
           media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet"
           media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.carousel.min.css"
-          rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
@@ -241,7 +241,7 @@ Template Name: New INDEX
         <div class="container">
             <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
 
-            <div id="owl-demo">
+            <div id="owl-demo" class="owl-carousel">
                 <div class="item">
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
                          alt="barbara radomska karpińska"/>
