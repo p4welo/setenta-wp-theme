@@ -19,6 +19,8 @@ Template Name: New INDEX
           media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet"
           media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.carousel.min.css"
+          rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
@@ -124,132 +126,155 @@ Template Name: New INDEX
         </div>
     </div>
 </div>
-<div class="news-content row">
-    <div class="container" ng:controller="newsCtrl">
-        <div class="col-sm-8">
-            <div ng:if="newsLoading" class="text-center">
-                <i class="fa fa-spin fa-spinner"></i>
-                Ładowanie...
-            </div>
-            <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                 ng:repeat="post in posts | filter: {'title': searchText} | limitTo: postLimit">
-                <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
-
-                <div class="col-sm-12">
-                    <small class="date-area">
-                        <i class="fa fa-calendar-o text-danger"></i>
-                        {{ post.date | date:'dd-MM-yyyy' }}
-                    </small>
-                    <small class="author-area">
-                        <i class="fa fa-user text-danger"></i>
-                        {{post.author.first_name | uppercase}}
-                    </small>
-                    <small class="category-area" ng-if="post.terms.post_tag.length>0">
-                        <i class="fa fa-tag text-danger"></i>
-                        <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
-                    </small>
-
-                    <h2>
-                        <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
-                    </h2>
-
-                    <p ng:bind:html="post.content"></p>
-
-                    <div class="text-right more-button-container">
-                        <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
-                <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
-                    <i class="fa fa-cog fa-spin"></i>
-                    Załaduj więcej postów...
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-4 search-container">
-            <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="Szukaj..."
-                       aria-describedby="inputSuccess2Status" ng:model="searchText">
-                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-            </div>
-            <h3>Kategorie</h3>
-
-            <div class="list-group">
-                <a href="#" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name" ng:click="toggleTag(tag)"
-                   ng:class="{'active': selectedTag == tag}"></a>
-            </div>
-
-            <h3>Honorujemy</h3>
-
-            <div class="col-sm-12">
-                <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
-                </a>
-            </div>
-            <div class="col-sm-12">
-                <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <noscript>
+<div ng:controller="newsCtrl">
+    <div class="news-content row">
         <div class="container">
-
             <div class="col-sm-8">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <div class="col-sm-12 panel panel-default post-panel">
-                        <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+                <div ng:if="newsLoading" class="text-center">
+                    <i class="fa fa-spin fa-spinner"></i>
+                    Ładowanie...
+                </div>
+                <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
+                     ng:repeat="post in posts | filter: {'title': searchText} | limitTo: postLimit">
+                    <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
-                        <div class="col-sm-12">
-                            <small class="date-area">
-                                <i class="fa fa-calendar-o text-danger"></i>
-                                21 cze 2015
-                            </small>
-                            <small class="category-area">
-                                <i class="fa fa-folder-open-o text-danger"></i>
-                                NOWE GRUPY
-                            </small>
+                    <div class="col-sm-12">
+                        <small class="date-area">
+                            <i class="fa fa-calendar-o text-danger"></i>
+                            {{ post.date | date:'dd-MM-yyyy' }}
+                        </small>
+                        <small class="author-area">
+                            <i class="fa fa-user text-danger"></i>
+                            {{post.author.first_name | uppercase}}
+                        </small>
+                        <small class="category-area" ng-if="post.terms.post_tag.length>0">
+                            <i class="fa fa-tag text-danger"></i>
+                            <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
+                        </small>
 
-                            <h2>
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </h2>
+                        <h2>
+                            <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
+                        </h2>
 
-                            <p>
-                                <?php
-                                the_content('Czytaj dalej &rarr;');
-                                ?>
-                            </p>
+                        <p ng:bind:html="post.content"></p>
+
+                        <div class="text-right more-button-container">
+                            <a ng:href="{{post.link}}" href="javascript:void(0)" class="btn btn-default">WIĘCEJ...</a>
                         </div>
                     </div>
-                <?php endwhile;
-                else: ?>
-                    <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
-                <?php endif; ?>
+                </div>
+                <div class="col-sm-12 panel panel-default post-panel text-center" ng:if="postLimit < posts.length">
+                    <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
+                        <i class="fa fa-cog fa-spin"></i>
+                        Załaduj więcej postów...
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 search-container">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Szukaj..."
+                           aria-describedby="inputSuccess2Status" ng:model="searchText">
+                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <h3>Kategorie</h3>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"
+                       ng:click="toggleTag(tag)"
+                       ng:class="{'active': selectedTag == tag}"></a>
+                </div>
+
+                <h3>Honorujemy</h3>
+
+                <div class="col-sm-12">
+                    <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
+                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
+                    </a>
+                </div>
+                <div class="col-sm-12">
+                    <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
+                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
+                    </a>
+                </div>
             </div>
         </div>
-    </noscript>
-</div>
 
-<div class="instructor-row row">
-    <div class="container">
-        <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
+        <noscript>
+            <div class="container">
 
-        <div class="row">
-            <div class="col-sm-12">
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
-                     alt="barbara radomska karpińska"
-                     class="img-circle col-sm-3 col-xs-6"/>
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
-                     alt="paweł radomski" class="img-circle col-sm-3 col-xs-6"/>
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
-                     alt="magda mróz"
-                     class="img-circle col-sm-3 col-xs-6"/>
-                <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
-                     alt="kasia michalak" class="img-circle col-sm-3 col-xs-6"/>
+                <div class="col-sm-8">
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <div class="col-sm-12 panel panel-default post-panel">
+                            <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+
+                            <div class="col-sm-12">
+                                <small class="date-area">
+                                    <i class="fa fa-calendar-o text-danger"></i>
+                                    21 cze 2015
+                                </small>
+                                <small class="category-area">
+                                    <i class="fa fa-folder-open-o text-danger"></i>
+                                    NOWE GRUPY
+                                </small>
+
+                                <h2>
+                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                </h2>
+
+                                <p>
+                                    <?php
+                                    the_content('Czytaj dalej &rarr;');
+                                    ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php endwhile;
+                    else: ?>
+                        <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+                    <?php endif; ?>
+                </div>
             </div>
+        </noscript>
+    </div>
+
+    <div class="instructor-row row">
+        <div class="container">
+            <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
+
+            <div id="owl-demo">
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg" alt="barbara radomska karpińska"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg" alt="paweł radomski"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg" alt="kasia michalak"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg" alt="julia utig"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg" alt="marta węgrzynowska"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg" alt="marta mostek mościcka"/>
+                </div>
+                <div class="item">
+                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg" alt="martyna olszewska"/>
+                </div>
+            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-sm-12">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg" alt="barbara radomska karpińska" class="col-sm-3 col-xs-6"/>-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg" alt="paweł radomski" class="col-sm-3 col-xs-6"/>-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg" alt="magda mróz" class="col-sm-3 col-xs-6"/>-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg" alt="kasia michalak" class="col-sm-3 col-xs-6"/>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
@@ -369,76 +394,78 @@ Template Name: New INDEX
 </div>
 
 <div class="schedule-page">
-    <div class="animated fadeIn" ng:controller="scheduleCtrl">
-        <div ng:init="initCalendar()">
-            <div class="container">
+    <div ng:init="initCalendar()" ng:controller="scheduleCtrl">
+        <div class="container">
 
-                <div class="visible-md-block visible-lg-block">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <h4 class="text-center">Duża sala</h4>
+            <div class="visible-md-block visible-lg-block">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4 class="text-center">Duża sala</h4>
 
-                            <div class="row text-center" ng:if="loadingView">
-                                <i class="fa fa-spin fa-spinner"></i>
-                                <span>Ładowanie...</span>
-                            </div>
-                            <div id='bigSchedule'></div>
+                        <div class="row text-center" ng:if="loadingView">
+                            <i class="fa fa-spin fa-spinner"></i>
+                            <span>Ładowanie...</span>
                         </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <h4 class="text-center">Mała sala</h4>
-
-                            <div class="row text-center" ng:if="loadingView">
-                                <i class="fa fa-spin fa-spinner"></i>
-                                <span>Ładowanie...</span>
-                            </div>
-                            <div id='smallSchedule'></div>
-                        </div>
+                        <div id='bigSchedule'></div>
                     </div>
                 </div>
-                <div class="panel panel-default visible-sm-block visible-xs-block">
+                <div class="panel panel-default">
                     <div class="panel-body">
-                        <div ng-repeat="d in days">
-                            <legend>
-                                {{ d | translate }}
-                            </legend>
-                            <table class="table table-condensed">
-                                <thead>
-                                <tr>
-                                    <th>godz</th>
-                                    <th>nazwa</th>
-                                    <th>poziom</th>
-                                    <th>sala</th>
-                                    <th>&nbsp;</th>
-                                </tr>
-                                </thead>
-                                <tbody>
+                        <h4 class="text-center">Mała sala</h4>
 
-                                <tr ng-repeat="c in courseList | filter : {'day': d}">
-                                    <td>
-                                        <span ng-bind="c.startTime"></span>
-                                        -
-                                        <span ng-bind="c.endTime"></span>
-                                    </td>
-                                    <td ng-bind="c.style.name"></td>
-                                    <td>
-                                        {{ c.level | translate }}
-                                    </td>
-                                    <td ng-bind="c.room.name"></td>
-                                    <td class="text-right">
-                                        <span class="badge badge-danger" ng-if="c.canRegister">ZAPISY</span>
-                                        <span class='badge badge-error' ng-if="!c.canRegister && !c.canJoin">BRAK MIEJSC</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="row text-center" ng:if="loadingView">
+                            <i class="fa fa-spin fa-spinner"></i>
+                            <span>Ładowanie...</span>
                         </div>
+                        <div id='smallSchedule'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default visible-sm-block visible-xs-block">
+                <div class="panel-body">
+                    <div ng-repeat="d in days">
+                        <legend>
+                            {{ d | translate }}
+                        </legend>
+                        <table class="table table-condensed">
+                            <thead>
+                            <tr>
+                                <th>godz</th>
+                                <th>nazwa</th>
+                                <th>poziom</th>
+                                <th>sala</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr ng-repeat="c in courseList | filter : {'day': d}">
+                                <td>
+                                    <span ng-bind="c.startTime"></span>
+                                    -
+                                    <span ng-bind="c.endTime"></span>
+                                </td>
+                                <td ng-bind="c.style.name"></td>
+                                <td>
+                                    {{ c.level | translate }}
+                                </td>
+                                <td ng-bind="c.room.name"></td>
+                                <td class="text-right">
+                                    <span class="badge badge-danger" ng-if="c.canRegister">ZAPISY</span>
+                                    <span class='badge badge-error'
+                                          ng-if="!c.canRegister && !c.canJoin">BRAK MIEJSC</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="pricelist-page">
+
 </div>
 </div>
 <footer>
@@ -467,9 +494,14 @@ Template Name: New INDEX
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
         type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/moment/min/moment-with-locales.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.js" type="text/javascript"></script>
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>-->
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/moment/min/moment-with-locales.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.js"
+        type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/owl.carousel.min.js"
+        type="text/javascript"></script>
+<!--<script src="-->
+<?php //bloginfo('template_url'); ?><!--/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>-->
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/app.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/news.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/assets/js/schedule.js" type="text/javascript"></script>

@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $("#owl-demo").owlCarousel({
+
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+
+    });
     var yearCopy = $('#year-copy'), d = new Date();
     if (d.getFullYear() === 2013) { yearCopy.html('2013'); } else { yearCopy.html('2013-' + d.getFullYear().toString()); }
 });

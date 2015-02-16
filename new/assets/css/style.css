@@ -558,6 +558,15 @@ footer div.second-line {
     padding: 17px;
 }
 
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* =================================== */
 /* ========== NEWS PAGE END ========== */
 /* =================================== */
