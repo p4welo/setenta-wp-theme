@@ -242,37 +242,52 @@ Template Name: New INDEX
             <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
 
             <div class="owl-carousel">
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/barbara-radomska.jpg"-->
+<!--                         alt="barbara radomska karpińska"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/pawel-radomski.jpg"-->
+<!--                         alt="paweł radomski"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/magda-mroz.jpg"-->
+<!--                         alt="magda mróz"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/kasia-michalak.jpg"-->
+<!--                         alt="kasia michalak"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/julia-utig.jpg"-->
+<!--                         alt="julia utig"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-wegrzynowska.jpg"-->
+<!--                         alt="marta węgrzynowska"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/marta-moscicka.jpg"-->
+<!--                         alt="marta mostek mościcka"/>-->
+<!--                </div>-->
+<!--                <div class="item">-->
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/new/assets/img/instructors/martyna-olszewska.jpg"-->
+<!--                         alt="martyna olszewska"/>-->
+<!--                </div>-->
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
-                         alt="barbara radomska karpińska"/>
+                   1
                 </div>
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
-                         alt="paweł radomski"/>
+                   2
                 </div>
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
-                         alt="magda mróz"/>
+                   3
                 </div>
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
-                         alt="kasia michalak"/>
+                   4
                 </div>
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg"
-                         alt="julia utig"/>
-                </div>
-                <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg"
-                         alt="marta węgrzynowska"/>
-                </div>
-                <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg"
-                         alt="marta mostek mościcka"/>
-                </div>
-                <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
-                         alt="martyna olszewska"/>
+                   5
                 </div>
 
             </div>

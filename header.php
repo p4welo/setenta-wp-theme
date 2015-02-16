@@ -4,14 +4,13 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <title><?php wp_title(); ?></title>
 
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet"
-          media="screen"/>
-    <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet"
-          media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/skippr/css/jquery.skippr.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
