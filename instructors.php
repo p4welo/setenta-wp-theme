@@ -3,8 +3,36 @@
 Template Name: NEW Instruktorzy
 */
 ?>
-
 <?php get_header(); ?>
+    <div class="registration-row row" ng:app="setenta">
+        <div class="container" ng:controller="registrationCtrl">
+            <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
+
+            <div class="registration-grid text-center row">
+                <div ng:if="courseLoading" class="text-center">
+                    <i class="fa fa-spin fa-spinner"></i>
+                    Ładowanie...
+                </div>
+
+                <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
+                    <img
+                        ng:src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
+                        alt="img21">
+                    <figcaption>
+                        <div>
+                            <h3 ng:bind="group[0].style.name"></h3>
+
+                            <p ng:repeat:start="course in group">
+                                {{course.day | translate}}
+                                {{ course.startTime}}
+                            </p>
+                            <br ng:repeat:end/>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
     <div class="instrucors-page row">
         <div class="container">
             <div class="col-xs-6 col-lg-3">
@@ -54,7 +82,8 @@ Template Name: NEW Instruktorzy
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mostek.jpg"
-                             class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA" title="MARTA 'MOSTEK' MOŚCICKA">
+                             class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
+                             title="MARTA 'MOSTEK' MOŚCICKA">
                     </a>
                     <h4>MARTA "MOSTEK" MOŚCICKA</h4>
 
