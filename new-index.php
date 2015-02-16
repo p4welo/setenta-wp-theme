@@ -368,15 +368,10 @@ Template Name: New INDEX
     </div>
 </div>
 
-<div class="page schedule-page">
+<div class="schedule-page">
     <div class="animated fadeIn" ng:controller="scheduleCtrl">
-        <div class="img-header jumbotron team-header"></div>
-        <div class="body-cover" ng:init="initCalendar()">
-            <div class="container main-content staff-content">
-                <h2>
-                    <i class="glyphicon glyphicon-calendar"></i>
-                    Grafik
-                </h2>
+        <div ng:init="initCalendar()">
+            <div class="container">
 
                 <div class="visible-md-block visible-lg-block">
                     <div class="panel panel-default">
