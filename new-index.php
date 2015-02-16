@@ -241,7 +241,7 @@ Template Name: New INDEX
         <div class="container">
             <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
 
-            <div id="owl-demo" class="owl-carousel">
+            <div class="owl-carousel">
                 <div class="item">
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
                          alt="barbara radomska karpińska"/>
@@ -274,6 +274,7 @@ Template Name: New INDEX
                     <img src="<?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
                          alt="martyna olszewska"/>
                 </div>
+
             </div>
             <!--            <div class="row">-->
             <!--                <div class="col-sm-12">-->
