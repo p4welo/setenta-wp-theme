@@ -81695,7 +81695,9 @@ $(document).ready(function ($) {
     $(window).bind("load", ScaleSlider);
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
-});;function init(elementId, markerImg) {
+});;$(document).ready(function () {
+    var elementId = "mapka",
+        markerImg = "<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png";
     var wspolrzedne = new google.maps.LatLng(51.1172973, 17.0430937);
     var opcjeMapy = {
         zoom: 17,
@@ -81722,10 +81724,6 @@ $(document).ready(function ($) {
         icon: new google.maps.MarkerImage(markerImg, rozmiar, punkt_startowy, punkt_zaczepienia)
     };
     var marker = new google.maps.Marker(opcjeMarkera);
-}
-
-$(document).ready(function () {
-    init("mapka", "<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png");
 });;angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"])
 
     .config(['$translateProvider', function ($translateProvider) {

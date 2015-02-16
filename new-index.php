@@ -239,7 +239,7 @@ Template Name: New INDEX
 
     <div class="instructor-row row">
         <div class="container">
-            <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
+            <h2 class="col-sm-12">INSTRUKTORZY</h2>
 
             <div class="owl-carousel">
 <!--                <div class="item">-->

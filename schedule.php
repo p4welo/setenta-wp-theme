@@ -37,7 +37,7 @@ Template Name: NEW Grafik
         </div>
         <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
             <div class="container">
-                <h2>GRAFIK</h2>
+<!--                <h2>GRAFIK</h2>-->
                 <div class="visible-md-block visible-lg-block">
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -106,7 +106,7 @@ Template Name: NEW Grafik
         </div>
         <div class="instructor-row row">
             <div class="container">
-                <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
+                <h2 class="col-sm-12">INSTRUKTORZY</h2>
             </div>
         </div>
         <div class="instructor-row row">
