@@ -17,6 +17,8 @@ Template Name: New INDEX
           media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/vendor/animate.css/animate.min.css" rel="stylesheet"
           media="screen"/>
+    <link href="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet"
+          media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/new/assets/css/style.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
@@ -470,6 +472,8 @@ Template Name: New INDEX
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/angular-translate/angular-translate.min.js"
         type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/vendor/lodash/lodash.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/moment/min/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/new/vendor/fullcalendar/dist/fullcalendar.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
 </body>
 </html>
