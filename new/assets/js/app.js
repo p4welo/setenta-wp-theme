@@ -1,20 +1,20 @@
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-    });
+//    $('.owl-carousel').owlCarousel({
+//        loop:true,
+//        margin:10,
+//        nav:true,
+//        responsive:{
+//            0:{
+//                items:1
+//            },
+//            600:{
+//                items:3
+//            },
+//            1000:{
+//                items:5
+//            }
+//        }
+//    });
     var yearCopy = $('#year-copy'), d = new Date();
     if (d.getFullYear() === 2013) { yearCopy.html('2013'); } else { yearCopy.html('2013-' + d.getFullYear().toString()); }
 });
