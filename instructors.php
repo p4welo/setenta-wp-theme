@@ -35,7 +35,7 @@ Template Name: NEW Instruktorzy
     </div>
     <div class="instrucors-page row">
         <div class="container">
-            <h2 class="col-sm-12">INSTRUKTORZY</h2>
+<!--            <h2 class="col-sm-12">INSTRUKTORZY</h2>-->
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
