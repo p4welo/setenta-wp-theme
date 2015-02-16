@@ -35,7 +35,7 @@ h4 {
     color: #D31266;
 }
 
-.text-danger, a {
+.alert-danger, .text-danger, a {
     color: #D31266;
 }
 
