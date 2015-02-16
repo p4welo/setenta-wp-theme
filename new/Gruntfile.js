@@ -32,6 +32,7 @@ module.exports = function (grunt) {
                     'vendor/lodash/lodash.js',
                     'vendor/moment/min/moment-with-locales.js',
                     'vendor/fullcalendar/dist/fullcalendar.js',
+                    'vendor/owl.carousel/dist/owl.carousel.js',
                     'assets/**/*.js'
                 ],
                 dest: 'dist/<%= pkg.name %>.js'
