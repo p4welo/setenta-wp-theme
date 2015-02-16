@@ -104,5 +104,57 @@ Template Name: NEW Grafik
                 </div>
             </div>
         </div>
+        <div class="instructor-row row">
+            <div class="container">
+                <h2 class="col-sm-12">INSTRUKTORZY TAŃCA</h2>
+            </div>
+        </div>
+        <div class="instructor-row row">
+            <div class="container">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
+                             alt="barbara radomska karpińska"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
+                             alt="paweł radomski"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
+                             alt="magda mróz"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                             alt="kasia michalak"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg"
+                             alt="julia utig"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg"
+                             alt="marta węgrzynowska"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg"
+                             alt="marta mostek mościcka"/>
+                    </div>
+                    <div class="item">
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
+                             alt="martyna olszewska"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 <?php get_footer(); ?>
