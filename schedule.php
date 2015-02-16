@@ -5,7 +5,7 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div class="schedule-page" ng:app="setenta">
+    <div ng:app="setenta">
         <div class="registration-row row" ng:controller="registrationCtrl">
             <div class="container">
                 <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
@@ -35,7 +35,7 @@ Template Name: NEW Grafik
                 </div>
             </div>
         </div>
-        <div ng:init="initCalendar()" ng:controller="scheduleCtrl">
+        <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
             <div class="container">
 
                 <div class="visible-md-block visible-lg-block">
