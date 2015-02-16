@@ -39,6 +39,7 @@ h4 {
 .list-group-item:hover {
     background-color: #D31266 !important;
     border-color: #D31266;
+    color: white !important;
 }
 
 .list-group-item.active:focus,
