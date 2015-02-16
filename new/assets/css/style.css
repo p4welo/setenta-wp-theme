@@ -471,7 +471,7 @@ footer div.second-line {
 /* ========== NEWS PAGE START ========== */
 /* ===================================== */
 
-.news-page .registration-row,
+.registration-row,
 .news-page .instructor-row {
     padding-top: 20px;
     background-color: #530369
@@ -481,12 +481,12 @@ footer div.second-line {
     background-color: #AA024C;
 }
 
-.news-page .registration-row {
+.registration-row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.news-page .registration-row > .container > h2,
+.registration-row > .container > h2,
 .news-page .instructor-row > .container > h2 {
     color: white;
 }
@@ -567,14 +567,14 @@ footer div.second-line {
     padding: 17px;
 }
 
-#owl-demo .item{
-    margin: 3px;
-}
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
+/*#owl-demo .item{*/
+    /*margin: 3px;*/
+/*}*/
+/*#owl-demo .item img{*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
 
 /* =================================== */
 /* ========== NEWS PAGE END ========== */
