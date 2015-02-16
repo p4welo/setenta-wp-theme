@@ -37,18 +37,18 @@ Template Name: NEW Grafik
         </div>
         <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
             <div class="container">
+<!--                <div class="visible-md-block visible-lg-block">-->
+<!--                <ul style="margin-bottom: 50px;" class="nav nav-pills">-->
+<!--                    <li role="presentation" ng:class="{'active': scheduleId==0}">-->
+<!--                        <a href="javascript:void(0)" ng:click="showSchedule(0)">DUŻA SALA</a>-->
+<!--                    </li>-->
+<!--                    <li role="presentation" ng:class="{'active': scheduleId==1}">-->
+<!--                        <a href="javascript:void(0)" ng:click="showSchedule(1)">MAŁA SALA</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                </div>-->
                 <div class="visible-md-block visible-lg-block">
-                <ul style="margin-bottom: 50px;" class="nav nav-pills">
-                    <li role="presentation" ng:class="{'active': scheduleId==0}">
-                        <a href="javascript:void(0)" ng:click="showSchedule(0)">DUŻA SALA</a>
-                    </li>
-                    <li role="presentation" ng:class="{'active': scheduleId==1}">
-                        <a href="javascript:void(0)" ng:click="showSchedule(1)">MAŁA SALA</a>
-                    </li>
-                </ul>
-                </div>
-                <div class="visible-md-block visible-lg-block">
-                    <div class="panel panel-default" ng:show="scheduleId==0">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <h2>Duża sala</h2>
 
@@ -59,7 +59,7 @@ Template Name: NEW Grafik
                             <div id='bigSchedule'></div>
                         </div>
                     </div>
-                    <div class="panel panel-default" ng:show="scheduleId==1">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <h2>Mała sala</h2>
 
