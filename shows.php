@@ -36,10 +36,6 @@ Template Name: Pokazy
     </div>
     <div class="shows-page">
         <div class="container">
-<!--            <h2 class="col-sm-12">-->
-<!--                POKAZY TAŃCA-->
-<!--            </h2>-->
-
             <div class="col-md-8 col-sm-7 col-xs-12">
                     <p>
                         Naszymi klientami są agencje artystyczne, promocyjno-eventowe, agencje modeli i
