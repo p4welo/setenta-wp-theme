@@ -564,12 +564,12 @@ footer div.second-line {
     margin-bottom: 20px
 }
 
-.news-page .foryoucard > img,
-.news-page .oksystem > img {
+.foryoucard > img,
+.oksystem > img {
     margin-top: 30px;
 }
 
-.news-page .foryoucard > img {
+.foryoucard > img {
     background-color: black;
     padding: 17px;
     margin-bottom: 50px;
