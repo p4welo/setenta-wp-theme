@@ -130,7 +130,7 @@
                 </div>
                 <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
                      data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true"
-                     data-show-border="true"></div>
+                     data-width="100%" data-show-border="true"></div>
             </div>
         </div>
 
