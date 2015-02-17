@@ -741,3 +741,7 @@ footer div.second-line {
     height: 400px;
     background: white;
 }
+
+.single-page .thumbnail {
+    height: auto !important;
+}

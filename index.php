@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="news-content row">
+    <div class="news-content single-page row">
         <div class="container">
             <div class="col-sm-8">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -37,14 +37,14 @@
                         <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
 
                         <div class="col-sm-12">
-                            <small class="date-area">
-                                <i class="fa fa-calendar-o text-danger"></i>
-                                21 cze 2015
-                            </small>
-                            <small class="category-area">
-                                <i class="fa fa-folder-open-o text-danger"></i>
-                                NOWE GRUPY
-                            </small>
+<!--                            <small class="date-area">-->
+<!--                                <i class="fa fa-calendar-o text-danger"></i>-->
+<!--                                21 cze 2015-->
+<!--                            </small>-->
+<!--                            <small class="category-area">-->
+<!--                                <i class="fa fa-folder-open-o text-danger"></i>-->
+<!--                                NOWE GRUPY-->
+<!--                            </small>-->
 
                             <h2>
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -63,12 +63,6 @@
                 <?php endif; ?>
             </div>
             <div class="col-sm-4 search-container">
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Szukaj..."
-                           aria-describedby="inputSuccess2Status" ng:model="searchText">
-                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                </div>
-
                 <h3>Honorujemy</h3>
 
                 <div class="col-sm-12">
