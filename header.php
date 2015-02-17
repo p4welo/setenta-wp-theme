@@ -4,6 +4,9 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <title><?php wp_title(); ?></title>
 
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
+    <?php wp_head(); ?>
     <link href="<?php bloginfo('template_url'); ?>/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/vendor/skippr/css/jquery.skippr.css" rel="stylesheet" media="screen"/>
@@ -12,10 +15,6 @@
     <link href="<?php bloginfo('template_url'); ?>/vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/vendor/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" media="screen"/>
     <link href="<?php bloginfo('template_url'); ?>/assets/css/style.css" rel="stylesheet" media="screen"/>
-
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
-    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
-    <?php wp_head(); ?>
 </head>
 <body>
 <nav class="navbar navbar-default">
