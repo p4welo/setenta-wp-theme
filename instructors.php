@@ -43,7 +43,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="barbara karpinska radomska" title="barbara karpinska radomska">
                     </a>
-                    <h4>BARBARA RADOMSKA (KARPIŃSKA)</h4>
+                    <h3>
+
+                        BARBARA RADOMSKA (KARPIŃSKA)
+
+                    </h3>
 
                     <div>
                         <h6>Taniec towarzyski, Salsa, Bachata, Taniec użytkowy, Pierwszy taniec, Balet
@@ -58,11 +62,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                     </a>
-                    <h4>
+                    <h3>
                         <a href="/pawel-radomski">
                             PAWEŁ RADOMSKI
                         </a>
-                    </h4>
+                    </h3>
 
                     <div>
                         <h6>Salsa kubańska, Bachata</h6>
@@ -76,7 +80,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
                     </a>
-                    <h4>MAGDA MRÓZ</h4>
+                    <h3>
+
+                        MAGDA MRÓZ
+
+                    </h3>
 
                     <div>
                         <h6>Balet dla dzieci, Mix dance, Zouk</h6>
@@ -90,11 +98,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
                              title="MARTA 'MOSTEK' MOŚCICKA">
                     </a>
-                    <h4>
+                    <h3>
                         <a href="/marta-mostek-moscicka">
                             MARTA "MOSTEK" MOŚCICKA
                         </a>
-                    </h4>
+                    </h3>
 
                     <div>
                         <h6>Hip hop</h6>
@@ -109,7 +117,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="JULIA UTIG" title="JULIA UTIG">
                     </a>
-                    <h4>JULIA UTIG</h4>
+                    <h3>JULIA UTIG</h3>
 
                     <div>
                         <h6>Zouk</h6>
@@ -123,7 +131,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">
                     </a>
-                    <h4>KATARZYNA MICHALAK</h4>
+                    <h3>KATARZYNA MICHALAK</h3>
 
                     <div>
                         <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>
@@ -137,11 +145,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
                     </a>
-                    <h4>
+                    <h3>
                         <a href="/marta-wegrzynowska">
                             MARTA WĘGRZYNOWSKA
                         </a>
-                    </h4>
+                    </h3>
 
                     <div>
                         <h6>Taniec towarzyski, Taniec użytkowy, Balet dla dzieci, Mix dance</h6>
@@ -155,7 +163,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
                     </a>
-                    <h4>MARTYNA OLSZEWSKA</h4>
+                    <h3>MARTYNA OLSZEWSKA</h3>
 
                     <div>
                         <h6>Balet dla dzieci, Balet z elementami gimnastyki artystycznej</h6>
