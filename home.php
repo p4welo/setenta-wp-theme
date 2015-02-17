@@ -216,7 +216,6 @@
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
                          alt="martyna olszewska"/>
                 </div>
-
             </div>
         </div>
     </div>

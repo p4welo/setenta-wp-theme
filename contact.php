@@ -85,17 +85,14 @@ Template Name: Kontakt
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                          alt="marta węgrzynowska"/>
                 </div>
-                <div class="item">
-                    <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
-                         alt="marta mostek mościcka"/>
-                </div>
+                <a class="item" href="/marta-mostek-moscicka">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mościcka" alt="marta mostek mościcka"/>
+                </a>
                 <div class="item">
                     <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
                          alt="martyna olszewska"/>
                 </div>
-
             </div>
         </div>
     </div>
