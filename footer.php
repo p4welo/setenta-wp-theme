@@ -23,5 +23,10 @@
     ga('send', 'pageview');
 
 </script>
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        init("mapka", "--><?php //bloginfo('template_url'); ?><!--/assets/img/sys/marker-logo.png");-->
+<!--    })-->
+<!--</script>-->
 </body>
 </html>

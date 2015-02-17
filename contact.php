@@ -5,7 +5,7 @@ Template Name: Kontakt
 ?>
 
 <?php get_header(); ?>
-    <div class="page" ng:app="setenta" ng:controller="gmapCtrl" ng:init="initMap()">
+    <div class="page" ng:app="setenta" ng:controller="gmapCtrl" ng:init="initMap(\"<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png\")">
             <div class="map" id="mapka"></div>
             <div>
                 <div class="container">
