@@ -163,7 +163,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
                     </a>
-                    <h3>MARTYNA OLSZEWSKA</h3>
+                    <h3>
+
+                        MARTYNA OLSZEWSKA
+
+                    </h3>
 
                     <div>
                         <h6>Balet dla dzieci, Balet z elementami gimnastyki artystycznej</h6>
