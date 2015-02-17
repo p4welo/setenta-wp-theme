@@ -75,7 +75,7 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
-                <div class="fb-like-box col-sm-12 panel panel-default" data-href="https://www.facebook.com/setenta.taniec" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
             </div>
         </div>
     </div>
