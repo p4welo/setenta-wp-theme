@@ -63,37 +63,37 @@ Template Name: Kontakt
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
                          alt="paweł radomski"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                          alt="magda mróz"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
                          alt="kasia michalak"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/julia-utig.jpg"
                          alt="julia utig"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                          alt="marta węgrzynowska"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
                          alt="marta mostek mościcka"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
                          alt="martyna olszewska"/>
                 </div>
 

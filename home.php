@@ -10,13 +10,13 @@
     </div>
     <div u="slides" class="slider-slides">
         <div>
-            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/3.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/3.jpg"/>
         </div>
         <div>
-            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/1.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/1.jpg"/>
         </div>
         <div>
-            <img u="image" src="<?php bloginfo('template_url'); ?>/new/assets/img/carousel/2.jpg"/>
+            <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/2.jpg"/>
         </div>
     </div>
     <div u="navigator" class="jssorb21">
@@ -37,7 +37,7 @@
 
             <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
                 <img
-                    ng:src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
+                    ng:src="<?php bloginfo('template_url'); ?>/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
                     alt="img21">
                 <figcaption>
                     <div>
@@ -117,12 +117,12 @@
 
                 <div class="col-sm-12">
                     <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
-                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
                     </a>
                 </div>
                 <div class="col-sm-12">
                     <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
-                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
             </div>
@@ -176,42 +176,42 @@
             <div class="owl-carousel">
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/barbara-radomska.jpg"
                          alt="barbara radomska karpińska"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/pawel-radomski.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
                          alt="paweł radomski"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/magda-mroz.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                          alt="magda mróz"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/kasia-michalak.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
                          alt="kasia michalak"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/julia-utig.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/julia-utig.jpg"
                          alt="julia utig"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-wegrzynowska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                          alt="marta węgrzynowska"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/marta-moscicka.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
                          alt="marta mostek mościcka"/>
                 </div>
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/martyna-olszewska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
                          alt="martyna olszewska"/>
                 </div>
 

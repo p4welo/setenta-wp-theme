@@ -11,7 +11,7 @@
         <!--        <a href="mailto:p4welo@gmail.com">Paweł</a>-->
     </div>
 </footer>
-<script src="<?php bloginfo('template_url'); ?>/new/dist/setenta-wordpress.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/dist/setenta-wordpress.min.js" type="text/javascript"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
