@@ -86,10 +86,10 @@
 
 <!--                        <p ng:bind:html="post.content"></p>-->
 
-                        <div class="text-right more-button-container">
-                            <a ng:href="{{post.link}}" href="javascript:void(0)"
-                               class="btn btn-default">WIĘCEJ...</a>
-                        </div>
+<!--                        <div class="text-right more-button-container">-->
+<!--                            <a ng:href="{{post.link}}" href="javascript:void(0)"-->
+<!--                               class="btn btn-default">WIĘCEJ...</a>-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel" ng:if="postLimit < posts.length">
