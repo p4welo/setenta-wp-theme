@@ -722,3 +722,13 @@ footer div.second-line {
 .single-page .thumbnail {
     height: auto !important;
 }
+
+a.item img {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.item:hover img {
+    padding: 20px;
+    background-color: white;
+}
