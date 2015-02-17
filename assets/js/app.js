@@ -79,3 +79,7 @@ $(document).ready(function ($) {
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
 });
+
+$(document).ready(function () {
+    init("mapka", "<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png");
+})

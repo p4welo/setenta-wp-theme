@@ -58,7 +58,7 @@ Template Name: Kontakt
             <div class="owl-carousel">
                 <div class="item">
                     <img src="
-                    <?php bloginfo('template_url'); ?>/new/assets/img/instructors/barbara-radomska.jpg"
+                    <?php bloginfo('template_url'); ?>/assets/img/instructors/barbara-radomska.jpg"
                          alt="barbara radomska karpińska"/>
                 </div>
                 <div class="item">

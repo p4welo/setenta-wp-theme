@@ -27,7 +27,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <img alt="Brand" src="<?php bloginfo('template_url'); ?>/assets/img/sys/logo.png">
+                <img alt="nauka tańca wrocław" src="<?php bloginfo('template_url'); ?>/assets/img/sys/logo.png">
             </a>
         </div>
         <?php

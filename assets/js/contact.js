@@ -1,6 +1,4 @@
-$(document).ready(function () {
-    var elementId = "mapka",
-        markerImg = "<?php bloginfo('template_url'); ?>/assets/img/sys/marker-logo.png";
+function init(elementId, markerId) {
     var wspolrzedne = new google.maps.LatLng(51.1172973, 17.0430937);
     var opcjeMapy = {
         zoom: 17,
@@ -24,7 +22,7 @@ $(document).ready(function () {
     {
         position: wspolrzedne,
         map: mapa,
-        icon: new google.maps.MarkerImage(markerImg, rozmiar, punkt_startowy, punkt_zaczepienia)
+        icon: new google.maps.MarkerImage(markerId, rozmiar, punkt_startowy, punkt_zaczepienia)
     };
     var marker = new google.maps.Marker(opcjeMarkera);
-});
+}
