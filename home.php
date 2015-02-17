@@ -125,6 +125,7 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/setenta.taniec" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
             </div>
         </div>
 
