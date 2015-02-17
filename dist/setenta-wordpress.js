@@ -81729,8 +81729,8 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
             var marker = new google.maps.Marker(opcjeMarkera);
         }
 
-        $scope.initMap = function (markerId) {
-            init("mapka", markerId);
+        $scope.initMap = function () {
+            init("mapka", "/wp-content/themes/setenta/assets/img/sys/marker-logo.png");
         };
     }]);;angular.module('setenta')
 
