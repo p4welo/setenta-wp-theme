@@ -81,7 +81,7 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <a class="grayHover" href="/marta-mostek-moscicka">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
                              class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
                              title="MARTA 'MOSTEK' MOŚCICKA">
