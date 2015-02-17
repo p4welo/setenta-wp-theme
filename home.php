@@ -63,7 +63,7 @@
                     Ładowanie...
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                     ng:repeat="post in posts | filter: {'title': searchText} | limitTo: postLimit">
+                     ng:repeat="post in posts | filter: searchText | limitTo: postLimit">
                     <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
 
                     <div class="col-sm-12">
@@ -84,7 +84,7 @@
                             <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                         </h2>
 
-                        <p ng:bind:html="post.content"></p>
+<!--                        <p ng:bind:html="post.content"></p>-->
 
                         <div class="text-right more-button-container">
                             <a ng:href="{{post.link}}" href="javascript:void(0)"
