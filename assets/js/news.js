@@ -1,4 +1,4 @@
-angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"])
+angular.module('setenta')
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {

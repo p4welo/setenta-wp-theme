@@ -5,9 +5,8 @@ Template Name: Kontakt
 ?>
 
 <?php get_header(); ?>
-    <div class="page">
+    <div class="page" ng:app="setenta" ng:controller="gmapCtrl" ng:init="initMap()">
             <div class="map" id="mapka"></div>
-
             <div>
                 <div class="container">
                     <div class="col-sm-6 col-xs-12 body-content">
