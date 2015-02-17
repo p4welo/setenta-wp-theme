@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-    <div class="registration-row row" ng:app="setenta" ng-cloak>
-        <div class="container" ng:controller="registrationCtrl">
+<div class="news-page" ng:app="setenta" ng-cloak>
+    <div class="registration-row row" ng:controller="registrationCtrl">
+        <div class="container">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
             <div class="registration-grid text-center row">
@@ -9,7 +10,7 @@
                     Ładowanie...
                 </div>
 
-                <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups" ng:if="!courseLoading">
+                <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
                     <img
                         ng:src="<?php bloginfo('template_url'); ?>/new/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
                         alt="img21">
@@ -28,13 +29,62 @@
             </div>
         </div>
     </div>
-    <div class="news-page row">
-        <div class="news-content container">
-            <?php
-            the_content('Czytaj dalej &rarr;');
-            ?>
+    <div class="news-content row">
+        <div class="container">
+            <div class="col-sm-8">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="col-sm-12 panel panel-default post-panel">
+                        <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+
+                        <div class="col-sm-12">
+                            <small class="date-area">
+                                <i class="fa fa-calendar-o text-danger"></i>
+                                21 cze 2015
+                            </small>
+                            <small class="category-area">
+                                <i class="fa fa-folder-open-o text-danger"></i>
+                                NOWE GRUPY
+                            </small>
+
+                            <h2>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h2>
+
+                            <p>
+                                <?php
+                                the_content('Czytaj dalej &rarr;');
+                                ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php endwhile;
+                else: ?>
+                    <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
+                <?php endif; ?>
+            </div>
+            <div class="col-sm-4 search-container">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Szukaj..."
+                           aria-describedby="inputSuccess2Status" ng:model="searchText">
+                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                </div>
+
+                <h3>Honorujemy</h3>
+
+                <div class="col-sm-12">
+                    <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
+                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/oksystem.png"/>
+                    </a>
+                </div>
+                <div class="col-sm-12">
+                    <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
+                        <img src="<?php bloginfo('template_url'); ?>/new/assets/img/sys/4ucard.png"/>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="instructor-row row">
         <div class="container">
             <h2>INSTRUKTORZY</h2>
@@ -86,6 +136,5 @@
 
             </div>
         </div>
-    </div>
     </div>
 <?php get_footer(); ?>
