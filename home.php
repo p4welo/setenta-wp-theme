@@ -84,15 +84,16 @@
                             <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                         </h2>
 
-<!--                        <p ng:bind:html="post.content"></p>-->
+                        <!--                        <p ng:bind:html="post.content"></p>-->
 
-<!--                        <div class="text-right more-button-container">-->
-<!--                            <a ng:href="{{post.link}}" href="javascript:void(0)"-->
-<!--                               class="btn btn-default">WIĘCEJ...</a>-->
-<!--                        </div>-->
+                        <!--                        <div class="text-right more-button-container">-->
+                        <!--                            <a ng:href="{{post.link}}" href="javascript:void(0)"-->
+                        <!--                               class="btn btn-default">WIĘCEJ...</a>-->
+                        <!--                        </div>-->
                     </div>
                 </div>
-                <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel" ng:if="postLimit < posts.length">
+                <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel"
+                     ng:if="postLimit < posts.length">
                     <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
                         <i class="fa fa-cog fa-spin"></i>
                         Załaduj więcej postów...
@@ -100,10 +101,12 @@
                 </div>
             </div>
             <div class="col-sm-4 search-container">
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Szukaj..."
-                           aria-describedby="inputSuccess2Status" ng:model="searchText">
-                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Szukaj..."
+                               aria-describedby="inputSuccess2Status" ng:model="searchText">
+                        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                    </div>
                 </div>
                 <!--                    <h3>Kategorie</h3>-->
                 <!---->
@@ -125,7 +128,9 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
-                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
+                     data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true"
+                     data-show-border="true"></div>
             </div>
         </div>
 
