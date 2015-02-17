@@ -35,7 +35,7 @@ Template Name: NEW Instruktorzy
     </div>
     <div class="instrucors-page row">
         <div class="container">
-<!--            <h2 class="col-sm-12">INSTRUKTORZY</h2>-->
+            <!--            <h2 class="col-sm-12">INSTRUKTORZY</h2>-->
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
@@ -53,12 +53,16 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <a class="grayHover" href="/pawel-radomski">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
                              class="col-xs-12 img-circle"
                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                     </a>
-                    <h4>PAWEŁ RADOMSKI</h4>
+                    <h4>
+                        <a href="/pawel-radomski">
+                            PAWEŁ RADOMSKI
+                        </a>
+                    </h4>
 
                     <div>
                         <h6>Salsa kubańska, Bachata</h6>
@@ -86,7 +90,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
                              title="MARTA 'MOSTEK' MOŚCICKA">
                     </a>
-                    <h4>MARTA "MOSTEK" MOŚCICKA</h4>
+                    <h4>
+                        <a href="/marta-mostek-moscicka">
+                            MARTA "MOSTEK" MOŚCICKA
+                        </a>
+                    </h4>
 
                     <div>
                         <h6>Hip hop</h6>
@@ -124,12 +132,16 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <a class="grayHover" href="/marta-wegrzynowska">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                              class="col-xs-12 img-circle"
                              alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
                     </a>
-                    <h4>MARTA WĘGRZYNOWSKA</h4>
+                    <h4>
+                        <a href="/marta-wegrzynowska">
+                            MARTA WĘGRZYNOWSKA
+                        </a>
+                    </h4>
 
                     <div>
                         <h6>Taniec towarzyski, Taniec użytkowy, Balet dla dzieci, Mix dance</h6>
