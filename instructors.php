@@ -39,9 +39,9 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/bk.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/barbara-radomska.jpg"
                              class="col-xs-12 img-circle"
-                             alt="BARBARA KARPIŃSKA" title="BARBARA KARPIŃSKA">
+                             alt="barbara karpinska radomska" title="barbara karpinska radomska">
                     </a>
                     <h4>BARBARA RADOMSKA (KARPIŃSKA)</h4>
 
@@ -54,7 +54,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/pr2.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
                              class="col-xs-12 img-circle"
                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                     </a>
@@ -68,7 +68,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mm2.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                              class="col-xs-12 img-circle"
                              alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
                     </a>
@@ -82,7 +82,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/mostek.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
                              class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
                              title="MARTA 'MOSTEK' MOŚCICKA">
                     </a>
@@ -97,7 +97,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/julia2.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/julia-utig.jpg"
                              class="col-xs-12 img-circle"
                              alt="JULIA UTIG" title="JULIA UTIG">
                     </a>
@@ -111,7 +111,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/kasia.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
                              class="col-xs-12 img-circle"
                              alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">
                     </a>
@@ -125,7 +125,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/martaw.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                              class="col-xs-12 img-circle"
                              alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
                     </a>
@@ -139,7 +139,7 @@ Template Name: NEW Instruktorzy
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/photos/martyna.jpg"
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
                              class="col-xs-12 img-circle"
                              alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
                     </a>
