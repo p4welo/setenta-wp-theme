@@ -82027,6 +82027,7 @@ $(document).ready(function ($) {
                     minTime: "10:00:00",
                     maxTime: "23:00:00",
                     height: 'auto',
+                    timeFormat: 'H:mm',
                     columnFormat: {
                         week: 'dddd'
                     },
