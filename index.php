@@ -63,7 +63,7 @@
                 <?php endif; ?>
             </div>
             <div class="col-sm-4 search-container">
-                <h3>Honorujemy</h3>
+                <h3 class="col-sm-12">Honorujemy</h3>
 
                 <div class="col-sm-12">
                     <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
@@ -75,7 +75,7 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
-                <div class="fb-like-box" data-href="https://www.facebook.com/setenta.taniec" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
             </div>
         </div>
     </div>
