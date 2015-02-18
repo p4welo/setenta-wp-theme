@@ -18,7 +18,7 @@ angular.module("setenta")
         $translateProvider.preferredLanguage('pl');
     }])
 
-    .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', function ($scope, courseHttpClient, courseService, $timeout) {
+    .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', '$timeout', function ($scope, courseHttpClient, courseService, $timeout) {
         $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
