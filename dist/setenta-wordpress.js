@@ -81856,13 +81856,15 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
             courseHttpClient.findSchedule().$promise.then(
                 function (result) {
                     $scope.courseList = result;
-                    $timeout($scope.drawCalendar(result), 100);
+                    $timeout(function () {
+                        $scope.drawCalendar(result);
+                    }, 100);
                     $scope.loadingView = false;
                 }
             );
         };
         $scope.drawCalendar = function (courseList) {
-            if ($scope.scheduleId == 0) {
+            if ($scope.scheduleId === 0) {
                 var bigOptions = courseService.getScheduleOptionsByRoom('d', courseList);
                 $('#bigSchedule').fullCalendar(bigOptions);
             }
@@ -81874,7 +81876,9 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
 
         $scope.showSchedule = function (scheduleId) {
             $scope.scheduleId = scheduleId;
-            $timeout($scope.drawCalendar($scope.courseList), 100);
+            $timeout(function () {
+                $scope.drawCalendar($scope.courseList);
+            }, 100);
         };
     }])
 
