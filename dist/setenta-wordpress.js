@@ -81846,7 +81846,7 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
         $translateProvider.preferredLanguage('pl');
     }])
 
-    .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', function ($scope, courseHttpClient, courseService) {
+    .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', function ($scope, courseHttpClient, courseService, $timeout) {
         $scope.loadingView = true;
         $scope.courseList = [];
         $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
@@ -81856,14 +81856,7 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
             courseHttpClient.findSchedule().$promise.then(
                 function (result) {
                     $scope.courseList = result;
-
-                    $scope.drawCalendar(result);
-//                    var bigOptions = courseService.getScheduleOptionsByRoom('d', result);
-//                    $('#bigSchedule').fullCalendar(bigOptions);
-//
-//                    var smallOptions = courseService.getScheduleOptionsByRoom('m', result);
-//                    $('#smallSchedule').fullCalendar(smallOptions);
-
+                    $timeout($scope.drawCalendar(result), 100);
                     $scope.loadingView = false;
                 }
             );
@@ -81881,7 +81874,7 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
 
         $scope.showSchedule = function (scheduleId) {
             $scope.scheduleId = scheduleId;
-            $scope.drawCalendar($scope.courseList);
+            $timeout($scope.drawCalendar($scope.courseList), 100);
         };
     }])
 
