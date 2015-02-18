@@ -108,13 +108,13 @@
                         <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
                     </div>
                 </div>
-                <!--                    <h3>Kategorie</h3>-->
-                <!---->
-                <!--                    <div class="list-group">-->
-                <!--                        <a href="javascript:void(0)" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"-->
-                <!--                           ng:click="toggleTag(tag)"-->
-                <!--                           ng:class="{'active': selectedTag == tag}"></a>-->
-                <!--                    </div>-->
+<!--                <h3>Kategorie</h3>-->
+<!---->
+<!--                <div class="list-group">-->
+<!--                    <a href="javascript:void(0)" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"-->
+<!--                       ng:click="toggleTag(tag)"-->
+<!--                       ng:class="{'active': selectedTag == tag}"></a>-->
+<!--                </div>-->
 
                 <h3 class="col-sm-12">Honorujemy</h3>
 
@@ -128,7 +128,9 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
-                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%"
+                     data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
+                     data-show-border="false"></div>
             </div>
         </div>
 
@@ -209,8 +211,10 @@
                          alt="marta węgrzynowska"/>
                 </div>
                 <a class="item" href="/marta-mostek-moscicka">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mościcka" alt="marta mostek mościcka"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
+                         title="marta mostek mościcka" alt="marta mostek mościcka"/>
                 </a>
+
                 <div class="item">
                     <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"

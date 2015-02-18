@@ -1,8 +1,6 @@
 <?php
 register_nav_menu('top-navi', 'Main menu');
 remove_action('wp_head', 'wp_generator');
-
-
 add_theme_support('post-thumbnails');
 
 add_filter( 'wp_title', 'filter_wp_title' );
@@ -22,7 +20,6 @@ function filter_wp_title( $title ) {
 }
 
 add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
-
 function custom_oembed_filter($html, $url, $attr, $post_ID) {
     $return = '<div class="embed-responsive embed-responsive-16by9">'.$html.'</div>';
     return $return;
