@@ -43,10 +43,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="barbara karpinska radomska" title="barbara karpinska radomska">
                     </a>
+
                     <h3>
-
-                        BARBARA RADOMSKA (KARPIŃSKA)
-
+                        <a href="javascript:void(0)">
+                            BARBARA RADOMSKA (KARPIŃSKA)
+                        </a>
                     </h3>
 
                     <div>
@@ -57,13 +58,14 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="/pawel-radomski">
+                    <a class="grayHover" href="javascript:void(0)">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
                              class="col-xs-12 img-circle"
                              alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
                     </a>
+
                     <h3>
-                        <a href="/pawel-radomski">
+                        <a href="javascript:void(0)">
                             PAWEŁ RADOMSKI
                         </a>
                     </h3>
@@ -80,10 +82,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
                     </a>
+
                     <h3>
-
-                        MAGDA MRÓZ
-
+                        <a href="javascript:void(0)">
+                            MAGDA MRÓZ
+                        </a>
                     </h3>
 
                     <div>
@@ -98,6 +101,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
                              title="MARTA 'MOSTEK' MOŚCICKA">
                     </a>
+
                     <h3>
                         <a href="/marta-mostek-moscicka">
                             MARTA "MOSTEK" MOŚCICKA
@@ -117,7 +121,12 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="JULIA UTIG" title="JULIA UTIG">
                     </a>
-                    <h3>JULIA UTIG</h3>
+
+                    <h3>
+                        <a href="javascript:void(0)">
+                            JULIA UTIG
+                        </a>
+                    </h3>
 
                     <div>
                         <h6>Zouk</h6>
@@ -131,7 +140,12 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">
                     </a>
-                    <h3>KATARZYNA MICHALAK</h3>
+
+                    <h3>
+                        <a href="javascript:void(0)">
+                            KATARZYNA MICHALAK
+                        </a>
+                    </h3>
 
                     <div>
                         <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>
@@ -140,13 +154,14 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="/marta-wegrzynowska">
+                    <a class="grayHover" href="javascript:void(0)">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
                              class="col-xs-12 img-circle"
                              alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
                     </a>
+
                     <h3>
-                        <a href="/marta-wegrzynowska">
+                        <a href="javascript:void(0)">
                             MARTA WĘGRZYNOWSKA
                         </a>
                     </h3>
@@ -163,10 +178,11 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12 img-circle"
                              alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
                     </a>
+
                     <h3>
-
-                        MARTYNA OLSZEWSKA
-
+                        <a href="javascript:void(0)">
+                            MARTYNA OLSZEWSKA
+                        </a>
                     </h3>
 
                     <div>
