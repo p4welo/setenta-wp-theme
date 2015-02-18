@@ -81857,19 +81857,31 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
                 function (result) {
                     $scope.courseList = result;
 
-                    var bigOptions = courseService.getScheduleOptionsByRoom('d', result);
-                    $('#bigSchedule').fullCalendar(bigOptions);
-
-                    var smallOptions = courseService.getScheduleOptionsByRoom('m', result);
-                    $('#smallSchedule').fullCalendar(smallOptions);
+                    $scope.drawCalendar(result);
+//                    var bigOptions = courseService.getScheduleOptionsByRoom('d', result);
+//                    $('#bigSchedule').fullCalendar(bigOptions);
+//
+//                    var smallOptions = courseService.getScheduleOptionsByRoom('m', result);
+//                    $('#smallSchedule').fullCalendar(smallOptions);
 
                     $scope.loadingView = false;
                 }
             );
         };
+        $scope.drawCalendar = function (courseList) {
+            if ($scope.scheduleId == 0) {
+                var bigOptions = courseService.getScheduleOptionsByRoom('d', courseList);
+                $('#bigSchedule').fullCalendar(bigOptions);
+            }
+            else {
+                var smallOptions = courseService.getScheduleOptionsByRoom('m', courseList);
+                $('#smallSchedule').fullCalendar(smallOptions);
+            }
+        };
 
         $scope.showSchedule = function (scheduleId) {
             $scope.scheduleId = scheduleId;
+            $scope.drawCalendar($scope.courseList);
         };
     }])
 

@@ -49,7 +49,7 @@ angular.module("setenta")
                 var smallOptions = courseService.getScheduleOptionsByRoom('m', courseList);
                 $('#smallSchedule').fullCalendar(smallOptions);
             }
-        }
+        };
 
         $scope.showSchedule = function (scheduleId) {
             $scope.scheduleId = scheduleId;
