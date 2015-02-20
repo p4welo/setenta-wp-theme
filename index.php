@@ -66,17 +66,17 @@
                 <h3 class="col-sm-12">Honorujemy</h3>
 
                 <div class="col-sm-12">
-                    <a class="fitflex" target="_blank" href="http://www.fitflex.pl">
+                    <a class="fitflex thumbnail" target="_blank" href="http://www.fitflex.pl">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
                     </a>
                 </div>
                 <div class="col-sm-12">
-                    <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
+                    <a class="oksystem thumbnail" target="_blank" href="http://www.oksystem.pl">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
                     </a>
                 </div>
                 <div class="col-sm-12">
-                    <a class="foryoucard" target="_blank" href="https://www.4youcard.pl/">
+                    <a class="foryoucard thumbnail" target="_blank" href="https://www.4youcard.pl/">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
