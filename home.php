@@ -119,6 +119,11 @@
                 <h3 class="col-sm-12">Honorujemy</h3>
 
                 <div class="col-sm-12">
+                    <a class="fitflex" target="_blank" href="http://www.fitflex.pl">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
+                    </a>
+                </div>
+                <div class="col-sm-12">
                     <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
                     </a>
@@ -128,6 +133,7 @@
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
+                <h3 class="col-sm-12">Dołącz do nas</h3>
                 <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%"
                      data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
                      data-show-border="false"></div>

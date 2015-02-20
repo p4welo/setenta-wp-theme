@@ -136,6 +136,11 @@ Template Name: NEW  Cennik
                 <h3 class="col-sm-12">Honorujemy</h3>
 
                 <div class="col-sm-12">
+                    <a class="fitflex" target="_blank" href="http://www.fitflex.pl">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
+                    </a>
+                </div>
+                <div class="col-sm-12">
                     <a class="oksystem" target="_blank" href="http://www.oksystem.pl">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
                     </a>

@@ -1,7 +1,7 @@
 <footer>
-    <!--        <div class="row first-line">-->
-    <!--            ...-->
-    <!--        </div>-->
+<!--            <div class="row first-line">-->
+<!--                <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/marcin.jozefowicz.31/posts/591074270933979:0" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/marcin.jozefowicz.31/posts/591074270933979:0">Post</a> użytkownika <a href="https://www.facebook.com/marcin.jozefowicz.31">Mar Joz</a>.</div></div>-->
+<!--            </div>-->
     <div class="row second-line text-center">
         &copy;
         <a href="http://setenta.wroclaw.pl">
