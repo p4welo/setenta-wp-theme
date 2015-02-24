@@ -51,7 +51,7 @@ Template Name: NEW Instruktorzy
                     </h3>
 
                     <div>
-                        <h6>Taniec towarzyski, Salsa, Bachata, Taniec użytkowy, Pierwszy taniec, Balet
+                        <h6>Taniec towarzyski, <a href="/salsa-kubanska">Salsa</a>, <a href="/bachata">Bachata</a>, Taniec użytkowy, Pierwszy taniec, Balet
                             dla dzieci, Formacje dziecięce</h6>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ Template Name: NEW Instruktorzy
                     </h3>
 
                     <div>
-                        <h6>Salsa kubańska, Bachata</h6>
+                        <h6><a href="/salsa-kubanska">Salsa kubańska</a>, <a href="/bachata">Bachata</a></h6>
                     </div>
                 </div>
             </div>
