@@ -38,14 +38,15 @@ Template Name: NEW Grafik
         <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
             <div class="container">
                 <div class="visible-md-block visible-lg-block">
-                <ul style="margin-bottom: 50px;" class="nav nav-pills">
-                    <li role="presentation" ng:class="{'active': scheduleId==0}">
-                        <a href="javascript:void(0)" ng:click="showSchedule(0)">DUŻA SALA</a>
-                    </li>
-                    <li role="presentation" ng:class="{'active': scheduleId==1}">
-                        <a href="javascript:void(0)" ng:click="showSchedule(1)">MAŁA SALA</a>
-                    </li>
-                </ul>
+                    <h3 style="margin-bottom: 20px">Wybierz salę:</h3>
+                    <ul style="margin-bottom: 50px;" class="nav nav-pills">
+                        <li role="presentation" ng:class="{'active': scheduleId==0}">
+                            <a href="javascript:void(0)" ng:click="showSchedule(0)">DUŻA SALA</a>
+                        </li>
+                        <li role="presentation" ng:class="{'active': scheduleId==1}">
+                            <a href="javascript:void(0)" ng:click="showSchedule(1)">MAŁA SALA</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="visible-md-block visible-lg-block">
                     <div class="panel panel-default" ng:show="scheduleId==0">
@@ -152,8 +153,10 @@ Template Name: NEW Grafik
                              alt="marta węgrzynowska"/>
                     </div>
                     <a class="item" href="/marta-mostek-moscicka">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mościcka" alt="marta mostek mościcka"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
+                             title="marta mostek mościcka" alt="marta mostek mościcka"/>
                     </a>
+
                     <div class="item">
                         <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
