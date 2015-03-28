@@ -102,6 +102,12 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
+                        cwd: '../vendor/jssor/img/',
+                        src: '**/*',
+                        dest: '../dist/assets/img/jssor/'
+                    },
+                    {
+                        expand: true,
                         cwd: '../assets/img/',
                         src: '**/*',
                         dest: '../dist/assets/img/'

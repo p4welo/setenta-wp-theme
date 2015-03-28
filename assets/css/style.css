@@ -198,7 +198,7 @@ footer div.second-line {
 .slider-container .jssorb21 div,
 .slider-container .jssorb21 div:hover,
 .slider-container .jssorb21 .av {
-    background: url(../../vendor/jssor/img/b21.png) no-repeat;
+    background: url(../img/jssor/b21.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
 }
@@ -228,7 +228,7 @@ footer div.second-line {
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../../vendor/jssor/img/a21.png) center center no-repeat;
+    background: url(../img/jssor/a21.png) center center no-repeat;
     overflow: hidden;
 }
 
