@@ -1,3 +1,10 @@
+@import url("../../vendor/bootstrap/dist/css/bootstrap.css");
+@import url("../../vendor/font-awesome/css/font-awesome.css");
+@import url("../../vendor/animate.css/animate.css");
+@import url("../../vendor/fullcalendar/dist/fullcalendar.css");
+@import url("../../vendor/owl.carousel/dist/assets/owl.carousel.css");
+@import url("../../vendor/owl.carousel/dist/assets/owl.theme.default.css");
+
 @font-face {
     font-family: 'Lato';
     font-style: normal;
