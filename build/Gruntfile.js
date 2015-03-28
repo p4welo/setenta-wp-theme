@@ -57,7 +57,7 @@ module.exports = function (grunt) {
                     '../vendor/owl.carousel/dist/owl.carousel.js',
                     '../assets/**/*.js'
                 ],
-                dest: '../dist/assets/js/main-' + version +'.js'
+                dest: '../dist/assets/js/main.js'
             }
         },
         uglify: {
@@ -160,6 +160,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks("grunt-bower-install-simple");
 
-    grunt.registerTask('default', ['bower-install-simple', 'jshint', 'clean', 'concat', 'cssmin', 'copy', 'replace']);
+    grunt.registerTask('default', ['bower-install-simple', 'jshint', 'clean', 'concat', 'uglify', 'cssmin', 'copy', 'replace']);
 };
 

@@ -37,7 +37,7 @@ Template Name: NEW  Cennik
     <div class="pricelist-page row">
         <div class="container">
             <div class="col-sm-8 col-xs-12">
-                <div class="alert alert-danger">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch tygodni</u>
+                <div class="alert alert-danger animated shake">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch tygodni</u>
                     podczas
                     zajęć w dowolnej technice.
                 </div>
