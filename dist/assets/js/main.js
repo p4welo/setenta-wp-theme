@@ -81732,7 +81732,17 @@ angular.module('setenta', ["ngResource", "ngSanitize", "pascalprecht.translate"]
         $scope.initMap = function () {
             init("mapka", "/wp-content/themes/setenta/assets/img/sys/marker-logo.png");
         };
-    }]);;angular.module('setenta')
+    }]);;"use strict";
+angular.module('setenta')
+
+    .directive('instructorsCarousel', [
+        function () {
+            return {
+                restrict: 'EA',
+                templateUrl: 'instructorsCarousel.php'
+            };
+        }
+    ]);;angular.module('setenta')
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('pl', {

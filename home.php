@@ -83,13 +83,6 @@
                         <h2>
                             <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                         </h2>
-
-                        <!--                        <p ng:bind:html="post.content"></p>-->
-
-                        <!--                        <div class="text-right more-button-container">-->
-                        <!--                            <a ng:href="{{post.link}}" href="javascript:void(0)"-->
-                        <!--                               class="btn btn-default">WIĘCEJ...</a>-->
-                        <!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel"
@@ -108,14 +101,6 @@
                         <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
                     </div>
                 </div>
-<!--                <h3>Kategorie</h3>-->
-<!---->
-<!--                <div class="list-group">-->
-<!--                    <a href="javascript:void(0)" class="list-group-item" ng:repeat="tag in tags" ng:bind="tag.name"-->
-<!--                       ng:click="toggleTag(tag)"-->
-<!--                       ng:class="{'active': selectedTag == tag}"></a>-->
-<!--                </div>-->
-
                 <h3 class="col-sm-12">Honorujemy</h3>
 
                 <div class="col-sm-12">
