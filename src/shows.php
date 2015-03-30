@@ -75,7 +75,7 @@ Template Name: Pokazy
             <h2>INSTRUKTORZY</h2>
         </div>
     </div>
-    <instructors-carousel></instructors-carousel>
+    <instructors-carousel ver="<?php bloginfo('template_url'); ?>"></instructors-carousel>
 <!--    <div class="instructor-row row">-->
 <!--        <div class="container">-->
 <!--            <div class="owl-carousel">-->
