@@ -31,7 +31,8 @@ module.exports = function (grunt) {
         clean: {
             files: [
                 "../dist",
-                "../*.php"
+                "../footer.php",
+                "../header.php"
             ],
             options: {
                 force: true
