@@ -76,42 +76,47 @@ Template Name: Pokazy
                 <h2>INSTRUKTORZY</h2>
             </div>
         </div>
-        <!--    <instructors-carousel ver="--><?php //bloginfo('template_url'); ?><!--"></instructors-carousel>-->
         <div class="instructor-row row">
             <div class="container">
                 <div class="owl-carousel">
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/barbara-radomska.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/barbara-radomska.jpg"
                              alt="barbara radomska karpińska"/>
                     </div>
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/pawel-radomski.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/pawel-radomski.jpg"
                              alt="paweł radomski"/>
                     </div>
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/magda-mroz.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/magda-mroz.jpg"
                              alt="magda mróz"/>
                     </div>
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/kasia-michalak.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/kasia-michalak.jpg"
                              alt="kasia michalak"/>
                     </div>
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/julia-utig.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/julia-utig.jpg"
                              alt="julia utig"/>
                     </div>
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-wegrzynowska.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-wegrzynowska.jpg"
                              alt="marta węgrzynowska"/>
                     </div>
                     <a class="item" href="/marta-mostek-moscicka">
-                        <img
-                            src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-moscicka.jpg"
-                            title="marta mostek mościcka" alt="marta mostek mościcka"/>
+                        <img src="<?php bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-moscicka.jpg"
+                             title="marta mostek mościcka" alt="marta mostek mościcka"/>
                     </a>
 
                     <div class="item">
-                        <img src="<?php //bloginfo('template_url'); ?>/dist/assets/img/instructors/martyna-olszewska.jpg"
+                        <img src="
+                    <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/martyna-olszewska.jpg"
                              alt="martyna olszewska"/>
                     </div>
                 </div>
