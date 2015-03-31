@@ -5,8 +5,7 @@ Template Name: Pokazy
 ?>
 
 <?php get_header(); ?>
-<div ng:app="setenta" ng-cloak>
-    <div class="registration-row row">
+    <div class="registration-row row" ng:app="setenta" ng-cloak>
         <div class="container" ng:controller="registrationCtrl">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
@@ -121,5 +120,4 @@ Template Name: Pokazy
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-</div>
 <?php get_footer(); ?>

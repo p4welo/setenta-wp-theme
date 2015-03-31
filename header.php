@@ -7,7 +7,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <?php wp_head(); ?>
-    <link href="<?php bloginfo('template_url'); ?>/dist/assets/css/style-1427707315445.css" rel="stylesheet" media="all"/>
+    <link href="<?php bloginfo('template_url'); ?>/dist/assets/css/style-1427806520306.css" rel="stylesheet" media="all"/>
 </head>
 <body>
 <nav class="navbar navbar-default">
