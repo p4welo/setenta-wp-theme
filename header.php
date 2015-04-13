@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
+    <meta name="google-site-verification" content="jVDzML9KL7pKPlMvMKhlYuDceq1doMgB4WkyZp5-r84" />
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
