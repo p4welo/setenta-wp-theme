@@ -53,7 +53,7 @@ Template Name: NEW  Cennik
                             <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt>110 zł</dt>
+                            <dt>120 zł</dt>
                             <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
