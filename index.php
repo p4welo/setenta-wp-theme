@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="news-page" ng:app="setenta" ng-cloak>
+    <div class="news-page" ng:app="setenta" ng-cloak>
     <div class="registration-row row" ng:controller="registrationCtrl">
         <div class="container">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
@@ -34,7 +34,9 @@
             <div class="col-sm-8">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-sm-12 panel panel-default post-panel">
-                        <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
+                        </a>
 
                         <div class="col-sm-12">
                             <h2>
@@ -71,7 +73,9 @@
                         <img src="<?php bloginfo('template_url'); ?>/dist/assets/img/sys/4ucard.png"/>
                     </a>
                 </div>
-                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec" data-width="100%"
+                     data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
+                     data-show-border="false"></div>
             </div>
         </div>
     </div>
@@ -115,8 +119,10 @@
                          alt="marta węgrzynowska"/>
                 </div>
                 <a class="item" href="/marta-mostek-moscicka">
-                    <img src="<?php bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mościcka" alt="marta mostek mościcka"/>
+                    <img src="<?php bloginfo('template_url'); ?>/dist/assets/img/instructors/marta-moscicka.jpg"
+                         title="marta mostek mościcka" alt="marta mostek mościcka"/>
                 </a>
+
                 <div class="item">
                     <img src="
                     <?php bloginfo('template_url'); ?>/dist/assets/img/instructors/martyna-olszewska.jpg"
