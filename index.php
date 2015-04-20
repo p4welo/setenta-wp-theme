@@ -34,9 +34,7 @@
             <div class="col-sm-8">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-sm-12 panel panel-default post-panel">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
-                        </a>
+                        <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
 
                         <div class="col-sm-12">
                             <h2>
