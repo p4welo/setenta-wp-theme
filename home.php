@@ -73,11 +73,12 @@
                                 <i class="fa fa-calendar-o text-danger"></i>
                                 {{ post.date | date:'dd-MM-yyyy' }}
                             </small>
-<!--                            <small class="author-area">-->
-<!--                                <i class="fa fa-user text-danger"></i>-->
-<!--                                {{post.author.first_name | uppercase}}-->
-<!--                            </small>-->
-                            <small class="author-area" ng-if="post.terms.category.length>0" ng:repeat="category in post.terms.category">
+                            <small class="author-area">
+                                <i class="fa fa-user text-danger"></i>
+                                SEKRETARIAT
+                            </small>
+                            <small class="author-area" ng-if="post.terms.category.length>0"
+                                   ng:repeat="category in post.terms.category">
                                 <i class="fa fa-folder-open-o text-danger"></i>
                                 {{category.name | uppercase}}
                             </small>
@@ -85,15 +86,18 @@
                             <h2>
                                 <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                             </h2>
-                            <div class="row col-xs-12">
-                                <i class="fa fa-tag text-danger"></i>
-                                Tagi:
-                            </div>
-                            <div class="row col-xs-12" style="margin-bottom: 20px">
 
-                                <span class="label label-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
+                            <div ng-if="post.terms.post_tag.length>0">
+                                <div class="row col-xs-12">
+                                    <i class="fa fa-tag text-danger"></i>
+                                    Tagi:
+                                </div>
+                                <div class="row col-xs-12" style="margin-bottom: 20px">
+
+                                <span class="label label-danger" ng:repeat="tag in post.terms.post_tag">
                                     {{ ::tag.name | uppercase}}
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </div>
