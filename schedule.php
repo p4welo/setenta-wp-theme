@@ -5,66 +5,66 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng:app="setenta" ng-cloak>
-        <div class="registration-row row" ng:controller="registrationCtrl">
+    <div ng-app="setenta" ng-cloak>
+        <div class="registration-row row" ng-controller="registrationCtrl">
             <div class="container">
                 <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
                 <div class="registration-grid text-center row">
-                    <div ng:if="courseLoading" class="text-center">
+                    <div ng-if="courseLoading" class="text-center">
                         <i class="fa fa-spin fa-spinner"></i>
                         Ładowanie...
                     </div>
 
-                    <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
+                    <figure class="col-md-3 col-lg-2 col-sm-4" ng-repeat="group in courseGroups">
                         <img
-                            ng:src="<?php bloginfo('template_url'); ?>/dist/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
+                            ng-src="<?php bloginfo('template_url'); ?>/dist/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
                             alt="img21">
                         <figcaption>
                             <div>
-                                <h3 ng:bind="group[0].style.name"></h3>
+                                <h3 ng-bind="group[0].style.name"></h3>
 
-                                <p ng:repeat:start="course in group">
+                                <p ng-repeat:start="course in group">
                                     {{course.day | translate}}
                                     {{ course.startTime}}
                                 </p>
-                                <br ng:repeat:end/>
+                                <br ng-repeat:end/>
                             </div>
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </div>
-        <div class="schedule-page" ng:init="initCalendar()" ng:controller="scheduleCtrl">
+        <div class="schedule-page" ng-init="initCalendar()" ng-controller="scheduleCtrl">
             <div class="container">
                 <div class="visible-md-block visible-lg-block">
                     <h3 style="margin-bottom: 20px">Wybierz salę:</h3>
                     <ul style="margin-bottom: 50px;" class="nav nav-pills">
-                        <li role="presentation" ng:class="{'active': scheduleId==0}">
-                            <a href="javascript:void(0)" ng:click="showSchedule(0)">DUŻA SALA</a>
+                        <li role="presentation" ng-class="{'active': scheduleId==0}">
+                            <a href="javascript:void(0)" ng-click="showSchedule(0)">DUŻA SALA</a>
                         </li>
-                        <li role="presentation" ng:class="{'active': scheduleId==1}">
-                            <a href="javascript:void(0)" ng:click="showSchedule(1)">MAŁA SALA</a>
+                        <li role="presentation" ng-class="{'active': scheduleId==1}">
+                            <a href="javascript:void(0)" ng-click="showSchedule(1)">MAŁA SALA</a>
                         </li>
                     </ul>
                 </div>
                 <div class="visible-md-block visible-lg-block">
-                    <div class="panel panel-default" ng:show="scheduleId==0">
+                    <div class="panel panel-default" ng-show="scheduleId==0">
                         <div class="panel-body">
                             <h2>Duża sala</h2>
 
-                            <div class="row text-center" ng:if="loadingView">
+                            <div class="row text-center" ng-if="loadingView">
                                 <i class="fa fa-spin fa-spinner"></i>
                                 <span>Ładowanie...</span>
                             </div>
                             <div id='bigSchedule'></div>
                         </div>
                     </div>
-                    <div class="panel panel-default" ng:show="scheduleId==1">
+                    <div class="panel panel-default" ng-show="scheduleId==1">
                         <div class="panel-body">
                             <h2>Mała sala</h2>
 
-                            <div class="row text-center" ng:if="loadingView">
+                            <div class="row text-center" ng-if="loadingView">
                                 <i class="fa fa-spin fa-spinner"></i>
                                 <span>Ładowanie...</span>
                             </div>

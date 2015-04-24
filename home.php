@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="news-page" ng:app="setenta" ng-cloak>
+    <div class="news-page" ng-app="setenta" ng-cloak>
     <div id="slider-container" class="slider-container">
         <div u="loading" class="slider-loading">
             <div class="slider-back">
@@ -25,29 +25,29 @@
         <span u="arrowleft" class="jssora21l"></span>
         <span u="arrowright" class="jssora21r"></span>
     </div>
-    <div class="registration-row row" ng:controller="registrationCtrl">
+    <div class="registration-row row" ng-controller="registrationCtrl">
         <div class="container">
             <h2 class="col-sm-12">ZAPISY DO NOWYCH GRUP</h2>
 
             <div class="registration-grid text-center row">
-                <div ng:if="courseLoading" class="text-center">
+                <div ng-if="courseLoading" class="text-center">
                     <i class="fa fa-spin fa-spinner"></i>
                     Ładowanie...
                 </div>
 
-                <figure class="col-md-3 col-lg-2 col-sm-4" ng:repeat="group in courseGroups">
+                <figure class="col-md-3 col-lg-2 col-sm-4" ng-repeat="group in courseGroups">
                     <img
-                        ng:src="<?php bloginfo('template_url'); ?>/dist/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
+                        ng-src="<?php bloginfo('template_url'); ?>/dist/assets/img/styles/{{resolveStyleImage(group[0].style)}}"
                         alt="img21">
                     <figcaption>
                         <div>
-                            <h3 ng:bind="group[0].style.name"></h3>
+                            <h3 ng-bind="group[0].style.name"></h3>
 
-                            <p ng:repeat:start="course in group">
+                            <p ng-repeat:start="course in group">
                                 {{course.day | translate}}
                                 {{ course.startTime}}
                             </p>
-                            <br ng:repeat:end/>
+                            <br ng-repeat:end/>
                         </div>
                     </figcaption>
                 </figure>
@@ -55,17 +55,17 @@
         </div>
     </div>
     <div>
-        <div class="news-content row" ng:controller="newsCtrl">
+        <div class="news-content row" ng-controller="newsCtrl">
             <div class="container">
                 <div class="col-sm-8">
-                    <div ng:if="newsLoading" class="text-center">
+                    <div ng-if="newsLoading" class="text-center">
                         <i class="fa fa-spin fa-spinner"></i>
                         Ładowanie...
                     </div>
                     <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                         ng:repeat="post in posts | filter: searchText | limitTo: postLimit">
-                        <a ng:href="{{post.link}}" href="javascript:void(0)">
-                            <img class="thumbnail col-sm-12 col-xs-12" ng:src="{{post.featured_image.source}}"/>
+                         ng-repeat="post in posts | filter: searchText | limitTo: postLimit">
+                        <a ng-href="{{post.link}}" href="javascript:void(0)">
+                            <img class="thumbnail col-sm-12 col-xs-12" ng-src="{{post.featured_image.source}}"/>
                         </a>
 
                         <div class="col-sm-12">
@@ -78,22 +78,22 @@
                                 SEKRETARIAT
                             </small>
                             <small class="author-area" ng-if="post.terms.category.length>0"
-                                   ng:repeat="category in post.terms.category">
+                                   ng-repeat="category in post.terms.category">
                                 <i class="fa fa-folder-open-o text-danger"></i>
                                 {{category.name | uppercase}}
                             </small>
 
                             <h2>
-                                <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
+                                <a ng-href="{{post.link}}" href="javascript:void(0)" ng-bind:html="post.title"></a>
                             </h2>
 
                             <div ng-if="post.terms.post_tag.length>0">
-                                <div class="row col-xs-12" style="margin-bottom: 5px">
+                                <div style="margin-bottom: 5px">
                                     <i class="fa fa-tag text-danger"></i>
                                     Tagi:
                                 </div>
-                                <div class="row col-xs-12" style="margin-bottom: 20px">
-                                    <span class="label label-danger" ng:repeat="tag in post.terms.post_tag">
+                                <div style="margin-bottom: 20px">
+                                    <span class="badge badge-danger" ng-repeat="tag in post.terms.post_tag">
                                         {{ ::tag.name | uppercase}}
                                     </span>
                                 </div>
@@ -101,8 +101,8 @@
                         </div>
                     </div>
                     <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel"
-                         ng:if="postLimit < posts.length">
-                        <a href="javascript:void(0)" class="list-group-item active" ng:click="loadMore()">
+                         ng-if="postLimit < posts.length">
+                        <a href="javascript:void(0)" class="list-group-item active" ng-click="loadMore()">
                             <i class="fa fa-cog fa-spin"></i>
                             Załaduj więcej postów...
                         </a>
@@ -112,7 +112,7 @@
                     <div class="col-sm-12">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control" placeholder="Szukaj..."
-                                   aria-describedby="inputSuccess2Status" ng:model="searchText">
+                                   aria-describedby="inputSuccess2Status" ng-model="searchText">
                             <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
                         </div>
                     </div>
