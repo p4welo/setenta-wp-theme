@@ -666,12 +666,17 @@ footer div.second-line {
     opacity: 0;
 }
 
-.schedule-page .badge-danger,
 .news-content .badge-danger,
-.news-content .label-danger
+.news-content .label-danger,
+.schedule-page .badge-danger
 {
-    margin-right: 10px;
     background-color: #d31266;
+}
+
+.news-content .badge-danger,
+.news-content .label-danger {
+    margin-right: 10px;
+    font-weight: 100;
 }
 
 .schedule-page .badge-error {
