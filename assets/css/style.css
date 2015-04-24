@@ -666,7 +666,7 @@ footer div.second-line {
     opacity: 0;
 }
 
-.schedule-page .badge-danger {
+.schedule-page .badge-danger, .badge-danger {
     background-color: #d31266;
 }
 

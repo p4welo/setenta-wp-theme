@@ -73,18 +73,21 @@
                                 <i class="fa fa-calendar-o text-danger"></i>
                                 {{ post.date | date:'dd-MM-yyyy' }}
                             </small>
-                            <small class="author-area">
-                                <i class="fa fa-user text-danger"></i>
-                                {{post.author.first_name | uppercase}}
-                            </small>
-                            <small class="category-area" ng-if="post.terms.post_tag.length>0">
-                                <i class="fa fa-tag text-danger"></i>
-                                <span ng:repeat="tag in post.terms.post_tag">{{tag.name | uppercase}}</span>
-                            </small>
+<!--                            <small class="author-area">-->
+<!--                                <i class="fa fa-user text-danger"></i>-->
+<!--                                {{post.author.first_name | uppercase}}-->
+<!--                            </small>-->
+
 
                             <h2>
                                 <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                             </h2>
+                            <div class="row">
+                                <small class="badge-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
+                                    <i class="fa fa-tag text-danger"></i>
+                                    <span>{{ ::tag.name | uppercase}}</span>
+                                </small>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12 panel panel-default post-panel text-center more-posts-panel"
@@ -138,15 +141,6 @@
                                 <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
 
                                 <div class="col-sm-12">
-                                    <small class="date-area">
-                                        <i class="fa fa-calendar-o text-danger"></i>
-                                        21 cze 2015
-                                    </small>
-                                    <small class="category-area">
-                                        <i class="fa fa-folder-open-o text-danger"></i>
-                                        NOWE GRUPY
-                                    </small>
-
                                     <h2>
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>

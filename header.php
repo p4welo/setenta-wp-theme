@@ -2,13 +2,12 @@
 <html>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
-    <meta name="google-site-verification" content="jVDzML9KL7pKPlMvMKhlYuDceq1doMgB4WkyZp5-r84" />
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <?php wp_head(); ?>
-    <link href="<?php bloginfo('template_url'); ?>/dist/assets/css/style-1427962782875.css" rel="stylesheet" media="all"/>
+    <link href="<?php bloginfo('template_url'); ?>/dist/assets/css/style-1429869309777.css" rel="stylesheet" media="all"/>
 </head>
 <body>
 <nav class="navbar navbar-default">
