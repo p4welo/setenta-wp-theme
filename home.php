@@ -82,10 +82,14 @@
                             <h2>
                                 <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
                             </h2>
-                            <div class="row">
-                                <small class="badge-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
-                                    <i class="fa fa-tag text-danger"></i>
-                                    <span>{{ ::tag.name | uppercase}}</span>
+                            <div class="row col-xs-12">
+                                <i class="fa fa-tag text-danger"></i>
+                                Tagi:
+                            </div>
+                            <div class="row col-xs-12">
+
+                                <small class="label-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
+                                    {{ ::tag.name | uppercase}}
                                 </small>
                             </div>
                         </div>
