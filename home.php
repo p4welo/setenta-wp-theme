@@ -89,11 +89,11 @@
                                 <i class="fa fa-tag text-danger"></i>
                                 Tagi:
                             </div>
-                            <div class="row col-xs-12">
+                            <div class="row col-xs-12" style="margin-bottom: 20px">
 
-                                <small class="label-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
+                                <span class="label label-danger" ng-if="post.terms.post_tag.length>0" ng:repeat="tag in post.terms.post_tag">
                                     {{ ::tag.name | uppercase}}
-                                </small>
+                                </span>
                             </div>
                         </div>
                     </div>
