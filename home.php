@@ -62,8 +62,8 @@
                         <i class="fa fa-spin fa-spinner"></i>
                         Ładowanie...
                     </div>
-                    <div class="col-sm-12 panel panel-default post-panel animated fadeIn"
-                         ng-repeat="post in posts | filter: searchText | limitTo: postLimit">
+<!--                    <div class="col-sm-12 panel panel-default post-panel animated fadeIn" ng-repeat="post in posts | filter: searchText | limitTo: postLimit">-->
+                    <div class="col-sm-12 panel panel-default post-panel animated slideInLeft" ng-repeat="post in posts | filter: searchText | limitTo: postLimit">
                         <a ng-href="{{post.link}}" href="javascript:void(0)">
                             <img class="thumbnail col-sm-12 col-xs-12" ng-src="{{post.featured_image.source}}"/>
                         </a>
