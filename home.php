@@ -77,7 +77,10 @@
 <!--                                <i class="fa fa-user text-danger"></i>-->
 <!--                                {{post.author.first_name | uppercase}}-->
 <!--                            </small>-->
-
+                            <small class="author-area" ng-if="post.terms.category.length>0" ng:repeat="category in post.terms.category">
+                                <i class="fa fa-folder-open-o text-danger"></i>
+                                {{category.name | uppercase}}
+                            </small>
 
                             <h2>
                                 <a ng:href="{{post.link}}" href="javascript:void(0)" ng:bind:html="post.title"></a>
