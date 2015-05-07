@@ -81998,11 +81998,13 @@ angular.module('setenta')
                 "<table>" +
                 "<tr>" +
                 "<td><strong>Instruktor:&nbsp;&nbsp;&nbsp;</strong></td><td>";
-            if (c.instructor !== null) {
+            if (c.instructors !== null) {
+                c.instructors.forEach(function (i) {
+                    result += i.firstName + ", ";
+                })
+            }
+            else if (c.instructor !== null) {
                 result += c.instructor.firstName;
-//                if (c.instructor.lastName !== null) {
-//                    result += " " + c.instructor.lastName;
-//                }
             }
             result += "</td></tr>";
             if (c.level !== "") {
