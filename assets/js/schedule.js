@@ -156,7 +156,7 @@ angular.module("setenta")
                 "<td><strong>Instruktor:&nbsp;&nbsp;&nbsp;</strong></td><td>";
             if (c.instructors !== null) {
                 c.instructors.forEach(function (i) {
-                    result += i.firstName + ", ";
+                    result += i.firstName + " ";
                 })
             }
             else if (c.instructor !== null) {
