@@ -1,0 +1,19 @@
+{
+  "name": "new-setenta-wp",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "font-awesome": "~4.3.0",
+    "angularjs": "~1.3.13",
+    "angular-resource": "~1.3.13",
+    "angular-sanitize": "~1.3.13",
+    "animate.css": "~3.2.0",
+    "lodash": "~3.1.0",
+    "angular-translate": "~2.6.0",
+    "fullcalendar": "~2.2.3",
+    "moment": "~2.8.4",
+    "owl.carousel": "*",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -7,8 +7,10 @@
         <span id="year-copy"></span>
     </div>
 </footer>
-<script src="<?php bloginfo('template_url'); ?>/dist/assets/js/main-1430989900900.js" type="text/javascript"></script>
 <div id="fb-root"></div>
+</div>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
 <script>
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];

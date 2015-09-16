@@ -157,7 +157,7 @@ angular.module("setenta")
             if (c.instructors !== null) {
                 c.instructors.forEach(function (i) {
                     result += i.firstName + " ";
-                })
+                });
             }
             else if (c.instructor !== null) {
                 result += c.instructor.firstName;

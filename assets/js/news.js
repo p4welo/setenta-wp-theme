@@ -44,6 +44,9 @@ angular.module('setenta')
             else if (style.name.indexOf("towarzyski") > -1) {
                 return "ballroom.png";
             }
+            else if (style.name.indexOf("formacja") > -1) {
+                return "formation.png";
+            }
         };
     }])
     .controller('newsCtrl', ['$scope', 'newsFactory', function ($scope, newsFactory) {
