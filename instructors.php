@@ -108,12 +108,12 @@ Template Name: NEW Instruktorzy
                     <a class="grayHover" href="javascript:void(0)">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mazij.jpg"
                              class="col-xs-12 img-circle"
-                             alt="MAGDA MAZIJ" title="MAGDA MAZIJ">
+                             alt="MAGDALENA MAZIJ" title="MAGDA MAZIJ">
                     </a>
 
                     <h3>
                         <a href="javascript:void(0)">
-                            MAGDA MAZIJ
+                            MAGDALENA MAZIJ
                         </a>
                     </h3>
 
