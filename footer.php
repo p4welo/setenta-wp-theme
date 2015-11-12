@@ -9,18 +9,8 @@
 </footer>
 <div id="fb-root"></div>
 </div>
-<script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
+
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
-<script>
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&appId=503841366424292&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;

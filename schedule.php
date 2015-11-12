@@ -8,18 +8,6 @@ Template Name: NEW Grafik
     <div ng-app="setenta" ng-cloak>
         <div class="schedule-page" ng-init="initCalendar()" ng-controller="scheduleCtrl">
             <div class="container">
-                <strong>Grafik chwilowo niedostępny</strong>
-<!--                <div class="visible-md-block visible-lg-block">-->
-<!--                    <h3 style="margin-bottom: 20px">Wybierz salę:</h3>-->
-<!--                    <ul style="margin-bottom: 50px;" class="nav nav-pills">-->
-<!--                        <li role="presentation" ng-class="{'active': scheduleId==0}">-->
-<!--                            <a href="javascript:void(0)" ng-click="showSchedule(0)">DUŻA SALA</a>-->
-<!--                        </li>-->
-<!--                        <li role="presentation" ng-class="{'active': scheduleId==1}">-->
-<!--                            <a href="javascript:void(0)" ng-click="showSchedule(1)">MAŁA SALA</a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
 <!--                <div class="visible-md-block visible-lg-block">-->
 <!--                    <div class="panel panel-default" ng-show="scheduleId==0">-->
 <!--                        <div class="panel-body">-->
@@ -44,46 +32,41 @@ Template Name: NEW Grafik
 <!--                        </div>-->
 <!--                    </div>-->
 <!--                </div>-->
-<!--                <div class="panel panel-default visible-sm-block visible-xs-block">-->
-<!--                    <div class="panel-body">-->
-<!--                        <div ng-repeat="d in days">-->
-<!--                            <legend>-->
-<!--                                {{ d | translate }}-->
-<!--                            </legend>-->
-<!--                            <table class="table table-condensed">-->
-<!--                                <thead>-->
-<!--                                <tr>-->
-<!--                                    <th>godz</th>-->
-<!--                                    <th>nazwa</th>-->
-<!--                                    <th>poziom</th>-->
-<!--                                    <th>sala</th>-->
-<!--                                    <th>&nbsp;</th>-->
-<!--                                </tr>-->
-<!--                                </thead>-->
-<!--                                <tbody>-->
-<!---->
-<!--                                <tr ng-repeat="c in courseList | filter : {'day': d}">-->
-<!--                                    <td>-->
-<!--                                        <span ng-bind="c.startTime"></span>-->
-<!--                                        --->
-<!--                                        <span ng-bind="c.endTime"></span>-->
-<!--                                    </td>-->
-<!--                                    <td ng-bind="c.style.name"></td>-->
-<!--                                    <td>-->
-<!--                                        {{ c.level | translate }}-->
-<!--                                    </td>-->
-<!--                                    <td ng-bind="c.room.name"></td>-->
-<!--                                    <td class="text-right">-->
-<!--                                        <span class="badge badge-danger" ng-if="c.canRegister">ZAPISY</span>-->
-<!--                                    <span class='badge badge-error'-->
-<!--                                          ng-if="!c.canRegister && !c.canJoin">BRAK MIEJSC</span>-->
-<!--                                    </td>-->
-<!--                                </tr>-->
-<!--                                </tbody>-->
-<!--                            </table>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div ng-repeat="d in days" class="table-responsive">
+                            <legend>
+                                {{ d | translate }}
+                            </legend>
+                            <table class="table table-condensed">
+                                <thead>
+                                <tr>
+                                    <th>godz</th>
+                                    <th>nazwa</th>
+                                    <th colspan="2">poziom</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr ng-repeat="c in courseList | filter : {'day': d}">
+                                    <td>
+                                        <span ng-bind="c.startTime"></span>
+                                        -
+                                        <span ng-bind="c.endTime"></span>
+                                    </td>
+                                    <td ng-bind="c.style.name"></td>
+                                    <td>
+                                        {{ c.level | translate }}
+                                    </td>
+                                    <td>
+                                        {{ c.courseState | translate}}
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="instructor-row row">

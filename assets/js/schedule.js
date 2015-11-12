@@ -13,7 +13,12 @@ angular.module("setenta")
             BEGINNER: "Początkujący",
             INTERMEDIATE: "Średniozaawansowany",
             ADVANCED: "Zaawansowany",
-            OPEN: "Otwarty"
+            OPEN: "Otwarty",
+
+            REGISTRATION: "Zapisy",
+            CAN_JOIN: "Dołącz",
+            NO_PLACE: "Brak miejsc"
+
         });
         $translateProvider.preferredLanguage('pl');
     }])
@@ -21,37 +26,37 @@ angular.module("setenta")
     .controller('scheduleCtrl', ['$scope','courseHttpClient','courseService', '$timeout', function ($scope, courseHttpClient, courseService, $timeout) {
         $scope.loadingView = true;
         $scope.courseList = [];
-        $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT', 'SB', 'ND'];
+        $scope.days = ['PN', 'WT', 'SR', 'CZ', 'PT'];
         $scope.scheduleId = 0;
 
         $scope.initCalendar = function () {
             courseHttpClient.findSchedule().$promise.then(
                 function (result) {
                     $scope.courseList = result;
-                    $timeout(function () {
-                        $scope.drawCalendar(result);
-                    }, 100);
+                    //$timeout(function () {
+                    //    $scope.drawCalendar(result);
+                    //}, 100);
                     $scope.loadingView = false;
                 }
             );
         };
-        $scope.drawCalendar = function (courseList) {
-            if ($scope.scheduleId === 0) {
-                var bigOptions = courseService.getScheduleOptionsByRoom('d', courseList);
-                $('#bigSchedule').fullCalendar(bigOptions);
-            }
-            else {
-                var smallOptions = courseService.getScheduleOptionsByRoom('m', courseList);
-                $('#smallSchedule').fullCalendar(smallOptions);
-            }
-        };
+        //$scope.drawCalendar = function (courseList) {
+        //    if ($scope.scheduleId === 0) {
+        //        var bigOptions = courseService.getScheduleOptionsByRoom('d', courseList);
+        //        $('#bigSchedule').fullCalendar(bigOptions);
+        //    }
+        //    else {
+        //        var smallOptions = courseService.getScheduleOptionsByRoom('m', courseList);
+        //        $('#smallSchedule').fullCalendar(smallOptions);
+        //    }
+        //};
 
-        $scope.showSchedule = function (scheduleId) {
-            $scope.scheduleId = scheduleId;
-            $timeout(function () {
-                $scope.drawCalendar($scope.courseList);
-            }, 100);
-        };
+        //$scope.showSchedule = function (scheduleId) {
+        //    $scope.scheduleId = scheduleId;
+        //    $timeout(function () {
+        //        $scope.drawCalendar($scope.courseList);
+        //    }, 100);
+        //};
     }])
 
     .factory('courseHttpClient', ['$resource', function ($resource) {
