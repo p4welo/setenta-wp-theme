@@ -6,32 +6,9 @@ Template Name: NEW Grafik
 
 <?php get_header(); ?>
     <div ng-app="setenta" ng-cloak>
-        <div class="schedule-page" ng-init="initCalendar()" ng-controller="scheduleCtrl">
+        <div class="schedule-page" ng-controller="scheduleCtrl">
             <div class="container">
-<!--                <div class="visible-md-block visible-lg-block">-->
-<!--                    <div class="panel panel-default" ng-show="scheduleId==0">-->
-<!--                        <div class="panel-body">-->
-<!--                            <h2>Duża sala</h2>-->
-<!---->
-<!--                            <div class="row text-center" ng-if="loadingView">-->
-<!--                                <i class="fa fa-spin fa-spinner"></i>-->
-<!--                                <span>Ładowanie...</span>-->
-<!--                            </div>-->
-<!--                            <div id='bigSchedule'></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="panel panel-default" ng-show="scheduleId==1">-->
-<!--                        <div class="panel-body">-->
-<!--                            <h2>Mała sala</h2>-->
-<!---->
-<!--                            <div class="row text-center" ng-if="loadingView">-->
-<!--                                <i class="fa fa-spin fa-spinner"></i>-->
-<!--                                <span>Ładowanie...</span>-->
-<!--                            </div>-->
-<!--                            <div id='smallSchedule'></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="alert alert-info">Grafik obowiązujący od września 2016</div>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div ng-repeat="d in days" class="table-responsive">
@@ -43,24 +20,21 @@ Template Name: NEW Grafik
                                 <tr>
                                     <th>godz</th>
                                     <th>nazwa</th>
-                                    <th colspan="2">poziom</th>
+                                    <th>poziom</th>
+                                    <th>opis</th>
                                 </tr>
                                 </thead>
                                 <tbody>
 
                                 <tr ng-repeat="c in courseList | filter : {'day': d}">
                                     <td>
-                                        <span ng-bind="c.startTime"></span>
+                                        <span ng-bind="::c.startTime"></span>
                                         -
-                                        <span ng-bind="c.endTime"></span>
+                                        <span ng-bind="::c.endTime"></span>
                                     </td>
-                                    <td ng-bind="c.style.name"></td>
-                                    <td>
-                                        {{ c.level | translate }}
-                                    </td>
-                                    <td>
-                                        {{ c.courseState | translate}}
-                                    </td>
+                                    <td ng-bind="::c.style.name"></td>
+                                    <td ng-bind="::c.level | translate"></td>
+                                    <td ng-bind="::c.description"></td>
                                 </tr>
                                 </tbody>
                             </table>

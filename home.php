@@ -123,15 +123,15 @@
                         </div>
 
                     </div>
-                    <div class="panel panel-default col-xs-12">
-                        <h3 class="col-sm-12">Dołącz do nas</h3>
-
-                        <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
-                             data-width="100%"
-                             data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
-                             data-show-border="false"></div>
-
-                    </div>
+<!--                    <div class="panel panel-default col-xs-12">-->
+<!--                        <h3 class="col-sm-12">Dołącz do nas</h3>-->
+<!---->
+<!--                        <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"-->
+<!--                             data-width="100%"-->
+<!--                             data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"-->
+<!--                             data-show-border="false"></div>-->
+<!---->
+<!--                    </div>-->
                 </div>
             </div>
 

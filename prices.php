@@ -12,6 +12,7 @@ Template Name: NEW  Cennik
                     podczas
                     zajęć w dowolnej technice.
                 </div>
+                <div class="alert alert-info">Ceny obowiązujące od <strong>września 2016</strong></div>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <legend>Dorośli</legend>
@@ -38,15 +39,19 @@ Template Name: NEW  Cennik
                     <div class="panel-body">
                         <legend>Dzieci</legend>
                         <dl class="dl-horizontal">
-                            <dt>18 zł</dt>
+                            <dt>20 zł</dt>
                             <dd>Pojedyncze wejście (45min)</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>24 zł</dt>
+                            <dd>Pojedyncze wejście (1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>65 zł</dt>
                             <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 45min)</dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt>100 zł</dt>
+                            <dt>130 zł</dt>
                             <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h) - formacja taneczna</dd>
                         </dl>
                         <dl class="dl-horizontal">
@@ -93,11 +98,11 @@ Template Name: NEW  Cennik
                     <div class="panel-body">
                         <legend>Zajęcia indywidualne</legend>
                         <dl class="dl-horizontal">
-                            <dt>70 zł</dt>
+                            <dt>85 zł</dt>
                             <dd>Lekcja indywidualna (1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt>250 zł</dt>
+                            <dt>310 zł</dt>
                             <dd>Pierwszy taniec - karnet na 4 wejścia (4 x 1h) do wykorzystania w dowolnym okresie</dd>
                         </dl>
                     </div>
@@ -125,15 +130,15 @@ Template Name: NEW  Cennik
                     </div>
 
                 </div>
-                <div class="panel panel-default col-xs-12">
-                    <h3 class="col-sm-12">Dołącz do nas</h3>
-
-                    <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
-                         data-width="100%"
-                         data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
-                         data-show-border="false"></div>
-
-                </div>
+<!--                <div class="panel panel-default col-xs-12">-->
+<!--                    <h3 class="col-sm-12">Dołącz do nas</h3>-->
+<!---->
+<!--                    <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"-->
+<!--                         data-width="100%"-->
+<!--                         data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"-->
+<!--                         data-show-border="false"></div>-->
+<!---->
+<!--                </div>-->
             </div>
         </div>
         <div class="instructor-row row">
@@ -185,7 +190,7 @@ Template Name: NEW  Cennik
                              alt="marta wegrzynowska"/>
                     </div>
                     <a class="item" href="/marta-mostek-moscicka">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mo�cicka" alt="marta mostek mo�cicka"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mościcka" alt="marta mostek mościcka"/>
                     </a>
                     <div class="item">
                         <img src="
