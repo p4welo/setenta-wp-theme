@@ -9,6 +9,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <?php wp_head(); ?>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="https://use.fontawesome.com/9a5db28d88.js"></script>
     <link href="<?php bloginfo('template_url'); ?>/style.css?@@version" rel="stylesheet" media="all"/>
 
     <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
