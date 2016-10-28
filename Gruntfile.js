@@ -34,8 +34,6 @@ module.exports = function (grunt) {
             files: [
                 "dist",
                 dest_dir
-                //"footer.php",
-                //"header.php"
             ],
             options: {
                 force: true

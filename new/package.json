@@ -1,0 +1,11 @@
+{
+  "name": "setenta-wordpress",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p4welo/setenta-wp-theme"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.4"
+  }
+}

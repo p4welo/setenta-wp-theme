@@ -95,13 +95,6 @@
                     </div>
                 </div>
                 <div class="col-sm-4 search-container">
-                    <div class="col-sm-12">
-                        <div class="form-group has-feedback">
-                            <input type="text" class="form-control" placeholder="Szukaj..."
-                                   aria-describedby="inputSuccess2Status" ng-model="searchText">
-                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                        </div>
-                    </div>
                     <div class="panel panel-default col-xs-12">
 
                         <h3 class="col-sm-12">Honorujemy</h3>
