@@ -9,7 +9,6 @@
 </footer>
 <div id="fb-root"></div>
 </div>
-
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
 <script>
     (function (i, s, o, g, r, a, m) {

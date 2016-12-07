@@ -47,17 +47,11 @@ module.exports = function (grunt) {
             },
             vendor: {
                 src: [
-                    'vendor/jquery/dist/jquery.js',
-                    'vendor/bootstrap/dist/js/bootstrap.js',
                     'vendor/jssor/js/jssor.js',
                     'vendor/jssor/js/jssor.slider.js',
                     'vendor/angularjs/angular.js',
                     'vendor/angular-sanitize/angular-sanitize.js',
-                    'vendor/angular-resource/angular-resource.js',
                     'vendor/angular-translate/angular-translate.js',
-                    'vendor/lodash/lodash.js',
-                    'vendor/moment/min/moment-with-locales.js',
-                    'vendor/fullcalendar/dist/fullcalendar.js',
                     'vendor/owl.carousel/dist/owl.carousel.js'
 
                 ],

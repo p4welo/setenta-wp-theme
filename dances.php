@@ -34,11 +34,6 @@ Template Name: Style taneczne
                     </div>
                     <div class="item">
                         <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             alt="kasia michalak"/>
-                    </div>
-                    <div class="item">
-                        <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/jacek-sztorc.jpg"
                              alt="jacek sztorc"/>
                     </div>

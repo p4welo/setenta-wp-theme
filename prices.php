@@ -16,16 +16,16 @@ Template Name: NEW  Cennik
                     <div class="panel-body">
                         <legend>Dorośli</legend>
                         <dl class="dl-horizontal">
-                            <dt>20 zł</dt>
+                            <dt>24 zł</dt>
                             <dd>Pojedyncze wejście (1h)</dd>
                         </dl>
                         <dl class="dl-horizontal emphasize">
                             <dt>70 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>120 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h - 2 razy w tygodniu)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>180 zł</dt>
@@ -38,20 +38,28 @@ Template Name: NEW  Cennik
                     <div class="panel-body">
                         <legend>Dzieci</legend>
                         <dl class="dl-horizontal">
-                            <dt>18 zł</dt>
+                            <dt>20 zł</dt>
                             <dd>Pojedyncze wejście (45min)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 45min)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>45min</strong> - raz w tygodniu)
+                            </dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt>100 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h) - formacja taneczna</dd>
+                            <dt>70 zł</dt>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>1h</strong> - raz w tygodniu)
+                            </dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>110 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 45min)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>45min</strong> - dwa razy
+                                w tygodniu)</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>130 zł</dt>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>1h</strong> - raz w
+                                tygodniu) - formacja taneczna</dd>
                         </dl>
                         <dl class="dl-horizontal emphasize">
                             <dt>150 zł</dt>
@@ -63,14 +71,14 @@ Template Name: NEW  Cennik
 
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <legend>Studenci (za okazaniem legitymacji)</legend>
+                        <legend>Studenci / doktoranci (za okazaniem legitymacji)</legend>
                         <dl class="dl-horizontal">
-                            <dt>18 zł</dt>
+                            <dt>20 zł</dt>
                             <dd>Pojedyncze wejście (1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
                         </dl>
                     </div>
                 </div>
@@ -84,7 +92,7 @@ Template Name: NEW  Cennik
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>40 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
                         </dl>
                     </div>
                 </div>
@@ -93,11 +101,11 @@ Template Name: NEW  Cennik
                     <div class="panel-body">
                         <legend>Zajęcia indywidualne</legend>
                         <dl class="dl-horizontal">
-                            <dt>70 zł</dt>
+                            <dt>85 zł</dt>
                             <dd>Lekcja indywidualna (1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt>250 zł</dt>
+                            <dt>310 zł</dt>
                             <dd>Pierwszy taniec - karnet na 4 wejścia (4 x 1h) do wykorzystania w dowolnym okresie</dd>
                         </dl>
                     </div>
@@ -125,15 +133,6 @@ Template Name: NEW  Cennik
                     </div>
 
                 </div>
-                <div class="panel panel-default col-xs-12">
-                    <h3 class="col-sm-12">Dołącz do nas</h3>
-
-                    <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
-                         data-width="100%"
-                         data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
-                         data-show-border="false"></div>
-
-                </div>
             </div>
         </div>
         <div class="instructor-row row">
@@ -158,11 +157,6 @@ Template Name: NEW  Cennik
                         <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                              alt="magda mroz"/>
-                    </div>
-                    <div class="item">
-                        <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             alt="kasia michalak"/>
                     </div>
                     <div class="item">
                         <img src="

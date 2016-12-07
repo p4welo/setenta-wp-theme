@@ -5,10 +5,10 @@ Template Name: Kontakt
 ?>
 
 <?php get_header(); ?>
-    <div class="page" ng-app="setenta" ng-controller="gmapCtrl" ng-init="initMap()">
-            <div class="map" id="mapka"></div>
+    <div class="page">
+<!--            <div class="map" id="mapka"></div>-->
             <div>
-                <div class="container">
+                <div class="container" style="padding-top: 20px">
                     <div class="col-sm-6 col-xs-12 body-content">
                         <address>
                             <h2>Szkoła tańca Setenta</h2>
@@ -72,11 +72,6 @@ Template Name: Kontakt
             </div>
             <div class="item">
                 <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                     alt="kasia michalak"/>
-            </div>
-            <div class="item">
-                <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/jacek-sztorc.jpg"
                      alt="jacek sztorc"/>
             </div>
@@ -106,5 +101,35 @@ Template Name: Kontakt
             </div>
         </div>
     </div>
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<!--    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function () {-->
+<!--            var elementId = 'mapka';-->
+<!--            var markerId = 'http://setenta.wroclaw.pl/wp-content/uploads/2016/12/marker-logo.png';-->
+<!--            var wspolrzedne = new google.maps.LatLng(51.1172973, 17.0430937);-->
+<!--            var opcjeMapy = {-->
+<!--                zoom: 17,-->
+<!--                center: wspolrzedne,-->
+<!--                scrollwheel: false,-->
+<!--                keyboardShortcuts: false,-->
+<!--                mapTypeId: google.maps.MapTypeId.ROADMAP,-->
+<!--                panControl: false,-->
+<!--                zoomControl: true,-->
+<!--                zoomControlOptions: {-->
+<!--                    style: google.maps.ZoomControlStyle.SMALL,-->
+<!--                    position: google.maps.ControlPosition.LEFT-->
+<!--                },-->
+<!--                scaleControl: true-->
+<!--            };-->
+<!--            var mapa = new google.maps.Map(document.getElementById(elementId), opcjeMapy);-->
+<!--            var rozmiar = new google.maps.Size(60, 25);-->
+<!--            var punkt_startowy = new google.maps.Point(0, 0);-->
+<!--            var punkt_zaczepienia = new google.maps.Point(50, 10);-->
+<!--            new google.maps.Marker({-->
+<!--                position: wspolrzedne,-->
+<!--                map: mapa,-->
+<!--                icon: new google.maps.MarkerImage(markerId, rozmiar, punkt_startowy, punkt_zaczepienia)-->
+<!--            });-->
+<!--        })-->
+<!--    </script>-->
 <?php get_footer(); ?>

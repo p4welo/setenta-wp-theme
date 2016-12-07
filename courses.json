@@ -1,0 +1,103 @@
+[
+  {
+    "day": "PN",
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "style": {
+      "name": "Taniec użytkowy"
+    },
+    "level": "BEGINNER",
+    "description": "Start 19 września"
+  },
+  {
+    "day": "PN",
+    "startTime": "20:00",
+    "endTime": "21:00",
+    "style": {
+      "name": "Kurs przedsylwestrowy"
+    },
+    "level": "BEGINNER",
+    "description": ""
+  },
+  {
+    "day": "PN",
+    "startTime": "21:00",
+    "endTime": "22:00",
+    "style": {
+      "name": "Salsa kubańska"
+    },
+    "level": "INTERMEDIATE",
+    "description": "Dołącz"
+  },
+  {
+    "day": "WT",
+    "startTime": "20:30",
+    "endTime": "21:30",
+    "style": {
+      "name": "Taniec użytkowy"
+    },
+    "level": "INTERMEDIATE",
+    "description": "Start 8 września"
+  },
+  {
+    "day": "WT",
+    "startTime": "21:30",
+    "endTime": "22:30",
+    "style": {
+      "name": "Taniec użytkowy"
+    },
+    "level": "INTERMEDIATE",
+    "description": ""
+  },
+
+  {
+    "day": "SR",
+    "startTime": "20:00",
+    "endTime": "21:00",
+    "style": {
+      "name": "Taniec użytkowy"
+    },
+    "level": "BEGINNER",
+    "description": "Start 21 września"
+  },
+  {
+    "day": "CZ",
+    "startTime": "20:30",
+    "endTime": "21:00",
+    "style": {
+      "name": "Taniec towarzyski"
+    },
+    "level": "INTERMEDIATE",
+    "description": "Dołącz"
+  },
+  {
+    "day": "PT",
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "style": {
+      "name": "Salsa kubańska"
+    },
+    "level": "BEGINNER",
+    "description": "Dołącz"
+  },
+  {
+    "day": "PT",
+    "startTime": "19:30",
+    "endTime": "20:30",
+    "style": {
+      "name": "Salsa kubańska"
+    },
+    "level": "INTERMEDIATE",
+    "description": "Dołącz"
+  },
+  {
+    "day": "PT",
+    "startTime": "20:30",
+    "endTime": "21:30",
+    "style": {
+      "name": "Bachata"
+    },
+    "level": "BEGINNER",
+    "description": ""
+  },
+]

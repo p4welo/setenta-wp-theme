@@ -5,33 +5,9 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng-app="setenta" ng-cloak>
-        <div class="schedule-page" ng-init="initCalendar()" ng-controller="scheduleCtrl">
+    <div ng-app="schedule" ng-cloak>
+        <div class="schedule-page">
             <div class="container">
-<!--                <div class="visible-md-block visible-lg-block">-->
-<!--                    <div class="panel panel-default" ng-show="scheduleId==0">-->
-<!--                        <div class="panel-body">-->
-<!--                            <h2>Duża sala</h2>-->
-<!---->
-<!--                            <div class="row text-center" ng-if="loadingView">-->
-<!--                                <i class="fa fa-spin fa-spinner"></i>-->
-<!--                                <span>Ładowanie...</span>-->
-<!--                            </div>-->
-<!--                            <div id='bigSchedule'></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="panel panel-default" ng-show="scheduleId==1">-->
-<!--                        <div class="panel-body">-->
-<!--                            <h2>Mała sala</h2>-->
-<!---->
-<!--                            <div class="row text-center" ng-if="loadingView">-->
-<!--                                <i class="fa fa-spin fa-spinner"></i>-->
-<!--                                <span>Ładowanie...</span>-->
-<!--                            </div>-->
-<!--                            <div id='smallSchedule'></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div ng-repeat="d in days" class="table-responsive">
@@ -55,12 +31,8 @@ Template Name: NEW Grafik
                                         <span ng-bind="c.endTime"></span>
                                     </td>
                                     <td ng-bind="c.style.name"></td>
-                                    <td>
-                                        {{ c.level | translate }}
-                                    </td>
-                                    <td>
-                                        {{ c.courseState | translate}}
-                                    </td>
+                                    <td>{{c.level | translate}}</td>
+                                    <td ng-bind="c.description"></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -91,11 +63,6 @@ Template Name: NEW Grafik
                         <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                              alt="magda mroz"/>
-                    </div>
-                    <div class="item">
-                        <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             alt="kasia michalak"/>
                     </div>
                     <div class="item">
                         <img src="

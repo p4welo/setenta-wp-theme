@@ -65,11 +65,11 @@ Template Name: Pokazy
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                              alt="magda mroz"/>
                     </div>
-                    <div class="item">
-                        <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             alt="kasia michalak"/>
-                    </div>
+<!--                    <div class="item">-->
+<!--                        <img src="-->
+<!--                    --><?php //bloginfo('template_url'); ?><!--/assets/img/instructors/kasia-michalak.jpg"-->
+<!--                             alt="kasia michalak"/>-->
+<!--                    </div>-->
                     <div class="item">
                         <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/jacek-sztorc.jpg"

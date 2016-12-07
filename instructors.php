@@ -84,25 +84,25 @@ Template Name: NEW Instruktorzy
 
                 </div>
             </div>
-            <div class="col-xs-6 col-lg-3">
-                <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">
-                    </a>
-
-                    <h3>
-                        <a href="javascript:void(0)">
-                            KATARZYNA MICHALAK
-                        </a>
-                    </h3>
-
-                    <div>
-                        <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="col-xs-6 col-lg-3">-->
+<!--                <div class="team-member">-->
+<!--                    <a class="grayHover" href="javascript:void(0)">-->
+<!--                        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/instructors/kasia-michalak.jpg"-->
+<!--                             class="col-xs-12 img-circle"-->
+<!--                             alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">-->
+<!--                    </a>-->
+<!---->
+<!--                    <h3>-->
+<!--                        <a href="javascript:void(0)">-->
+<!--                            KATARZYNA MICHALAK-->
+<!--                        </a>-->
+<!--                    </h3>-->
+<!---->
+<!--                    <div>-->
+<!--                        <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
                     <a class="grayHover" href="javascript:void(0)">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="news-page" ng-app="setenta" ng-cloak>
+    <div class="news-page">
     <div id="slider-container" class="slider-container">
         <div u="loading" class="slider-loading">
             <div class="slider-back">
@@ -40,8 +40,8 @@
         <span u="arrowleft" class="jssora21l"></span>
         <span u="arrowright" class="jssora21r"></span>
     </div>
-    <div>
-        <div class="news-content row" ng-controller="newsCtrl">
+    <div ng-app="news">
+        <div class="news-content row" id="news">
             <div class="container">
                 <div class="col-sm-8">
                     <div ng-if="newsLoading" class="text-center">
@@ -95,13 +95,13 @@
                     </div>
                 </div>
                 <div class="col-sm-4 search-container">
-                    <div class="col-sm-12">
-                        <div class="form-group has-feedback">
-                            <input type="text" class="form-control" placeholder="Szukaj..."
-                                   aria-describedby="inputSuccess2Status" ng-model="searchText">
-                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                        </div>
-                    </div>
+<!--                    <div class="col-sm-12">-->
+<!--                        <div class="form-group has-feedback">-->
+<!--                            <input type="text" class="form-control" placeholder="Szukaj..."-->
+<!--                                   aria-describedby="inputSuccess2Status" ng-model="searchText">-->
+<!--                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="panel panel-default col-xs-12">
 
                         <h3 class="col-sm-12">Honorujemy</h3>
@@ -123,15 +123,15 @@
                         </div>
 
                     </div>
-                    <div class="panel panel-default col-xs-12">
-                        <h3 class="col-sm-12">Dołącz do nas</h3>
-
-                        <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"
-                             data-width="100%"
-                             data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"
-                             data-show-border="false"></div>
-
-                    </div>
+<!--                    <div class="panel panel-default col-xs-12">-->
+<!--                        <h3 class="col-sm-12">Dołącz do nas</h3>-->
+<!---->
+<!--                        <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"-->
+<!--                             data-width="100%"-->
+<!--                             data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"-->
+<!--                             data-show-border="false"></div>-->
+<!---->
+<!--                    </div>-->
                 </div>
             </div>
 
@@ -185,11 +185,6 @@
                         <img src="
                     <?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
                              alt="magda mroz"/>
-                    </div>
-                    <div class="item">
-                        <img src="
-                    <?php bloginfo('template_url'); ?>/assets/img/instructors/kasia-michalak.jpg"
-                             alt="kasia michalak"/>
                     </div>
                     <div class="item">
                         <img src="
