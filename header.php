@@ -10,13 +10,17 @@
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.theme.default.min.css">
     <link href="<?php bloginfo('template_url'); ?>/style.css?@@version" rel="stylesheet" media="all"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/angular@1.5.9/angular.min.js"></script>
+    <script src="https://unpkg.com/angular-sanitize@1.5.9/angular-sanitize.min.js"></script>
+    <script src="https://unpkg.com/angular-translate@2.13.1/dist/angular-translate.min.js"></script>
+    <script src="https://unpkg.com/owl.carousel@2.2.0/dist/owl.carousel.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
 
     <!--[if lt IE 9]>
@@ -24,19 +28,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="loading">
-<div class="loader">
-    <div class="loader-content">
-        <div class="spinner">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <div class="rect3"></div>
-            <div class="rect4"></div>
-            <div class="rect5"></div>
-        </div>
-    </div>
-</div>
-<div class="main-content">
+<body>
+<div class="main-content visible">
     <div class="navbar-section">
         <nav class="navbar navbar-default">
             <div class="container">

@@ -21,11 +21,11 @@ Template Name: NEW  Cennik
                         </dl>
                         <dl class="dl-horizontal emphasize">
                             <dt>70 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>120 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h - 2 razy w tygodniu)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>180 zł</dt>
@@ -43,23 +43,21 @@ Template Name: NEW  Cennik
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>45min</strong> - raz w tygodniu)
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>45min</strong>)
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>70 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>1h</strong> - raz w tygodniu)
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>1h</strong>)
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>110 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>45min</strong> - dwa razy
-                                w tygodniu)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>45min</strong>)</dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>130 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>1h</strong> - raz w
-                                tygodniu) - formacja taneczna</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>1h</strong>) - formacja taneczna</dd>
                         </dl>
                         <dl class="dl-horizontal emphasize">
                             <dt>150 zł</dt>
@@ -78,7 +76,7 @@ Template Name: NEW  Cennik
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>65 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
                         </dl>
                     </div>
                 </div>
@@ -92,7 +90,7 @@ Template Name: NEW  Cennik
                         </dl>
                         <dl class="dl-horizontal">
                             <dt>40 zł</dt>
-                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h - raz w tygodniu)</dd>
+                            <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x 1h)</dd>
                         </dl>
                     </div>
                 </div>

@@ -48,11 +48,11 @@ module.exports = function (grunt) {
             vendor: {
                 src: [
                     'vendor/jssor/js/jssor.js',
-                    'vendor/jssor/js/jssor.slider.js',
-                    'vendor/angularjs/angular.js',
-                    'vendor/angular-sanitize/angular-sanitize.js',
-                    'vendor/angular-translate/angular-translate.js',
-                    'vendor/owl.carousel/dist/owl.carousel.js'
+                    'vendor/jssor/js/jssor.slider.js'
+                    //'vendor/angularjs/angular.js',
+                    //'vendor/angular-sanitize/angular-sanitize.js',
+                    //'vendor/angular-translate/angular-translate.js',
+                    //'vendor/owl.carousel/dist/owl.carousel.js'
 
                 ],
                 dest: dest_dir + '/assets/js/vendor.js'
