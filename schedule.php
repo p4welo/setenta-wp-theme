@@ -5,15 +5,13 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng-app="schedule" ng-cloak>
+    <div ng-app="schedule">
         <div class="schedule-page">
             <div class="container">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div ng-repeat="d in days" class="table-responsive">
-                            <legend>
-                                {{ d | translate }}
-                            </legend>
+                        <div ng-repeat="day in days" class="table-responsive">
+                            <legend translate="{{day}}"></legend>
                             <table class="table table-condensed">
                                 <thead>
                                 <tr>
@@ -24,15 +22,15 @@ Template Name: NEW Grafik
                                 </thead>
                                 <tbody>
 
-                                <tr ng-repeat="c in courseList | filter : {'day': d}">
+                                <tr ng-repeat="course in courseList | filter : {'day': day}">
                                     <td>
-                                        <span ng-bind="c.startTime"></span>
+                                        <span ng-bind="course.startTime"></span>
                                         -
-                                        <span ng-bind="c.endTime"></span>
+                                        <span ng-bind="course.endTime"></span>
                                     </td>
-                                    <td ng-bind="c.style.name"></td>
-                                    <td>{{c.level | translate}}</td>
-                                    <td ng-bind="c.description"></td>
+                                    <td ng-bind="course.style.name"></td>
+                                    <td translate="{{course.level}}"></td>
+                                    <td ng-bind="course.description"></td>
                                 </tr>
                                 </tbody>
                             </table>

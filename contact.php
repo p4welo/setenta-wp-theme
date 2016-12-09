@@ -132,4 +132,5 @@ Template Name: Kontakt
 <!--            });-->
 <!--        })-->
 <!--    </script>-->
+
 <?php get_footer(); ?>

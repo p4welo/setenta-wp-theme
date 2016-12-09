@@ -102,6 +102,10 @@
 <!--                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>-->
 <!--                        </div>-->
 <!--                    </div>-->
+<!--                    <a href="/partner-do-tanca-wroclaw" class="thumbnail col-xs-12" style="padding: 0">-->
+<!--                        <img src="/wp-content/uploads/2016/12/Szukasz-1-1-e1481231364648.png"-->
+<!--                             alt="Partner do tańca wrocław">-->
+<!--                    </a>-->
                     <div class="panel panel-default col-xs-12">
 
                         <h3 class="col-sm-12">Honorujemy</h3>

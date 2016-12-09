@@ -4,7 +4,7 @@ angular.module('news', ['ngSanitize'])
       $rootScope.newsLoading = true;
       $rootScope.postLimit = 5;
 
-      $http.get('/wp-json/posts?filter[posts_per_page]=50').then(function (result) {
+      $http.get('/wp-json/posts').then(function (result) {
         $rootScope.posts = result.data;
         $rootScope.newsLoading = false;
       });
