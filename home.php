@@ -106,10 +106,26 @@
 <!--                        <img src="/wp-content/uploads/2016/12/Szukasz-1-1-e1481231364648.png"-->
 <!--                             alt="Partner do tańca wrocław">-->
 <!--                    </a>-->
+
                     <div class="panel panel-default col-xs-12">
+                        <div class="panel-body">
+                            <div class="fb-page"
+                                 data-href="https://www.facebook.com/setenta.taniec/"
+                                 data-tabs="timeline"
+                                 data-small-header="false"
+                                 data-adapt-container-width="true"
+                                 data-hide-cover="false"
+                                 data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/setenta.taniec/"
+                                            class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/setenta.taniec/">Szkoła tańca Setenta</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="panel panel-default col-xs-12">
                         <h3 class="col-sm-12">Honorujemy</h3>
-
                         <div class="col-sm-12">
                             <a class="fitflex thumbnail" target="_blank" href="http://www.fitflex.pl">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
@@ -125,17 +141,7 @@
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
                             </a>
                         </div>
-
                     </div>
-<!--                    <div class="panel panel-default col-xs-12">-->
-<!--                        <h3 class="col-sm-12">Dołącz do nas</h3>-->
-<!---->
-<!--                        <div class="fb-like-box col-sm-12" data-href="https://www.facebook.com/setenta.taniec"-->
-<!--                             data-width="100%"-->
-<!--                             data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true"-->
-<!--                             data-show-border="false"></div>-->
-<!---->
-<!--                    </div>-->
                 </div>
             </div>
 
@@ -222,4 +228,12 @@
             </div>
         </div>
     </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8&appId=503841366424292";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 <?php get_footer(); ?>

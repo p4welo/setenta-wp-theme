@@ -7,7 +7,6 @@
         <span id="year-copy"></span>
     </div>
 </footer>
-<div id="fb-root"></div>
 </div>
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
 <script>
