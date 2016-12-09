@@ -95,19 +95,12 @@
                     </div>
                 </div>
                 <div class="col-sm-4 search-container">
-<!--                    <div class="col-sm-12">-->
-<!--                        <div class="form-group has-feedback">-->
-<!--                            <input type="text" class="form-control" placeholder="Szukaj..."-->
-<!--                                   aria-describedby="inputSuccess2Status" ng-model="searchText">-->
-<!--                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>-->
-<!--                        </div>-->
-<!--                    </div>-->
 <!--                    <a href="/partner-do-tanca-wroclaw" class="thumbnail col-xs-12" style="padding: 0">-->
 <!--                        <img src="/wp-content/uploads/2016/12/Szukasz-1-1-e1481231364648.png"-->
 <!--                             alt="Partner do tańca wrocław">-->
 <!--                    </a>-->
 
-                    <div class="panel panel-default col-xs-12">
+                    <div class="panel panel-default col-xs-12" style="padding: 0">
                         <div class="panel-body">
                             <div class="fb-page"
                                  data-href="https://www.facebook.com/setenta.taniec/"
@@ -228,12 +221,4 @@
             </div>
         </div>
     </div>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8&appId=503841366424292";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 <?php get_footer(); ?>
