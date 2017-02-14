@@ -21,7 +21,7 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <script type="text/javascript">
-    window.smartlook ||(function (d) {
+    window.smartlook || (function (d) {
         var o = smartlook = function () {
             o.api.push(arguments)
         }, h = d.getElementsByTagName('head')[0];
@@ -36,19 +36,32 @@
     smartlook('init', 'd221c4ce9b13e155a23ed6904778ff7b521195b7');
 </script>
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
+    (function (window, document, o, g, r, scriptElement, firstScriptElement) {
+        window['GoogleAnalyticsObject'] = 'ga';
+        window.ga = window.ga ||
+            function () {
+                (window.ga.q = window.ga.q || []).push(arguments)
+            };
+        window.ga.l = 1 * new Date();
+        scriptElement = document.createElement('script');
+        firstScriptElement = document.getElementsByTagName('script')[0];
+        scriptElement.async = 1;
+        scriptElement.src = g;
+        firstScriptElement.parentNode.insertBefore(scriptElement, firstScriptElement)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
     ga('create', 'UA-45485563-1', 'auto');
     ga('send', 'pageview');
 </script>
+<!--<script type="text/javascript">-->
+<!--    (function () {-->
+<!--        "use strict";-->
+<!--        var s = document.createElement('script');-->
+<!--        s.type = 'text/javascript';-->
+<!--        s.async = true;-->
+<!--        s.src = 'https://dynamic.pushango.com/pushango-plugin-setenta.js';-->
+<!--        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);-->
+<!--    })();-->
+<!--</script>-->
 </body>
 </html>

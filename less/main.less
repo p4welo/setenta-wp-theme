@@ -1,0 +1,858 @@
+@import "variables";
+
+/* ========================== */
+/* ========== CORE ========== */
+/* ========================== */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}
+
+html {
+  margin-top: 0 !important;
+
+  body {
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, "sans-serif" !important;
+    background-color: @color-light-gray;
+
+    h3, h2 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h2 > a {
+      color: #333;
+    }
+
+    h4 {
+      color: @color-primary;
+    }
+
+    .alert-danger,
+    .text-danger,
+    a {
+      color: @color-primary;
+    }
+  }
+}
+
+
+
+.nav-pills .active a,
+.list-group-item.active,
+.list-group-item:hover {
+  background-color: @color-primary !important;
+  border-color: @color-primary;
+  color: white !important;
+}
+
+.list-group-item {
+  &.active {
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: #AA024C;
+      border-color: #AA024C;
+    }
+  }
+}
+
+a:focus,
+a:active,
+a:hover {
+  color: #AA024C;
+}
+
+.panel,
+.btn {
+  border-radius: 0;
+}
+
+dl.emphasize {
+  color: @color-primary !important;
+}
+
+.thumbnail {
+  border: 0;
+}
+
+/* ============================== */
+/* ========== CORE END ========== */
+/* ============================== */
+
+/* ================================== */
+/* ========== NAVBAR START ========== */
+/* ================================== */
+.navbar {
+  background-color: white;
+  border: 0;
+  margin-bottom: 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+  @media (max-width: 767px) {
+    .navbar-brand {
+      padding-top: 10px;
+
+      img {
+        max-height: 35px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-brand img {
+      height: 40px;
+    }
+  }
+
+  .navbar-nav {
+    a {
+      color: @color-primary !important;
+    }
+
+    li.dropdown:hover > .dropdown-menu {
+      display: block;
+      width: 700px;
+      left: -350px;
+    }
+
+    @media (min-width: 768px) {
+      > li {
+        border-top: 4px solid white;
+        transition: all 0.2s ease-in-out;
+
+        &.active,
+        &.current-menu-item {
+          border-top: 4px solid @color-primary;
+
+          > a {
+            background-color: @color-primary !important;
+            color: #f8f8f8 !important;
+          }
+        }
+
+        &:hover {
+          border-top: 4px solid @color-primary;
+          cursor: pointer;
+        }
+
+        > a {
+          height: 60px;
+          padding: 20px 15px !important;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            margin-top: -8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .dropdown-menu > li > a:hover,
+  .navbar-nav > li.current_page_item > a:hover {
+    margin-top: 0px;
+  }
+}
+
+/* ================================ */
+/* ========== NAVBAR END ========== */
+/* ================================ */
+
+/* ================================ */
+/* ========== FOOTER END ========== */
+/* ================================ */
+footer {
+  > div.first-line {
+    background-color: #333;
+    height: 300px;
+  }
+
+  div.second-line {
+    background-color: #111;
+    height: 50px;
+    color: white;
+  }
+}
+
+/* ================================ */
+/* ========== FOOTER END ========== */
+/* ================================ */
+
+/* ======================================== */
+/* ========== JSSOR SLIDER START ========== */
+/* ======================================== */
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 1300px;
+  height: 400px;
+  overflow: hidden;
+
+  .slider-slides {
+    cursor: move;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+
+    //.slide > div {
+    //  position: absolute;
+    //  top: 300px;
+    //  left: 30px;
+    //  padding: 5px;
+    //  text-align: left;
+    //  line-height: 36px;
+    //  font-size: 30px;
+    //  color: #FFFFFF;
+    //  background-color: #000;
+    //}
+  }
+
+  .jssorb21 {
+    div,
+    div:hover,
+    .av {
+      background: url(assets/img/jssor/b21.png) no-repeat;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    div {
+      background-position: -5px -5px;
+    }
+
+    div:hover,
+    .av:hover {
+      background-position: -35px -5px;
+    }
+  }
+}
+
+.slider-container .jssorb21 .av {
+  background-position: -65px -5px;
+}
+
+.slider-container .jssorb21 .dn,
+.slider-container .jssorb21 .dn:hover {
+  background-position: -95px -5px;
+}
+
+.slider-container .jssora21l,
+.slider-container .jssora21r,
+.slider-container .jssora21ldn,
+.slider-container .jssora21rdn {
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(assets/img/jssor/a21.png) center center no-repeat;
+  overflow: hidden;
+}
+
+.slider-container .jssora21l {
+  background-position: -3px -33px;
+}
+
+.slider-container .jssora21r {
+  background-position: -63px -33px;
+}
+
+.slider-container .jssora21l:hover {
+  background-position: -123px -33px;
+}
+
+.slider-container .jssora21r:hover {
+  background-position: -183px -33px;
+}
+
+.slider-container .jssora21ldn {
+  background-position: -243px -33px;
+}
+
+.slider-container .jssora21rdn {
+  background-position: -303px -33px;
+}
+
+.slider-container .jssorb21 {
+  position: absolute;
+  bottom: 26px;
+  left: 6px;
+}
+
+.slider-container .slider-prototype {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  line-height: 19px;
+  color: white;
+  font-size: 12px;
+}
+
+.slider-container .slider-loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.slider-container .slider-back {
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container .slider-indicator {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container .jssora21l {
+  width: 55px;
+  height: 55px;
+  top: 123px;
+  left: 8px;
+}
+
+.slider-container .jssora21r {
+  width: 55px;
+  height: 55px;
+  top: 123px;
+  right: 8px
+}
+
+/* ====================================== */
+/* ========== JSSOR SLIDER END ========== */
+/* ====================================== */
+
+/* ============================================= */
+/* ========== REGISTRATION GRID START ========== */
+/* ============================================= */
+.registration-grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.registration-grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.registration-grid i {
+  color: white;
+}
+
+.registration-grid figure img {
+  position: relative;
+  display: block;
+  opacity: 0.8;
+}
+
+.registration-grid figure figcaption {
+  padding-left: 5px;
+  color: #fff;
+  vertical-align: bottom;
+}
+
+.registration-grid figure figcaption::before,
+.registration-grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.registration-grid figure figcaption,
+.registration-grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.registration-grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.registration-grid figure h2 {
+  font-weight: 300;
+}
+
+.registration-grid figure h2,
+.registration-grid figure h2,
+.registration-grid figure p {
+  margin: 0;
+}
+
+.registration-grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+.registration-grid figure {
+  background: #2f3238;
+  padding: 0;
+}
+
+.registration-grid figure img {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.registration-grid figure figcaption {
+  text-align: left;
+}
+
+.registration-grid figure h2 {
+  position: relative;
+  padding: 0.5em 0;
+}
+
+.registration-grid figure p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+}
+
+.registration-grid figure p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.registration-grid figure p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.registration-grid figure p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.registration-grid figure:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.registration-grid figure:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.registration-grid figure:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.registration-grid figure:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.registration-grid figure:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.registration-grid h4 {
+  color: white;
+}
+
+/* =========================================== */
+/* ========== REGISTRATION GRID END ========== */
+/* =========================================== */
+
+/* ===================================== */
+/* ========== NEWS PAGE START ========== */
+/* ===================================== */
+
+.registration-row,
+.instructor-row {
+  padding-top: 20px;
+  background-color: #530369
+}
+
+.instructor-row {
+  background-color: #AA024C;
+}
+
+.registration-row {
+  margin-left: 0;
+  margin-right: 0;
+  color: white;
+}
+
+.registration-row > .container > h2,
+.instructor-row > .container > h2 {
+  color: white;
+}
+
+.more-posts-panel {
+  border: 0;
+}
+
+.instructor-row img {
+  border-radius: 0;
+  border: 0;
+}
+
+.news-page .instructor-row h2 {
+  margin-bottom: 40px;
+}
+
+.news-page .news-content {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.news-page .news-content > .container {
+  padding-top: 20px
+}
+
+.news-page .news-content .post-panel {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.news-page .news-content .post-panel .thumbnail {
+  margin-bottom: 10px;
+  border: 0;
+  padding: 0;
+  border-radius: 0
+}
+
+.news-page .news-content .post-panel .date-area i,
+.news-page .news-content .post-panel .category-area i,
+.news-page .news-content .post-panel .author-area i {
+  margin-right: 5px;
+}
+
+.news-page .news-content .post-panel .category-area,
+.news-page .news-content .post-panel .author-area {
+  margin-left: 15px;
+}
+
+.news-page .news-content .post-panel h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.news-page .news-content .post-panel .more-button-container {
+  margin-bottom: 20px
+}
+
+.fitflex > img,
+.foryoucard > img,
+.oksystem > img {
+  margin-top: 30px;
+}
+
+.foryoucard > img {
+  background-color: black;
+  padding: 17px;
+  margin-bottom: 50px;
+}
+
+/* =================================== */
+/* ========== NEWS PAGE END ========== */
+/* =================================== */
+
+/* ============================================ */
+/* ========== INSTRUCTORS PAGE START ========== */
+/* ============================================ */
+.instrucors-page .team-member .img-circle {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.instrucors-page .team-member:hover .img-circle {
+  border-radius: 0;
+  opacity: 1;
+}
+
+.instrucors-page .team-member {
+  padding: 0 0 5px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.instrucors-page .team-member:hover {
+  z-index: 2;
+}
+
+.instrucors-page .team-member h3,
+.instrucors-page .team-member h6 {
+  padding: 0 20px;
+}
+
+.instrucors-page .team-member div {
+  height: 50px;
+}
+
+.team-member img {
+  margin-bottom: 10px;
+}
+
+/* ========================================== */
+/* ========== INSTRUCTORS PAGE END ========== */
+/* ========================================== */
+
+/* ========================================= */
+/* ========== SCHEDULE PAGE START ========== */
+/* ========================================= */
+
+.schedule-page {
+  margin-top: 50px;
+}
+
+.schedule-page .fc-event {
+  border-radius: 0;
+  border: 1px solid #ffffff;
+  background-color: #0D9696;
+  padding-top: 5px;
+  font-size: 0.73em;
+}
+
+.schedule-page .fc-event:hover {
+  background-color: #237171;
+}
+
+.schedule-page .schedule-icon {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: @color-primary;
+}
+
+.schedule-page .fc-content {
+  text-align: center;
+}
+
+.schedule-page .fc-time-grid-event .fc-bg {
+  opacity: 0;
+}
+
+.news-content .badge-danger,
+.news-content .label-danger,
+.schedule-page .badge-danger {
+  background-color: @color-primary;
+}
+
+.news-content .badge-danger,
+.news-content .label-danger {
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+.schedule-page .badge-error {
+  background-color: #222;
+}
+
+.schedule-page .badge {
+  margin-top: 5px;
+}
+
+.schedule-page .badge-join {
+  background-color: #8CE413;
+}
+
+.schedule-page .badge {
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.alert-popover {
+  margin-top: 25px;
+  background-color: white !important;
+}
+
+/* ======================================= */
+/* ========== SCHEDULE PAGE END ========== */
+/* ======================================= */
+
+/* ====================================== */
+/* ========== SHOWS PAGE START ========== */
+/* ====================================== */
+.shows-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ==================================== */
+/* ========== SHOWS PAGE END ========== */
+/* ==================================== */
+
+/* ======================================= */
+/* ========== PRICES PAGE START ========== */
+/* ======================================= */
+.pricelist-page {
+  margin-top: 50px;
+}
+
+/* ===================================== */
+/* ========== PRICES PAGE END ========== */
+/* ===================================== */
+
+/* ======================================== */
+/* ========== CONTACT PAGE START ========== */
+/* ======================================== */
+.map {
+  width: 100%;
+  height: 400px;
+  background: white;
+}
+
+.single-page .thumbnail {
+  height: auto !important;
+}
+
+a.item img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a.item:hover img {
+  padding: 20px;
+  background-color: white;
+}
+
+body.loading, .loader {
+  background-color: white;
+  /*background-color: #1976d2;*/
+}
+
+.loader {
+  z-index: 1100;
+}
+
+.loader {
+  /*.loader, .main-content {*/
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hidden,
+.main-content {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.spinner {
+  margin: 0px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: @color-primary;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4)
+  }
+  20% {
+    -webkit-transform: scaleY(1.0)
+  }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+.loader-content {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  -moz-user-select: none;
+}

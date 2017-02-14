@@ -8,6 +8,19 @@ Template Name: NEW Grafik
     <div ng-app="schedule">
         <div class="schedule-page">
             <div class="container">
+<!--                <div class="alert alert-danger">-->
+<!--                    <h3>Zapisy</h3>-->
+<!--                    <ul class="list-group" ng-repeat="day in days">-->
+<!--                        <li ng-repeat="course in courses[day]" ng-if="course.registration" class="list-group-item">-->
+<!--                            <span translate="{{day}}"></span>-->
+<!--                            <span ng-bind="course.startTime"></span>-->
+<!--                            --->
+<!--                            <span ng-bind="course.endTime"></span>-->
+<!--                            <span ng-bind="course.name"></span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div ng-repeat="day in days" class="table-responsive">
@@ -17,20 +30,31 @@ Template Name: NEW Grafik
                                 <tr>
                                     <th>godz</th>
                                     <th>nazwa</th>
-                                    <th colspan="2">poziom</th>
+                                    <th>instruktor</th>
+                                    <th>poziom</th>
                                 </tr>
                                 </thead>
                                 <tbody>
 
-                                <tr ng-repeat="course in courseList | filter : {'day': day}">
+                                <!--                                <tr ng-repeat="course in courseList | filter : {'day': day}">-->
+                                <!--                                    <td>-->
+                                <!--                                        <span ng-bind="course.startTime"></span>-->
+                                <!--                                        --->
+                                <!--                                        <span ng-bind="course.endTime"></span>-->
+                                <!--                                    </td>-->
+                                <!--                                    <td ng-bind="course.style.name"></td>-->
+                                <!--                                    <td translate="{{course.level}}"></td>-->
+                                <!--                                    <td ng-bind="course.description"></td>-->
+                                <!--                                </tr>-->
+                                <tr ng-repeat="course in courses[day]" ng-if="!course.registration">
                                     <td>
                                         <span ng-bind="course.startTime"></span>
                                         -
                                         <span ng-bind="course.endTime"></span>
                                     </td>
-                                    <td ng-bind="course.style.name"></td>
+                                    <td ng-bind="course.name"></td>
+                                    <td ng-bind="course.instructor"></td>
                                     <td translate="{{course.level}}"></td>
-                                    <td ng-bind="course.description"></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -83,7 +107,8 @@ Template Name: NEW Grafik
                              alt="marta wegrzynowska"/>
                     </div>
                     <a class="item" href="/marta-mostek-moscicka">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mo�cicka" alt="marta mostek mo�cicka"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
+                             title="marta mostek mo�cicka" alt="marta mostek mo�cicka"/>
                     </a>
                     <div class="item">
                         <img src="
