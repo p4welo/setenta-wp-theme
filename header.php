@@ -19,8 +19,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/angular@1.5.9/angular.min.js"></script>
     <script src="https://unpkg.com/angular-sanitize@1.5.9/angular-sanitize.min.js"></script>
+    <script src="https://unpkg.com/angular-animate@1.5.9/angular-animate.min.js"></script>
+    <script src="https://unpkg.com/angular-touch@1.5.9/angular-touch.min.js"></script>
     <script src="https://unpkg.com/angular-translate@2.13.1/dist/angular-translate.min.js"></script>
+    <script src="https://unpkg.com/angular-ui-bootstrap@2.5.0/dist/ui-bootstrap-tpls.js"></script>
     <script src="https://unpkg.com/owl.carousel@2.2.0/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.17.4"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
 
     <!--[if lt IE 9]>
@@ -31,7 +35,7 @@
 <body>
 <div class="main-content visible">
     <div class="navbar-section">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"

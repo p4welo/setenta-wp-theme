@@ -1,6 +1,6 @@
-angular.module('news', ['ngSanitize'])
+angular.module('news', ['services', 'translations', 'ngSanitize', 'ngTouch', 'ngAnimate', 'ui.bootstrap'])
 
-    .run(['$rootScope', '$http', function ($rootScope, $http) {
+    .run(['$rootScope', '$http', 'courseFactory', '$uibModal', function ($rootScope, $http, courseFactory, $uibModal) {
       $rootScope.newsLoading = true;
       $rootScope.postLimit = 5;
 
@@ -17,5 +17,19 @@ angular.module('news', ['ngSanitize'])
           return;
         }
         $rootScope.selectedTag = tag;
+      };
+      $rootScope.status = {
+
+      };
+      $rootScope.courses = courseFactory.getRegistrationsByStyle();
+
+      $rootScope.open = function(course) {
+        $uibModal.open({
+          templateUrl: 'myModalContent.html',
+          size: 'sm',
+          controller: function($scope) {
+            $scope.course = course;
+          }
+        });
       };
     }]);

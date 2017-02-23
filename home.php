@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+            Selected: <b>{{ course|json }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+        </div>
+    </script>
     <div class="news-page">
     <div id="slider-container" class="slider-container">
         <div u="loading" class="slider-loading">
@@ -45,23 +57,34 @@
             <div class="container">
                 <div class="col-sm-8">
 <!--                    <div class="col-sm-12 panel panel-default post-panel animated fadeIn">-->
-<!--                        <a>-->
-<!--                            <img class="thumbnail col-sm-12 col-xs-12" src="http://setenta.wroclaw.pl/wp-content/uploads/2017/02/NOWE.png"/>-->
-<!--                        </a>-->
-<!--                        <table class="table">-->
-<!--                            <thead>-->
-<!--                            <th>1</th>-->
-<!--                            <th>2</th>-->
-<!--                            </thead>-->
-<!--                            <tbody>-->
-<!--                            <tr>-->
-<!--                                <td>1</td>-->
-<!--                                <td>2</td>-->
-<!--                            </tr>-->
-<!--                            </tbody>-->
-<!--                        </table>-->
+<!---->
+<!--                        <div class="thumbnail" style="padding: 0">-->
+<!--                            <img src="http://setenta.wroclaw.pl/wp-content/uploads/2017/02/NOWE.png"/>-->
+<!--                        </div>-->
+<!--                        <p class="col-xs-12">Wybierz kurs żeby wyświetlić dostępne terminy:</p>-->
+<!--                        <div class="panel-accordion">-->
+<!--                            <uib-accordion close-others="{{true}}">-->
+<!---->
+<!--                                <div uib-accordion-group class="panel-default"-->
+<!--                                     ng-repeat="(style, courses) in ::courses">-->
+<!--                                    <uib-accordion-heading>-->
+<!--                                        <h4 ng-bind="::style"></h4>-->
+<!--                                    </uib-accordion-heading>-->
+<!--                                    <dl class="dl-horizontal" ng-repeat="course in ::courses">-->
+<!--                                        <dt translate="{{::course.day}}"></dt>-->
+<!--                                        <dd>-->
+<!--                                            <span ng-bind="::course.startTime"></span>-->
+<!--                                            <a href class="label label-success"-->
+<!--                                               style="margin-left: 20px"-->
+<!--                                               ng-click="open(course)">-->
+<!--                                                Zapisz się!-->
+<!--                                            </a>-->
+<!--                                        </dd>-->
+<!--                                    </dl>-->
+<!--                                </div>-->
+<!--                            </uib-accordion>-->
+<!--                        </div>-->
 <!--                    </div>-->
-
                     <div ng-if="newsLoading" class="text-center">
 
                         <svg width='20px' height='20px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
@@ -146,10 +169,10 @@
                     </div>
                 </div>
                 <div class="col-sm-4 search-container">
-<!--                    <a href="/partner-do-tanca-wroclaw" class="thumbnail col-xs-12" style="padding: 0">-->
-<!--                        <img src="/wp-content/uploads/2016/12/Szukasz-1-1-e1481231364648.png"-->
-<!--                             alt="Partner do tańca wrocław">-->
-<!--                    </a>-->
+                    <!--                                        <a href="/partner-do-tanca-wroclaw" class="thumbnail col-xs-12" style="padding: 0">-->
+                    <!--                                            <img src="/wp-content/uploads/2016/12/Szukasz-1-1-e1481231364648.png"-->
+                    <!--                                                 alt="Partner do tańca wrocław">-->
+                    <!--                                        </a>-->
 
                     <div class="panel panel-default col-xs-12" style="padding: 0">
                         <div class="panel-body">
@@ -200,12 +223,6 @@
                                     <h2>
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
-
-                                    <p>
-                                        <?php
-                                        the_content('Czytaj dalej &rarr;');
-                                        ?>
-                                    </p>
                                 </div>
                             </div>
                         <?php endwhile;
@@ -261,7 +278,8 @@
                              alt="marta wegrzynowska"/>
                     </div>
                     <a class="item" href="/marta-mostek-moscicka">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg" title="marta mostek mo�cicka" alt="marta mostek mo�cicka"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
+                             title="marta mostek mo�cicka" alt="marta mostek mo�cicka"/>
                     </a>
                     <div class="item">
                         <img src="

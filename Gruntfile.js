@@ -101,18 +101,6 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd: 'vendor/bootstrap/dist/fonts/',
-            src: '*',
-            dest: dest_dir + '/assets/fonts/'
-          },
-          {
-            expand: true,
-            cwd: 'vendor/font-awesome/fonts/',
-            src: '*',
-            dest: dest_dir + '/assets/fonts/'
-          },
-          {
-            expand: true,
             cwd: 'vendor/jssor/img/',
             src: '**/*',
             dest: dest_dir + '/assets/img/jssor/'

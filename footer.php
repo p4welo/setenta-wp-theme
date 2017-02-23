@@ -21,17 +21,10 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <script type="text/javascript">
-    window.smartlook || (function (d) {
-        var o = smartlook = function () {
-            o.api.push(arguments)
-        }, h = d.getElementsByTagName('head')[0];
-        var c = d.createElement('script');
-        o.api = new Array();
-        c.async = true;
-        c.type = 'text/javascript';
-        c.charset = 'utf-8';
-        c.src = '//rec.smartlook.com/recorder.js';
-        h.appendChild(c);
+    window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
     })(document);
     smartlook('init', 'd221c4ce9b13e155a23ed6904778ff7b521195b7');
 </script>
@@ -53,15 +46,5 @@
     ga('create', 'UA-45485563-1', 'auto');
     ga('send', 'pageview');
 </script>
-<!--<script type="text/javascript">-->
-<!--    (function () {-->
-<!--        "use strict";-->
-<!--        var s = document.createElement('script');-->
-<!--        s.type = 'text/javascript';-->
-<!--        s.async = true;-->
-<!--        s.src = 'https://dynamic.pushango.com/pushango-plugin-setenta.js';-->
-<!--        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);-->
-<!--    })();-->
-<!--</script>-->
 </body>
 </html>

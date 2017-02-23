@@ -8,75 +8,70 @@ Template Name: NEW Instruktorzy
         <div class="container">
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/barbara-radomska.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="barbara karpinska radomska" title="barbara karpinska radomska">
-                    </a>
+                             class="col-xs-12" alt="barbara karpinska radomska" title="barbara karpinska radomska">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            BARBARA RADOMSKA (KARPIŃSKA)
-                        </a>
-                    </h3>
+                    <h3>BARBARA RADOMSKA (KARPIŃSKA)</h3>
 
                     <div>
-                        <h6>Taniec towarzyski, <a href="/salsa-kubanska">Salsa</a>, <a href="/bachata">Bachata</a>, Taniec użytkowy, Pierwszy taniec, Balet
-                            dla dzieci, Formacje dziecięce</h6>
+                        <h6>
+                            Taniec towarzyski,
+                            <a href="/salsa-kubanska">Salsa</a>,
+                            <a href="/bachata">Bachata</a>,
+                            Taniec użytkowy,
+                            Pierwszy taniec,
+                            Balet dla dzieci,
+                            Formacje dziecięce
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/pawel-radomski.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
-                    </a>
+                             class="col-xs-12" alt="PAWEŁ RADOMSKI" title="PAWEŁ RADOMSKI">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            PAWEŁ RADOMSKI
-                        </a>
-                    </h3>
+                    <h3>PAWEŁ RADOMSKI</h3>
 
                     <div>
-                        <h6><a href="/salsa-kubanska">Salsa kubańska</a>, Rueda de Casino, <a href="/bachata">Bachata</a></h6>
+                        <h6>
+                            <a href="/salsa-kubanska">Salsa kubańska</a>,
+                            Rueda de Casino,
+                            <a href="/bachata">Bachata</a>
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mroz.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
-                    </a>
+                             class="col-xs-12" alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            MAGDA MRÓZ
-                        </a>
-                    </h3>
+                    <h3>MAGDA MRÓZ</h3>
 
                     <div>
-                        <h6>Balet dla dzieci, Mix dance, Zouk</h6>
+                        <h6>
+                            Balet dla dzieci,
+                            Mix dance,
+                            Zouk
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="/marta-mostek-moscicka">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-moscicka.jpg"
-                             class="col-xs-12 img-circle" alt="MARTA 'MOSTEK' MOŚCICKA"
-                             title="MARTA 'MOSTEK' MOŚCICKA">
-                    </a>
+                             class="col-xs-12" alt="MARTA 'MOSTEK' MOŚCICKA" title="MARTA 'MOSTEK' MOŚCICKA">
+                    </span>
 
-                    <h3>
-                        <a href="/marta-mostek-moscicka">
-                            MARTA "MOSTEK" MOŚCICKA
-                        </a>
-                    </h3>
+                    <h3>MARTA "MOSTEK" MOŚCICKA</h3>
 
                     <div>
                         <h6>Hip hop</h6>
@@ -84,95 +79,68 @@ Template Name: NEW Instruktorzy
 
                 </div>
             </div>
-<!--            <div class="col-xs-6 col-lg-3">-->
-<!--                <div class="team-member">-->
-<!--                    <a class="grayHover" href="javascript:void(0)">-->
-<!--                        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/instructors/kasia-michalak.jpg"-->
-<!--                             class="col-xs-12 img-circle"-->
-<!--                             alt="KATARZYNA MICHALAK" title="KATARZYNA MICHALAK">-->
-<!--                    </a>-->
-<!---->
-<!--                    <h3>-->
-<!--                        <a href="javascript:void(0)">-->
-<!--                            KATARZYNA MICHALAK-->
-<!--                        </a>-->
-<!--                    </h3>-->
-<!---->
-<!--                    <div>-->
-<!--                        <h6>Taniec towarzyski, Taniec użytkowy, Taniec towarzyski dla dzieci</h6>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/magda-mazij.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="MAGDALENA MAZIJ" title="MAGDA MAZIJ">
-                    </a>
+                             class="col-xs-12" alt="MAGDALENA MAZIJ" title="MAGDA MAZIJ">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            MAGDALENA MAZIJ
-                        </a>
-                    </h3>
+                    <h3>MAGDALENA MAZIJ</h3>
 
                     <div>
-                        <h6>Reggaeton, Ladies latino, Sexy dance</h6>
+                        <h6>
+                            Reggaeton,
+                            Ladies latino,
+                            Sexy dance
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/jacek-sztorc.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="JACEK SZTORC" title="JACEK SZTORC">
-                    </a>
+                             class="col-xs-12" alt="JACEK SZTORC" title="JACEK SZTORC">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            JACEK SZTORC
-                        </a>
-                    </h3>
+                    <h3>JACEK SZTORC</h3>
 
                     <div>
-                        <h6><a href="/salsa-kubanska">Salsa kubańska</a>, Rueda de Casino</h6>
+                        <h6>
+                            <a href="/salsa-kubanska">Salsa kubańska</a>,
+                            Rueda de Casino
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/marta-wegrzynowska.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
-                    </a>
+                             class="col-xs-12" alt="MARTA WĘGRZYNOWSKA" title="MARTA WĘGRZYNOWSKA">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            MARTA WĘGRZYNOWSKA
-                        </a>
-                    </h3>
+                    <h3>MARTA WĘGRZYNOWSKA</h3>
 
                     <div>
-                        <h6>Taniec towarzyski, Taniec użytkowy, Balet dla dzieci, Mix dance</h6>
+                        <h6>
+                            Taniec towarzyski,
+                            Taniec użytkowy,
+                            Balet dla dzieci,
+                            Mix dance
+                        </h6>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/julia-utig.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="JULIA UTIG" title="JULIA UTIG">
-                    </a>
+                             class="col-xs-12" alt="JULIA UTIG" title="JULIA UTIG">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            JULIA UTIG
-                        </a>
-                    </h3>
+                    <h3>JULIA UTIG</h3>
 
                     <div>
                         <h6>Zouk</h6>
@@ -181,20 +149,18 @@ Template Name: NEW Instruktorzy
             </div>
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">
-                    <a class="grayHover" href="javascript:void(0)">
+                    <span class="grayHover">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/instructors/martyna-olszewska.jpg"
-                             class="col-xs-12 img-circle"
-                             alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
-                    </a>
+                             class="col-xs-12" alt="MARTYNA OLSZEWSKA" title="MARTYNA OLSZEWSKA">
+                    </span>
 
-                    <h3>
-                        <a href="javascript:void(0)">
-                            MARTYNA OLSZEWSKA
-                        </a>
-                    </h3>
+                    <h3>MARTYNA OLSZEWSKA</h3>
 
                     <div>
-                        <h6>Balet dla dzieci, Balet z elementami gimnastyki artystycznej</h6>
+                        <h6>
+                            Balet dla dzieci,
+                            Balet z elementami gimnastyki artystycznej
+                        </h6>
                     </div>
                 </div>
             </div>
