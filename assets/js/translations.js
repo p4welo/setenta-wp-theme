@@ -21,5 +21,4 @@ angular.module('translations', ['pascalprecht.translate'])
 
       });
       $translateProvider.preferredLanguage('pl');
-      $translateProvider.useSanitizeValueStrategy('sanitize');
     }]);

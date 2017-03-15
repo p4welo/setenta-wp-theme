@@ -152,10 +152,11 @@
                                     Tagi:
                                 </div>
                                 <div style="margin-bottom: 20px">
-                                    <span class="badge badge-danger"
-                                          ng-repeat="tag in post.terms.post_tag"
-                                          ng-bind="::tag.name | uppercase">
-                                    </span>
+                                    <a class="badge badge-danger"
+                                       ng-repeat="tag in post.terms.post_tag"
+                                       ng-href="{{::tag.link}}"
+                                       ng-bind="::tag.name | uppercase">
+                                    </a>
                                 </div>
                             </div>
                         </div>

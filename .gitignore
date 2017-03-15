@@ -3,5 +3,5 @@
 node_modules/
 .version
 !jssor/
-#vendor/
+vendor/moment/
 bin/

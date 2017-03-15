@@ -6,6 +6,13 @@
         </a>
         <span id="year-copy"></span>
     </div>
+    <div class="row text-center">
+        <a href="/salsa-kubanska/">nauka salsy we wrocławiu</a>
+        <a href="/nauka-pierwszego-tanca/">nauka pierwszego tańca</a>
+        <a href="/instruktorzy/">kurs tańca dla narzeczonych</a>
+        <a href="/grafik/">zajęcia taneczne dla dzieci</a>
+        <a href="/bachata/">bachata we wrocławiu</a>
+    </div>
 </footer>
 </div>
 <div id="fb-root"></div>
