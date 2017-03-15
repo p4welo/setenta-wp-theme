@@ -143,6 +143,7 @@ module.exports = function (grunt) {
     }
   });
 
+
   function generateAndSaveNewVersion(path) {
     var version = new Date().getTime();
     grunt.file.write(path, version);
