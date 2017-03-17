@@ -23,7 +23,7 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'assets/**/*.js'],
+      files: ['Gruntfile.js', 'js/**/*.js'],
       options: {
         globals: {
           jQuery: true,
@@ -51,11 +51,11 @@ module.exports = function (grunt) {
           'vendor/jssor/js/jssor.slider.js'
 
         ],
-        dest: dest_dir + '/assets/js/vendor.js'
+        dest: dest_dir + '/vendor.js'
       },
       app: {
         src: [
-          'assets/**/*.js'
+          'js/**/*.js'
         ],
         dest: dest_dir + '/app.js'
       }
@@ -66,21 +66,6 @@ module.exports = function (grunt) {
           {
             src: dest_dir + '/app.js',
             dest: dest_dir + '/app.js'
-          }
-        ]
-      }
-    },
-    cssmin: {
-      target: {
-        options: {
-          keepSpecialComments: 0,
-          preserveLicenseComments: false,
-          rebase: false
-        },
-        files: [
-          {
-            src: 'style.css',
-            dest: dest_dir + '/_style.css'
           }
         ]
       }
@@ -150,6 +135,6 @@ module.exports = function (grunt) {
     return version;
   }
 
-  grunt.registerTask('default', ['bower-install-simple', 'jshint', 'clean', 'concat', 'uglify', 'less', 'cssmin', 'copy', 'replace']);
+  grunt.registerTask('default', ['bower-install-simple', 'jshint', 'clean', 'concat', 'uglify', 'less', 'copy', 'replace']);
 };
 

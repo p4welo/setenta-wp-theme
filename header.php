@@ -25,12 +25,25 @@
     <script src="https://unpkg.com/angular-ui-bootstrap@2.5.0/dist/ui-bootstrap-tpls.js"></script>
     <script src="https://unpkg.com/owl.carousel@2.2.0/dist/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/lodash@4.17.4"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/vendor.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '5d60e928e9491d4623be5d105d16ddd0fa595c53';
+        window.smartsupp||(function(d) {
+            var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+            s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+            c.type='text/javascript';c.charset='utf-8';c.async=true;
+            c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+    </script>
+
 </head>
 <body>
 <div class="main-content visible">

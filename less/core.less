@@ -1,0 +1,26 @@
+@import "variables";
+
+.btn {
+  &:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+
+  &.btn-primary {
+    background-color: @color-primary;
+    border: @color-primary;
+
+    &:focus {
+      outline: 5px auto @color-primary;
+    }
+  }
+
+  &.btn-success {
+    background-color: @color-success;
+    border: @color-success;
+
+    &:focus {
+      outline: 5px auto @color-success;
+    }
+  }
+}
