@@ -6,13 +6,13 @@
         </a>
         <span id="year-copy"></span>
     </div>
-    <div class="row text-center">
-        <a href="/salsa-kubanska/">nauka salsy we wrocławiu</a>
-        <a href="/nauka-pierwszego-tanca/">nauka pierwszego tańca</a>
-        <a href="/instruktorzy/">kurs tańca dla narzeczonych</a>
-        <a href="/grafik/">zajęcia taneczne dla dzieci</a>
-        <a href="/bachata/">bachata we wrocławiu</a>
-    </div>
+<!--    <div class="row text-center">-->
+<!--        <a href="/salsa-kubanska/">nauka salsy we wrocławiu</a>-->
+<!--        <a href="/nauka-pierwszego-tanca/">nauka pierwszego tańca</a>-->
+<!--        <a href="/instruktorzy/">kurs tańca dla narzeczonych</a>-->
+<!--        <a href="/grafik/">zajęcia taneczne dla dzieci</a>-->
+<!--        <a href="/bachata/">bachata we wrocławiu</a>-->
+<!--    </div>-->
 </footer>
 </div>
 <div id="fb-root"></div>
@@ -26,6 +26,23 @@
         js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8&appId=503841366424292";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+</script>
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '5d60e928e9491d4623be5d105d16ddd0fa595c53';
+    window.smartsupp || (function (d) {
+        var s, c, o = smartsupp = function () {
+            o._.push(arguments)
+        };
+        o._ = [];
+        s = d.getElementsByTagName('script')[0];
+        c = d.createElement('script');
+        c.type = 'text/javascript';
+        c.charset = 'utf-8';
+        c.async = true;
+        c.src = '//www.smartsuppchat.com/loader.js?';
+        s.parentNode.insertBefore(c, s);
+    })(document);
 </script>
 <script type="text/javascript">
     window.smartlook||(function(d) {

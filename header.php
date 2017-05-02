@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
     <link href="<?php bloginfo('template_url'); ?>/style.css?@@version" rel="stylesheet" media="all"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -32,17 +33,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '5d60e928e9491d4623be5d105d16ddd0fa595c53';
-        window.smartsupp||(function(d) {
-            var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-            s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-            c.type='text/javascript';c.charset='utf-8';c.async=true;
-            c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-        })(document);
-    </script>
+
 
 </head>
 <body>
@@ -62,8 +53,7 @@
                         <img alt="nauka tańca wrocław" src="<?php bloginfo('template_url'); ?>/assets/img/sys/logo.png">
                     </a>
                 </div>
-                <?php
-                $defaults = array(
+                <?php wp_nav_menu(array(
                     'menu' => 'main-menu',
                     'container' => 'div',
                     'container_class' => 'collapse navbar-collapse',
@@ -79,9 +69,7 @@
                     'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     'depth' => 0,
                     'walker' => ''
-                );
-                wp_nav_menu($defaults);
-                ?>
+                )); ?>
             </div>
         </nav>
     </div>

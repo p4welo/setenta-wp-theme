@@ -8,12 +8,6 @@ $(document).ready(function ($) {
     initHomeSlider();
   }
 
-  setTimeout(function () {
-    $(".loader").addClass("animated slideOutDown");
-    $(".main-content").addClass("visible");
-    $("body").removeClass("loading");
-  }, 1000);
-
   function initYear() {
     var yearCopy = $('#year-copy'), d = new Date();
     if (d.getFullYear() === 2013) {
