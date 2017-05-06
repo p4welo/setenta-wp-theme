@@ -5,40 +5,32 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng-app="schedule">
+    <div ng-app="schedule" class="m-t-64">
         <div class="schedule-page">
-            <div class="container-fluid">
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div ng-repeat="day in days" class="table-responsive">
-                            <legend translate="{{day}}" translate-default=""></legend>
-                            <table class="table table-condensed">
-                                <thead>
-                                <tr>
-                                    <th>godz</th>
-                                    <th>nazwa</th>
-                                    <th>instruktor</th>
-                                    <th>poziom</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-
-                                <tr ng-repeat="course in courses[day]" ng-if="!course.registration">
-                                    <td>
-                                        <span ng-bind="course.startTime"></span>
-                                        -
-                                        <span ng-bind="course.endTime"></span>
-                                    </td>
-                                    <td ng-bind="course.name"></td>
-                                    <td ng-bind="course.instructor"></td>
-                                    <td translate="{{course.level}}"></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+                <legend class="visible-xs-block" translate="{{day}}" translate-default=""></legend>
+                <ul class="list-feed">
+                    <li ng-repeat="day in days">
+                        <span class="feed-time text-muted label label-success label-rounded label-icon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <strong class="feed-day" translate="{{day}}" translate-default=""></strong>
+                        <ul class="list-group">
+                            <li class="list-group-item ng-binding ng-scope" ng-repeat="course in courses[day]">
+                                <div ng-bind="course.startTime" style="position: absolute"></div>
+                                <div style="margin-left: 70px">
+                                    <h5 class="list-group-item-heading">
+                                        <strong ng-bind="course.name"></strong>
+                                        <span class="label label-striped"
+                                              translate="{{course.level}}"
+                                              translate-default></span>
+                                    </h5>
+                                    <p class="list-group-item-text text-muted" ng-bind="course.instructor"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="instructor-row row">

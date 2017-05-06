@@ -5,7 +5,7 @@ Template Name: Kontakt
 ?>
 
 <?php get_header(); ?>
-    <div class="page">
+    <div class="page m-t-64">
 <!--            <div class="map" id="mapka"></div>-->
             <div>
                 <div class="container" style="padding-top: 20px">

@@ -5,7 +5,7 @@ Template Name: Pokazy
 ?>
 
 <?php get_header(); ?>
-    <div>
+    <div class="m-t-64">
         <div class="shows-page">
             <div class="container">
                 <div class="col-md-8 col-sm-7 col-xs-12">

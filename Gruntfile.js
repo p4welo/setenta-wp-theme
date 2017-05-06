@@ -46,11 +46,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       vendor: {
-        src: [
-          'vendor/jssor/js/jssor.js',
-          'vendor/jssor/js/jssor.slider.js'
-
-        ],
+        src: [],
         dest: dest_dir + '/vendor.js'
       },
       app: {
@@ -84,12 +80,6 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          {
-            expand: true,
-            cwd: 'vendor/jssor/img/',
-            src: '**/*',
-            dest: dest_dir + '/assets/img/jssor/'
-          },
           {
             expand: true,
             cwd: 'assets/img/',

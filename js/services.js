@@ -1,6 +1,6 @@
 angular.module('services', [])
 
-    .factory('courseFactory', function () {
+    .factory('courseFactory', ['$http', '$q', function ($http, $q) {
 
       var courses = [
         {
@@ -142,7 +142,7 @@ angular.module('services', [])
         {
           startTime: '17:45',
           endTime: '18:30',
-          name: 'Balet z elem. gimnastyki artysty3nej (4-7 lat)',
+          name: 'Balet z elem. gimnastyki artystycznej (4-7 lat)',
           instructor: 'Magda Mróz-Murawska',
           level: 'BEG',
           day: 'CZ'
@@ -254,6 +254,10 @@ angular.module('services', [])
       }
 
       function getByDay() {
-        return _.groupBy(courses, 'day');
+        var deferred = $q.defer();
+        $http.get('http://p4welo.usermd.net/api/course').then(function (result) {
+          return deferred.resolve(_.groupBy(result.data, 'day'));
+        });
+        return deferred.promise;
       }
-    });
+    }]);

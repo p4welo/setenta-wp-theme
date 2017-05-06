@@ -5,7 +5,7 @@ Template Name: NEW  Cennik
 ?>
 
 <?php get_header(); ?>
-    <div class="pricelist-page row">
+    <div class="pricelist-page row m-t-64">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-xs-12">

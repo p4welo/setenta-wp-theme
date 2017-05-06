@@ -4,7 +4,7 @@ Template Name: NEW Instruktorzy
 */
 ?>
 <?php get_header(); ?>
-    <div class="instrucors-page row">
+    <div class="instrucors-page row m-t-64">
         <div class="container">
             <div class="col-xs-6 col-lg-3">
                 <div class="team-member">

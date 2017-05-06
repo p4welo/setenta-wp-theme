@@ -12,46 +12,60 @@
         </div>
     </script>
     <div class="news-page">
-    <div id="slider-container" class="slider-container">
-        <div u="loading" class="slider-loading">
-            <div class="slider-back">
-            </div>
-            <div class="slider-indicator text-center">
-                <i class="fa fa-spin fa-spinner"></i>
-            </div>
-        </div>
-        <div u="slides" class="slider-slides">
-            <div>
-                <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/3.jpg"/>
-
-                <div
-                    style="position: absolute; top: 300px; left: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000">
-                    PIERWSZY TANIEC
+<!--    <div id="slider-container" class="slider-container">-->
+<!--        <div u="loading" class="slider-loading">-->
+<!--            <div class="slider-back">-->
+<!--            </div>-->
+<!--            <div class="slider-indicator text-center">-->
+<!--                <i class="fa fa-spin fa-spinner"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div u="slides" class="slider-slides">-->
+<!--            <div>-->
+<!--                <img u="image" src="--><?php //bloginfo('template_url'); ?><!--/assets/img/carousel/3.jpg"/>-->
+<!---->
+<!--                <div-->
+<!--                    style="position: absolute; top: 300px; left: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000">-->
+<!--                    PIERWSZY TANIEC-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img u="image" src="--><?php //bloginfo('template_url'); ?><!--/assets/img/carousel/1.jpg"/>-->
+<!---->
+<!--                <div-->
+<!--                    style="position: absolute; top: 300px; right: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000; display:inline">-->
+<!--                    TANIEC W PARACH-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img u="image" src="--><?php //bloginfo('template_url'); ?><!--/assets/img/carousel/2.jpg"/>-->
+<!---->
+<!--                <div-->
+<!--                    style="position: absolute; top: 300px; left: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000">-->
+<!--                    ZAJĘCIA SOLO-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div u="navigator" class="jssorb21">-->
+<!--            <div u="prototype" class="slider-prototype"></div>-->
+<!--        </div>-->
+<!--        <span u="arrowleft" class="jssora21l"></span>-->
+<!--        <span u="arrowright" class="jssora21r"></span>-->
+<!--    </div>-->
+        <div class="slider-area" id="home" style="background: rgba(0, 0, 0, 0) url(<?php bloginfo('template_url');
+        ?>/assets/img/carousel/2.jpg) no-repeat scroll center 50% / cover;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider-content-wrapper row text-center">
+                            <a href="/grafik/" class="btn btn-lg btn-success" style="top: 50vh;margin: 0 auto;font-size: 24px;
+                            position: relative;
+                            ">PRZEJDŹ DO GRAFIKU</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/1.jpg"/>
-
-                <div
-                    style="position: absolute; top: 300px; right: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000; display:inline">
-                    TANIEC W PARACH
-                </div>
-            </div>
-            <div>
-                <img u="image" src="<?php bloginfo('template_url'); ?>/assets/img/carousel/2.jpg"/>
-
-                <div
-                    style="position: absolute; top: 300px; left: 30px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; background-color: #000">
-                    ZAJĘCIA SOLO
-                </div>
-            </div>
         </div>
-        <div u="navigator" class="jssorb21">
-            <div u="prototype" class="slider-prototype"></div>
-        </div>
-        <span u="arrowleft" class="jssora21l"></span>
-        <span u="arrowright" class="jssora21r"></span>
-    </div>
     <div ng-app="news">
         <div class="news-content row" id="news">
             <div class="container">

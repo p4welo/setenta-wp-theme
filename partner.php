@@ -4,7 +4,7 @@ Template Name: Partner do tanca
 */
 ?>
 <?php get_header(); ?>
-    <div class="news-page">
+    <div class="news-page m-t-64">
     <div class="news-content partner-content single-page row">
         <div class="container">
             <div class="col-sm-8">

@@ -18,6 +18,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
     <script src="https://unpkg.com/angular@1.5.9/angular.min.js"></script>
     <script src="https://unpkg.com/angular-sanitize@1.5.9/angular-sanitize.min.js"></script>
     <script src="https://unpkg.com/angular-animate@1.5.9/angular-animate.min.js"></script>
@@ -32,9 +33,6 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
-
 </head>
 <body>
 <div class="main-content visible">

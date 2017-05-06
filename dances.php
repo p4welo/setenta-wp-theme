@@ -5,7 +5,7 @@ Template Name: Style taneczne
 ?>
 
 <?php get_header(); ?>
-    <div>
+    <div class="m-t-64">
         <div class="schedule-page">
             Style taneczne
         </div>

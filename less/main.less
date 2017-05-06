@@ -13,7 +13,7 @@ html {
   body {
     font-family: Lato, "Helvetica Neue", Arial, Helvetica, "sans-serif" !important;
     background-color: @color-light-gray;
-    padding-top: 64px;
+    //padding-top: 64px;
 
     h3, h2 {
       font-family: 'Oswald', sans-serif;
@@ -104,6 +104,12 @@ dl.emphasize {
   border: 0;
   margin-bottom: 0;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+
+  //&.headroom--unpinned,
+  &.nav-up {
+    top: -70px;
+  }
 
   @media (max-width: 767px) {
     .navbar-brand {
@@ -699,16 +705,6 @@ footer {
   background-color: @color-primary;
 }
 
-.label-success {
-  background-color: @color-success;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #07AFAA !important;
-  }
-}
-
 .news-content .badge-danger,
 .news-content .label-danger {
   margin-right: 10px;
@@ -883,4 +879,8 @@ body.loading, .loader {
   right: 0px;
   margin: auto;
   -moz-user-select: none;
+}
+
+.m-t-64 {
+  margin-top: 84px;
 }
