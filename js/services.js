@@ -255,7 +255,7 @@ angular.module('services', [])
 
       function getByDay() {
         var deferred = $q.defer();
-        $http.get('http://p4welo.usermd.net/api/course').then(function (result) {
+        $http.get('http://p4welo.usermd.net/api/course/list').then(function (result) {
           return deferred.resolve(_.groupBy(result.data, 'day'));
         });
         return deferred.promise;

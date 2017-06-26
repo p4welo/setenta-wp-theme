@@ -58,7 +58,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="slider-content-wrapper row text-center">
-                            <a href="/grafik/" class="btn btn-lg btn-success" style="top: 50vh;margin: 0 auto;font-size: 24px;
+                            <a href="/grafik/" class="btn btn-lg btn-success animated fadeInDown btn-callToAction"
+                               style="top:
+                            50vh;margin: 0 auto;font-size: 24px;
                             position: relative;
                             ">PRZEJDŹ DO GRAFIKU</a>
                         </div>
