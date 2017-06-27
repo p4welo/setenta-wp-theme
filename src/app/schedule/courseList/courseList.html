@@ -1,0 +1,25 @@
+<ul class="list-feed">
+  <li ng-repeat="day in $ctrl.days">
+    <span class="feed-time text-muted label label-success label-rounded label-icon">
+      <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+    <strong class="feed-day" translate="DAYS.LONG.DAY{{day.id}}" translate-default=""></strong>
+    <ul class="list-group">
+      <li class="list-group-item ng-binding ng-scope" ng-repeat="course in $ctrl.courses[day.id] |
+          orderBy: 'timeFrom'">
+          <!--ng-click="$ctrl.register(course)">-->
+        <div ng-bind="course.timeFrom" style="position: absolute"></div>
+        <div style="margin-left: 70px">
+          <h5 class="list-group-item-heading">
+            <strong ng-bind="course.name"></strong>
+            <span class="label label-striped"
+                  translate="LEVELS.{{course.level}}"
+                  translate-default></span>
+          </h5>
+          <p class="list-group-item-text text-muted" ng-bind="course.instructor"></p>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+<a href ng-click="$ctrl.register($ctrl.courses[0][0])">.</a>
