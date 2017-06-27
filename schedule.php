@@ -5,35 +5,14 @@ Template Name: NEW Grafik
 ?>
 
 <?php get_header(); ?>
-    <div ng-app="schedule" class="m-t-64">
+    <div class="m-t-64">
         <div class="schedule-page">
-            <div class="container">
-                <ul class="list-feed">
-                    <li ng-repeat="day in days">
-                        <span class="feed-time text-muted label label-success label-rounded label-icon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                        <strong class="feed-day" translate="DAYS.LONG.DAY{{day.id}}" translate-default=""></strong>
-                        <ul class="list-group">
-                            <li class="list-group-item ng-binding ng-scope" ng-repeat="course in courses[day.id] |
-                            orderBy: 'timeFrom'">
-                                <div ng-bind="course.timeFrom" style="position: absolute"></div>
-                                <div style="margin-left: 70px">
-                                    <h5 class="list-group-item-heading">
-                                        <strong ng-bind="course.name"></strong>
-                                        <span class="label label-striped"
-                                              translate="LEVELS.{{course.level}}"
-                                              translate-default></span>
-                                    </h5>
-                                    <p class="list-group-item-text text-muted" ng-bind="course.instructor"></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="container" id="application">
+                <schedule></schedule>
             </div>
         </div>
         <div class="instructor-row row">
+
             <div class="container">
                 <h2>INSTRUKTORZY</h2>
             </div>
@@ -88,19 +67,5 @@ Template Name: NEW Grafik
                 </div>
             </div>
         </div>
-
-        <script type="text/ng-template" id="myModalContent.html">
-            <div class="modal-header">
-                <h3 class="modal-title" id="modal-title">header</h3>
-            </div>
-            <div class="modal-body" id="modal-body">
-                body
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
-                <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-            </div>
-        </script>
     </div>
-
 <?php get_footer(); ?>

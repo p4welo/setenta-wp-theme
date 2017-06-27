@@ -50,9 +50,7 @@ module.exports = function (grunt) {
         dest: dest_dir + '/vendor.js'
       },
       app: {
-        src: [
-          'js/**/*.js'
-        ],
+        src: 'js/vendor_plugins.js',
         dest: dest_dir + '/app.js'
       }
     },

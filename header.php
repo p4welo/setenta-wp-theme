@@ -19,14 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
-    <script src="https://unpkg.com/angular@1.5.9/angular.min.js"></script>
-    <script src="https://unpkg.com/angular-sanitize@1.5.9/angular-sanitize.min.js"></script>
-    <script src="https://unpkg.com/angular-animate@1.5.9/angular-animate.min.js"></script>
-    <script src="https://unpkg.com/angular-touch@1.5.9/angular-touch.min.js"></script>
-    <script src="https://unpkg.com/angular-translate@2.13.1/dist/angular-translate.min.js"></script>
-    <script src="https://unpkg.com/angular-ui-bootstrap@2.5.0/dist/ui-bootstrap-tpls.js"></script>
     <script src="https://unpkg.com/owl.carousel@2.2.0/dist/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/lodash@4.17.4"></script>
     <script src="<?php bloginfo('template_url'); ?>/vendor.js"></script>
 
     <!--[if lt IE 9]>

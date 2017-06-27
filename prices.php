@@ -139,6 +139,11 @@ Template Name: NEW  Cennik
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="container" id="application">
+{{2+3}}
+            </div>
+        </div>
         <div class="instructor-row row">
             <div class="container">
                 <h2>INSTRUKTORZY</h2>
