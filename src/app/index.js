@@ -4,6 +4,7 @@ import ngAnimate from 'angular-animate';
 import ngSanitize from 'angular-sanitize';
 import uiBootstrap from 'angular-ui-bootstrap';
 import config from './config';
+import core from './core';
 import newsFeed from './news-feed';
 import schedule from './schedule';
 
@@ -16,6 +17,7 @@ if (el) {
     ngAnimate,
     uiBootstrap,
     config,
+    core,
     newsFeed,
     schedule
   ]).name;

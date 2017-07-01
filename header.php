@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://unpkg.com/owl.carousel@2.2.0/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/notyf@2.0.1/dist/notyf.min.css">
     <link href="<?php bloginfo('template_url'); ?>/style.css?@@version" rel="stylesheet" media="all"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -63,4 +64,8 @@
                 )); ?>
             </div>
         </nav>
+        <script>
+            $('.sub-menu').addClass('dropdown-menu');
+            $('.menu-item-has-children a').addClass('dropdown-toggle').dropdown();
+        </script>
     </div>

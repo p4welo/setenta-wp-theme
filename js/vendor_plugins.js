@@ -1,14 +1,9 @@
 $(document).ready(function ($) {
 
-  var navbarElement = $("nav");
-  //Headroom.options.offset = 20;
-  //Headroom.options.tolerance = {
-  //  up : 5,
-  //  down : 0
-  //};
+  //$('.sub-menu').addClass('dropdown-menu');
+  //$('.menu-item-has-children a').addClass('dropdown-toggle').dropdown();
 
-  //var headroom  = new Headroom(navbarElement);
-  //headroom.init();
+  var navbarElement = $("nav");
 
   var didScroll;
   var lastScrollTop = 0;

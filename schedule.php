@@ -8,16 +8,24 @@ Template Name: NEW Grafik
     <div class="m-t-64">
         <div class="schedule-page">
             <div class="container" id="application">
+                <!--<div class="row" style="height:200px">
+                    <img src="http://setenta.wroclaw.pl/wp-content/uploads/2017/06/Hip-hop-Dance-Wallpapers-1.jpg"
+                         style="
+                            position: absolute;
+                            right: 0;
+                            width: 400px;
+                            top: -20px;
+                     "></div>-->
                 <schedule></schedule>
             </div>
         </div>
-        <div class="instructor-row row">
+        <div class="instructor-row">
 
             <div class="container">
                 <h2>INSTRUKTORZY</h2>
             </div>
         </div>
-        <div class="instructor-row row">
+        <div class="instructor-row">
             <div class="container">
                 <div class="owl-carousel">
                     <div class="item">

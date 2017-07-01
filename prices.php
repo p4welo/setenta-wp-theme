@@ -5,9 +5,9 @@ Template Name: NEW  Cennik
 ?>
 
 <?php get_header(); ?>
-    <div class="pricelist-page row m-t-64">
+    <div class="pricelist-page m-t-64">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <div class="col-sm-8 col-xs-12">
                     <div class="alert alert-danger animated shake">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch
                             tygodni</u>
@@ -139,17 +139,12 @@ Template Name: NEW  Cennik
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="container" id="application">
-{{2+3}}
-            </div>
-        </div>
-        <div class="instructor-row row">
+        <div class="instructor-row">
             <div class="container">
                 <h2>INSTRUKTORZY</h2>
             </div>
         </div>
-        <div class="instructor-row row">
+        <div class="instructor-row">
             <div class="container">
                 <div class="owl-carousel">
                     <div class="item">

@@ -47,12 +47,12 @@ Template Name: Kontakt
             </div>
         </div>
     </div>
-    <div class="instructor-row row">
+    <div class="instructor-row">
         <div class="container">
             <h2>INSTRUKTORZY</h2>
         </div>
     </div>
-    <div class="instructor-row row">
+    <div class="instructor-row">
         <div class="container">
             <div class="owl-carousel">
                 <div class="item">

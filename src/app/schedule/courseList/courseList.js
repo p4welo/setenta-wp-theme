@@ -2,7 +2,7 @@ import template from './courseList.html';
 
 export default {
   template: template,
-  controller(scheduleService, $uibModal) {
+  controller(scheduleService, notificationService, $uibModal) {
     'ngInject';
 
     this.register = (course) => {
@@ -11,7 +11,9 @@ export default {
         resolve: {
           course: () => course
         }
-      })
+      }).result.then((result) => {
+        notificationService.success("Pomyślnie zapisano na kurs");
+      });
     };
 
     this.$onInit = () => {

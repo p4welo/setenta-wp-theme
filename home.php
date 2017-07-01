@@ -55,7 +55,7 @@
         <div class="slider-area" id="home" style="background: rgba(0, 0, 0, 0) url(<?php bloginfo('template_url');
         ?>/assets/img/carousel/2.jpg) no-repeat scroll center 50% / cover;">
             <div class="container-fluid">
-                <div class="row">
+                <div class="">
                     <div class="col-lg-12">
                         <div class="slider-content-wrapper row text-center">
                             <a href="/grafik/" class="btn btn-lg btn-success animated fadeInDown btn-callToAction"
@@ -69,7 +69,8 @@
             </div>
         </div>
     <div>
-        <div class="news-content row" id="news">
+        <div class="news-content " id="news">
+
             <div class="container" id="application">
                 <news-feed></news-feed>
 <!--                <div class="col-sm-8">-->
@@ -223,12 +224,12 @@
             </noscript>
         </div>
 
-        <div class="instructor-row row">
+        <div class="instructor-row">
             <div class="container">
                 <h2>INSTRUKTORZY</h2>
             </div>
         </div>
-        <div class="instructor-row row">
+        <div class="instructor-row">
             <div class="container">
                 <div class="owl-carousel">
                     <div class="item">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="news-page m-t-64">
-    <div class="news-content single-page row">
+    <div class="news-content single-page">
         <div class="container">
             <div class="col-sm-8">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -66,12 +66,12 @@
         </div>
     </div>
 
-    <div class="instructor-row row">
+    <div class="instructor-row">
         <div class="container">
             <h2>INSTRUKTORZY</h2>
         </div>
     </div>
-    <div class="instructor-row row">
+    <div class="instructor-row">
         <div class="container">
             <div class="owl-carousel">
                 <div class="item">

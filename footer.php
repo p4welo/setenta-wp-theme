@@ -1,5 +1,5 @@
 <footer>
-    <div class="row second-line text-center">
+    <div class="second-line text-center">
         &copy;
         <a href="http://setenta.wroclaw.pl">
             Szkoła tańca Wrocław
@@ -10,7 +10,7 @@
 </div>
 <div id="fb-root"></div>
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
-<script src="<?php bloginfo('template_url'); ?>/bundle.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
 <script>
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];

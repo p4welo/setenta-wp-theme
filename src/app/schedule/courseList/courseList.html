@@ -4,10 +4,9 @@
       <span class="glyphicon glyphicon-calendar"></span>
     </span>
     <strong class="feed-day" translate="DAYS.LONG.DAY{{day.id}}" translate-default=""></strong>
-    <ul class="list-group">
-      <li class="list-group-item ng-binding ng-scope" ng-repeat="course in $ctrl.courses[day.id] |
-          orderBy: 'timeFrom'">
-          <!--ng-click="$ctrl.register(course)">-->
+    <div class="list-group" style="margin-bottom: 5px;">
+      <a href class="list-group-item ng-binding ng-scope" ng-repeat="course in $ctrl.courses[day.id] |
+          orderBy: 'timeFrom'" ng-click="$ctrl.register(course)">
         <div ng-bind="course.timeFrom" style="position: absolute"></div>
         <div style="margin-left: 70px">
           <h5 class="list-group-item-heading">
@@ -18,8 +17,10 @@
           </h5>
           <p class="list-group-item-text text-muted" ng-bind="course.instructor"></p>
         </div>
-      </li>
-    </ul>
+      </a>
+    </div>
+    <p class="text-muted">
+      Kliknij wybrany kurs żeby się zapisać.
+    </p>
   </li>
 </ul>
-<a href ng-click="$ctrl.register($ctrl.courses[0][0])">.</a>
