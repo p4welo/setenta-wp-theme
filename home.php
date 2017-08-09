@@ -1,16 +1,4 @@
 <?php get_header(); ?>
-  <script type="text/ng-template" id="myModalContent.html">
-    <div class="modal-header">
-      <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
-    </div>
-    <div class="modal-body" id="modal-body">
-      Selected: <b>{{ course|json }}</b>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
-      <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-    </div>
-  </script>
   <div class="news-page">
     <div class="slider-area" id="home" style="background: rgba(0, 0, 0, 0) url(<?php bloginfo('template_url');
     ?>/assets/img/carousel/2.jpg) no-repeat scroll center 50% / cover;">

@@ -19,11 +19,11 @@ Template Name: NEW Grafik
                      "></div>-->
 <!--                <schedule></schedule>-->
 <!--                <main></main>-->
-<!--                --><?php
-                if ( is_user_logged_in() ) {
+                <?php
+                if (is_user_logged_in()) {
                     echo '<schedule></schedule>';
                 }
-//                ?>
+                ?>
                 <div class="alert alert-success">Grafik na nowy sezon już niedługo!</div>
                 <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
             </div>
