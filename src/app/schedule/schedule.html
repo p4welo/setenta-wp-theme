@@ -1,1 +1,7 @@
-<course-list></course-list>
+<div class="schedule">
+  <!--<course-list-filter days="::$ctrl.days"></course-list-filter>-->
+  <course-list-group ng-repeat="day in ::$ctrl.days"
+                     courses="::$ctrl.courses"
+                     day="day"></course-list-group>
+  <!--<course-list2></course-list2>-->
+</div>

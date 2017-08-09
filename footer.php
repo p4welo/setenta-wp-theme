@@ -10,7 +10,7 @@
 </div>
 <div id="fb-root"></div>
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
-<script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/bundle.js?@@version"></script>-->
 <script>
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,23 +21,23 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '5d60e928e9491d4623be5d105d16ddd0fa595c53';
-    window.smartsupp || (function (d) {
-        var s, c, o = smartsupp = function () {
-            o._.push(arguments)
-        };
-        o._ = [];
-        s = d.getElementsByTagName('script')[0];
-        c = d.createElement('script');
-        c.type = 'text/javascript';
-        c.charset = 'utf-8';
-        c.async = true;
-        c.src = '//www.smartsuppchat.com/loader.js?';
-        s.parentNode.insertBefore(c, s);
-    })(document);
-</script>
+<!--<script type="text/javascript">-->
+<!--    var _smartsupp = _smartsupp || {};-->
+<!--    _smartsupp.key = '5d60e928e9491d4623be5d105d16ddd0fa595c53';-->
+<!--    window.smartsupp || (function (d) {-->
+<!--        var s, c, o = smartsupp = function () {-->
+<!--            o._.push(arguments)-->
+<!--        };-->
+<!--        o._ = [];-->
+<!--        s = d.getElementsByTagName('script')[0];-->
+<!--        c = d.createElement('script');-->
+<!--        c.type = 'text/javascript';-->
+<!--        c.charset = 'utf-8';-->
+<!--        c.async = true;-->
+<!--        c.src = '//www.smartsuppchat.com/loader.js?';-->
+<!--        s.parentNode.insertBefore(c, s);-->
+<!--    })(document);-->
+<!--</script>-->
 <script type="text/javascript">
     window.smartlook||(function(d) {
         var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];

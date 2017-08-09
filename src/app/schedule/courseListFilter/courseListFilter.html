@@ -1,0 +1,13 @@
+<div class="panel panel-default course-list-filter">
+  <div class="panel-body">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="day">Dzień</label>
+        <select class="form-control" id="day" ng-model="$ctrl.day">
+          <option value="">Wszystkie</option>
+          <option ng-value="{{day.id}}" ng-repeat="day in ::$ctrl.days" ng-bind="day.label"></option>
+        </select>
+      </div>
+    </form>
+  </div>
+</div>

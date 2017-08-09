@@ -1,0 +1,12 @@
+<div class="course-group">
+  <div class="course-group__header">
+    <span class="course-group__header--icon label label-success label-rounded label-icon pull-left">
+      <i class="glyphicon glyphicon-calendar"></i>
+    </span>
+    <h3 class="course-group__header--label">
+      <span ng-bind="::$ctrl.day.label"></span>
+      <small>Wybierz kurs żeby rozwinąć szczegóły</small>
+    </h3>
+  </div>
+  <course-list courses="$ctrl.courses" day="$ctrl.day"></course-list>
+</div>

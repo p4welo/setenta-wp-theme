@@ -59,3 +59,135 @@
     }
   }
 }
+
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext');
+
+.schedule {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+  .course-list-filter {
+    > .panel-body:before {
+      content: 'FILTRUJ';
+      font-size: 12px;
+      font-weight: 700;
+      color: #959595;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .course-group {
+    margin-bottom: 50px;
+
+    &__header {
+      font-weight: 300;
+      margin-bottom: 20px;
+      margin-top: 30px;
+
+      &--icon {
+        background-color: #07BEB8;
+        border: #07BEB8;
+        padding: 9px 9px 11px 12px;
+        line-height: 1;
+        border-radius: 100px;
+        font-size: 18px;
+      }
+
+      &--label {
+        font-family: 'Lato', sans-serif;
+        margin-left: 50px;
+        padding-top: 7px;
+      }
+    }
+
+    .course-list {
+      &__item {
+        border-left: 3px solid @color-primary;
+        box-shadow: 0 8px 6px -6px #aaa;
+        padding: 2px 15px;
+
+        &.opened {
+          color: #555;
+          background-color: #f5f5f5;
+        }
+
+        &--time {
+          position: absolute;
+          font-size: 2em;
+        }
+
+        &--title {
+          margin-left: 100px;
+
+          h4 {
+            font-weight: 300;
+            color: #555;
+
+            .label {
+              color: white;
+              border-left-width: 2px;
+              font-size: 12px;
+              font-weight: 300;
+              padding: 5px 10px;
+
+              &.label-primary {
+                background-color: @color-primary;
+              }
+              &.label-striped {
+                background-color: @color-success;
+              }
+            }
+          }
+        }
+
+        &--description {
+          background-color: transparent;
+          padding: 0 10px 0 10px;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-bottom-color: transparent;
+          border-width: 0;
+
+          > div {
+            //transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: all 400ms cubic-bezier(0.63, 0.04, 0.33, 0.96);
+            max-height: 0;
+            overflow: hidden;
+          }
+
+          &.opened {
+            > div {
+              max-height: 500px !important;
+              margin-bottom: 10px;
+            }
+            //animation: toggle-height-500 .4s cubic-bezier(0.63, 0.04, 0.33, 0.96);
+            //animation-fill-mode: forwards;
+            //animation-direction: normal;
+          }
+
+          .panel {
+            margin-bottom: 0;
+            border-top: 0;
+            border-radius: 0;
+            box-shadow: 0 8px 6px -6px #aaa;
+          }
+        }
+      }
+
+      @keyframes toggle-height-500 {
+        0% {
+          max-height: 0;
+        }
+        100% {
+          border-width: 1px;
+          max-height: 500px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+

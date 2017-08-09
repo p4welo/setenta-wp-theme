@@ -5,8 +5,8 @@ import ngSanitize from 'angular-sanitize';
 import uiBootstrap from 'angular-ui-bootstrap';
 import config from './config';
 import core from './core';
-import newsFeed from './news-feed';
 import schedule from './schedule';
+import newsFeed from './news-feed';
 
 
 const el = document.getElementById("application");

@@ -1,0 +1,33 @@
+<div class="panel-body" ng-if="!$ctrl.course.register">
+  <h4 ng-bind="::$ctrl.course.name"></h4>
+  <div class="row">
+    <div class="col-sm-6">
+      <dl>
+        <dt>Termin</dt>
+        <dd>
+          <span translate="DAYS.LONG.DAY{{::$ctrl.course.day}}"
+                translate-default=""></span>
+          <span ng-bind="::$ctrl.course.timeFrom"></span>
+          -
+          <span ng-bind="::$ctrl.course.timeTo"></span>
+        </dd>
+      </dl>
+      <dl>
+        <dt ng-if="::$ctrl.course.instructor">Prowadzący</dt>
+        <dd ng-bind="::$ctrl.course.instructor"></dd>
+      </dl>
+    </div>
+    <div class="col-sm-6">
+      <dl>
+        <dt>Szczegóły kursu</dt>
+        <!--<dt ng-if="::$ctrl.course.details">Szczegóły kursu</dt>-->
+        <dd ng-bind="::$ctrl.course.details"></dd>
+      </dl>
+    </div>
+  </div>
+  <p class="text-center">
+    <button class="btn btn-primary btn-lg" ng-if="::$ctrl.course.isRegistrationOpen"
+            ng-click="$ctrl.register($ctrl.course)">Zapisz się</button>
+    <span ng-if="::!$ctrl.course.isRegistrationOpen">Zapisy zamknięte</span>
+  </p>
+</div>

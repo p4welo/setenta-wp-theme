@@ -1,19 +1,18 @@
 <form class="form-horizontal" ng-submit="$ctrl.ok()" name="form">
   <div class="modal-header">
-    <h3 class="modal-title">Zapisz się na kurs</h3>
+    <h4 class="modal-title pull-left">Zapisz się na kurs</h4>
+    <button ng-click="$ctrl.cancel()" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
   </div>
   <div class="modal-header text-center">
     <p>
       <strong ng-bind="::$ctrl.course.name"></strong>
-    </p>
-    <p>
       <span class="label label-striped">
         Poziom
-        <span translate="LEVELS.{{$ctrl.course.level}}" translate-default></span>
+        <span translate="LEVELS.{{::$ctrl.course.level}}" translate-default></span>
       </span>
     </p>
     <p>
-      <span translate="DAYS.LONG.DAY{{$ctrl.course.day}}" translate-default=""></span>
+      <span translate="DAYS.LONG.DAY{{::$ctrl.course.day}}" translate-default=""></span>
       -
       <span ng-bind="::$ctrl.course.timeFrom"></span>
     </p>
@@ -63,6 +62,9 @@
                placeholder="Email"
                ng-model="$ctrl.customer.email"
                required>
+               <!--uib-popover="Na podany adres email wyślemy potwierdzenie rezerwacji"-->
+               <!--popover-placement="bottom"-->
+               <!--popover-trigger="outsideClick">-->
       </div>
     </div>
     <div class="form-group">
@@ -77,12 +79,20 @@
                placeholder="Telefon"
                ng-model="$ctrl.customer.phone"
                required>
+               <!--uib-popover="Na podany numer telefonu wyślemy sms gdy będzie znany termin pierwszych zajęć"-->
+               <!--popover-placement="bottom"-->
+               <!--popover-trigger="outsideClick">-->
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-8 col-sm-offset-4">
-        <span class="text-danger">*</span>
-        - pole wymagane
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="$ctrl.customer.agreement" required>
+            <span class="text-danger">*</span>
+            Wyrażam zgodę na przetwarzanie moich danych osobowych przez Szkołę tańca Setenta
+          </label>
+        </div>
       </div>
     </div>
     <div class="form-group">
@@ -95,9 +105,17 @@
         <input type="hidden" ng-model="$ctrl.customer.recaptcha" required>
       </div>
     </div>
+    <div class="form-group">
+      <div class="col-sm-8 col-sm-offset-4">
+        <span class="text-danger">*</span>
+        - pole wymagane
+      </div>
+    </div>
+    <!--<div class="form-group text-center">Uwaga! Podanie nieprawidłowych danych może uniemożliwić odebranie biletu lub złożenie ewentualnej reklamacji</div>-->
   </div>
   <div class="modal-footer">
     <button class="btn btn-link" type="button" ng-click="$ctrl.cancel()">Anuluj</button>
     <button class="btn btn-primary" type="submit" ng-disabled="form.$invalid">Zapisz się!</button>
+    <p class="text-right text-danger" ng-if="form.$dirty && form.$invalid">Wypełnij wymagane pola</p>
   </div>
 </form>

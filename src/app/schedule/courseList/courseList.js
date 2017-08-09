@@ -2,25 +2,28 @@ import template from './courseList.html';
 
 export default {
   template: template,
-  controller(scheduleService, notificationService, $uibModal) {
+  bindings: {
+    day: '<',
+    courses: '<'
+  },
+  controller() {
     'ngInject';
 
-    this.register = (course) => {
-      $uibModal.open({
-        component: 'registerToCourse',
-        resolve: {
-          course: () => course
+    this.toggleOpen = (course) => {
+      course.opened=!course.opened;
+      this.courses.map((c) => {
+        if (c._id !== course._id) {
+          c.opened = false;
         }
-      }).result.then((result) => {
-        notificationService.success("Pomyślnie zapisano na kurs");
-      });
+      })
     };
 
     this.$onInit = () => {
-      this.days = scheduleService.getDays();
-      scheduleService.getByDay().then((result) => {
-        this.courses = result;
-      });
+      this.levels = {
+        BEG: {label: 'Początkujący'},
+        INT: {label: 'Średniozaawansowany'},
+        ADV: {label: 'Zaawansowany'}
+      };
     }
   }
 };

@@ -11,21 +11,25 @@ class ScheduleService {
 
   getDays() {
     return [
-      {id: 0},
-      {id: 1},
-      {id: 2},
-      {id: 3},
-      {id: 4},
-      {id: 5},
-      {id: 6}
+      {id: 0, label: 'Poniedziałek'},
+      {id: 1, label: 'Wtorek'},
+      {id: 2, label: 'Środa'},
+      {id: 3, label: 'Czwartek'},
+      {id: 4, label: 'Piątek'},
+      {id: 5, label: 'Sobota'},
+      {id: 6, label: 'Niedziela'}
     ];
   }
 
   getByDay() {
     const deferred = this.$q.defer();
-    this.$http.get('http://p4welo.usermd.net/api/course/list')
+    this.$http.get('http://p4welo.usermd.net/api/course')
         .then((result) => deferred.resolve(_.groupBy(result.data, 'day')));
     return deferred.promise;
+  }
+
+  findAll() {
+    return this.$http.get('http://p4welo.usermd.net/api/course');
   }
 
   registerToCourse(courseId, customerData) {

@@ -8,17 +8,28 @@ Template Name: NEW Grafik
     <div class="m-t-64">
         <div class="schedule-page">
             <div class="container" id="application">
+                <h1>Grafik zajęć</h1>
                 <!--<div class="row" style="height:200px">
                     <img src="http://setenta.wroclaw.pl/wp-content/uploads/2017/06/Hip-hop-Dance-Wallpapers-1.jpg"
                          style="
                             position: absolute;
                             right: 0;
-                            width: 400px;
+                             width: 400px;
                             top: -20px;
                      "></div>-->
-                <schedule></schedule>
+<!--                <schedule></schedule>-->
+<!--                <main></main>-->
+<!--                --><?php
+                if ( is_user_logged_in() ) {
+                    echo '<schedule></schedule>';
+                }
+//                ?>
+                <div class="alert alert-success">Grafik na nowy sezon już niedługo!</div>
+                <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
             </div>
         </div>
+
+
         <div class="instructor-row">
 
             <div class="container">
@@ -76,4 +87,10 @@ Template Name: NEW Grafik
             </div>
         </div>
     </div>
+<!--    <iframe src="http://p4welo.usermd.net/plugin.html" frameborder="0" width="100%" height="100%"></iframe>-->
+<!--    <style>-->
+<!--        html, body {-->
+<!--            margin: 0;-->
+<!--        }-->
+<!--    </style>-->
 <?php get_footer(); ?>
