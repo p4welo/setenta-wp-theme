@@ -1,14 +1,15 @@
 <div class="course-list list-group">
   <a href class="course-list__item list-group-item"
      ng-class="{'opened': course.opened}"
-     ng-repeat-start="course in ::$ctrl.courses | filter: { day : $ctrl.day.id } | orderBy: 'timeFrom'"
+     ng-repeat-start="course in ::$ctrl.courses | filter: { day : $ctrl.day.id } | orderBy: 'timeFrom' as results"
      ng-click="$ctrl.toggleOpen(course)">
     <span class="course-list__item--time" ng-bind="::course.timeFrom"></span>
     <div class="course-list__item--title">
       <h4>
         <span ng-bind="::course.name"></span>
         <span class="label label-striped" ng-bind="$ctrl.levels[course.level].label"></span>
-        <span class="label label-primary" ng-if="::course.isRegistrationOpen">ZAPISY</span>
+        <span class="label label-primary" ng-if="::course.state=='REGISTRATION'">NOWA GRUPA</span>
+        <small ng-bind="::course.shortDescription"></small>
       </h4>
     </div>
   </a>
@@ -18,4 +19,5 @@
       <course-details course="course"></course-details>
     </div>
   </div>
+  <p ng-if="results.length < 1">Brak kursów w podanym dniu</p>
 </div>

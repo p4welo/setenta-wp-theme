@@ -7,24 +7,11 @@ Template Name: NEW Grafik
 <?php get_header(); ?>
     <div class="m-t-64">
         <div class="schedule-page">
-            <div class="container" id="application">
+            <div class="container">
                 <h1>Grafik zajęć</h1>
-                <!--<div class="row" style="height:200px">
-                    <img src="http://setenta.wroclaw.pl/wp-content/uploads/2017/06/Hip-hop-Dance-Wallpapers-1.jpg"
-                         style="
-                            position: absolute;
-                            right: 0;
-                             width: 400px;
-                            top: -20px;
-                     "></div>-->
-<!--                <schedule></schedule>-->
-<!--                <main></main>-->
-                <?php
-                if (is_user_logged_in()) {
-                    echo '<schedule></schedule>';
-                }
-                ?>
-                <div class="alert alert-success">Grafik na nowy sezon już niedługo!</div>
+                <schedule id="application"></schedule>
+                <noscript><div class="alert alert-danger">Twoja przegadarka nie obsługuje JavaScript!</div></noscript>
+
                 <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
             </div>
         </div>

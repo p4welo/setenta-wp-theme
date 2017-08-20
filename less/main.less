@@ -15,8 +15,9 @@ html {
     background-color: @color-light-gray;
     //padding-top: 64px;
 
-    h3, h2 {
-      font-family: 'Oswald', sans-serif;
+    h3, h2, h1 {
+    //  font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     }
 
     h2 > a {
@@ -37,7 +38,7 @@ html {
 
 .nav-pills .active a,
 .list-group-item.more-link.active {
-//.list-group-item:hover {
+  //.list-group-item:hover {
   background-color: @color-primary !important;
   border-color: @color-primary;
   color: white !important;
@@ -132,11 +133,13 @@ dl.emphasize {
       color: @color-primary !important;
     }
 
-    li.dropdown:hover > .dropdown-menu {
-      display: block;
-      width: 700px;
-      left: -350px;
-    }
+    //@media (min-width: 768px) {
+    //  li.menu-item-has-children:hover > .dropdown-menu {
+    //    display: block;
+    //    width: 700px;
+    //    left: -350px;
+    //  }
+    //}
 
     @media (min-width: 768px) {
       > li {
@@ -144,7 +147,9 @@ dl.emphasize {
         transition: all 0.2s ease-in-out;
 
         &.active,
-        &.current-menu-item {
+        &.open,
+        &.current-menu-item,
+        &.current-menu-parent {
           border-top: 4px solid @color-primary;
 
           > a {
@@ -164,7 +169,7 @@ dl.emphasize {
           transition: all 0.2s ease-in-out;
 
           &:hover {
-            margin-top: -8px;
+            //margin-top: -8px;
           }
         }
       }
@@ -566,6 +571,17 @@ footer {
 .news-page .news-content {
   margin-top: 20px;
   margin-bottom: 50px;
+
+  .promotion-row {
+
+    .thumbnail {
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 6px 0 rgba(0,0,0,.8);
+      }
+    }
+  }
 }
 
 .news-page .news-content > .container {
@@ -597,7 +613,8 @@ footer {
 
 .news-page .news-content .post-panel h2 {
   margin-bottom: 20px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
+  font-weight: 300;
 }
 
 .news-page .news-content .post-panel .more-button-container {

@@ -42,19 +42,19 @@
     </a>
 
     <div class="col-sm-12">
-      <small class="date-area">
-        <i class="fa fa-calendar-o text-danger"></i>
-        <span ng-bind="::post.date | date:'dd-MM-yyyy'"></span>
-      </small>
-      <small class="author-area">
-        <i class="fa fa-user text-danger"></i>
-        SEKRETARIAT
-      </small>
-      <small class="author-area" ng-if="post.terms.category.length>0"
-             ng-repeat="category in post.terms.category">
-        <i class="fa fa-folder-open-o text-danger"></i>
-        <span ng-bind="::category.name | uppercase"></span>
-      </small>
+      <!--<small class="date-area">-->
+        <!--<i class="fa fa-calendar-o text-danger"></i>-->
+        <!--<span ng-bind="::post.date | date:'dd-MM-yyyy'"></span>-->
+      <!--</small>-->
+      <!--<small class="author-area">-->
+        <!--<i class="fa fa-user text-danger"></i>-->
+        <!--SEKRETARIAT-->
+      <!--</small>-->
+      <!--<small class="author-area" ng-if="post.terms.category.length>0"-->
+             <!--ng-repeat="category in post.terms.category">-->
+        <!--<i class="fa fa-folder-open-o text-danger"></i>-->
+        <!--<span ng-bind="::category.name | uppercase"></span>-->
+      <!--</small>-->
 
       <h2>
         <a ng-href="{{post.link}}" href ng-bind-html="::post.title"></a>

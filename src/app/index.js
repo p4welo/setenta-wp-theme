@@ -6,6 +6,7 @@ import uiBootstrap from 'angular-ui-bootstrap';
 import config from './config';
 import core from './core';
 import schedule from './schedule';
+import partner from './partner';
 import newsFeed from './news-feed';
 
 
@@ -19,6 +20,7 @@ if (el) {
     config,
     core,
     newsFeed,
+    partner,
     schedule
   ]).name;
   angular.bootstrap(el, [app]);

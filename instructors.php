@@ -15,7 +15,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12" alt="barbara karpinska radomska" title="barbara karpinska radomska">
                     </span>
 
-          <h3>BARBARA RADOMSKA (KARPIŃSKA)</h3>
+          <h3>BARBARA RADOMSKA</h3>
 
           <div>
             <h6>
@@ -55,7 +55,7 @@ Template Name: NEW Instruktorzy
                              class="col-xs-12" alt="MAGDA MRÓZ" title="MAGDA MRÓZ">
                     </span>
 
-          <h3>MAGDA MRÓZ</h3>
+          <h3>MAGDA MRÓZ-MURAWSKA</h3>
 
           <div>
             <h6>
