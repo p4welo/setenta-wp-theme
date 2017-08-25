@@ -105,6 +105,9 @@ Template Name: Kontakt
       </div>
     </div>
   </div>
+  <div id="application">
+    <chat></chat>
+  </div>
   <!--    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>-->
   <!--    <script>-->
   <!--        $(document).ready(function () {-->

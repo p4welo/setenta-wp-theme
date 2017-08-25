@@ -42,7 +42,15 @@
         <h1>Aktualności</h1>
         <div class="row">
           <div class="col-sm-8">
-            <news-feed id="application"></news-feed>
+            <noscript>
+              <div class="alert alert-danger">Do prawidłowego działanie potrzebna jest
+                włączona obsługa JavaScript w przeglądarce!
+              </div>
+            </noscript>
+            <div id="application">
+              <news-feed></news-feed>
+              <chat></chat>
+            </div>
           </div>
           <div class="col-sm-4 search-container">
             <div class="panel panel-default col-xs-12" style="padding: 0">
@@ -83,28 +91,6 @@
           </div>
         </div>
       </div>
-
-      <noscript>
-        <div class="container">
-          <div class="col-sm-8">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <div class="col-sm-12 panel panel-default post-panel">
-                <?php the_post_thumbnail('full', array('class' => 'thumbnail col-sm-12 col-xs-12')); ?>
-
-                <div class="col-sm-12">
-                  <h2>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                  </h2>
-                </div>
-              </div>
-            <?php endwhile;
-            else: ?>
-              <p><?php _e('Nie znaleziono postów spełniających podane kryteria.'); ?></p>
-            <?php endif; ?>
-          </div>
-        </div>
-      </noscript>
     </div>
   </div>
-  <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
 <?php get_footer(); ?>
