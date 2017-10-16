@@ -20,6 +20,10 @@ export default {
         })
         .then((result) => {
           $window.localStorage.setItem(COOKIE_KEY, result.data.userKey)
-        })
+        });
+
+
+    this.$onInit = () => {
+    }
   }
 };

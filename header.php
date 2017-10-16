@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title><?php wp_title('|', true, 'right'); ?></title>
 
@@ -22,6 +22,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
   <script src="https://unpkg.com/owl.carousel@2.2.0/dist/owl.carousel.min.js"></script>
+<!--  <script src="https://connect.facebook.net/en_US/sdk.js"></script>-->
   <script src="https://unpkg.com/cookieconsent@3.0.4"></script>
   <script src="<?php bloginfo('template_url'); ?>/vendor.js"></script>
 

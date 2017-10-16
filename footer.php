@@ -20,6 +20,16 @@
     js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8&appId=503841366424292";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+//$(document).ready(function() {
+//  $.ajaxSetup({ cache: true });
+//  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+//    FB.init({
+//      appId: '503841366424292',
+//      version: 'v2.7' // or v2.1, v2.2, v2.3, ...
+//    });
+//    console.log(FB);
+//  });
+//});
 </script>
 <!--<script type="text/javascript">-->
 <!--    var _smartsupp = _smartsupp || {};-->
@@ -70,6 +80,16 @@
 
   ga('create', 'UA-45485563-1', 'auto');
   ga('send', 'pageview');
+</script>
+<script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:622800,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <!--<script>-->
 <!--  window.cookieconsent.initialise({-->

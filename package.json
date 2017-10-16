@@ -46,12 +46,14 @@
   "dependencies": {
     "angular": "^1.6.4",
     "angular-animate": "^1.6.4",
+    "angular-cookies": "^1.6.4",
+    "angular-facebook": "0.0.2",
     "angular-recaptcha": "^4.1.0",
     "angular-sanitize": "^1.6.4",
-    "angular-cookies": "^1.6.4",
     "angular-touch": "^1.6.4",
     "angular-translate": "^2.15.2",
     "angular-ui-bootstrap": "^2.5.0",
+    "fb": "^2.0.0",
     "lodash": "^4.17.4",
     "notyf": "^2.0.1"
   }

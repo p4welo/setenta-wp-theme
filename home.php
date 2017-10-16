@@ -1,13 +1,14 @@
 <?php get_header(); ?>
   <div class="news-page">
-  <div class="slider-area" id="home" style="background: rgba(0, 0, 0, 0) url(<?php bloginfo('template_url');
-  ?>/assets/img/carousel/2.jpg) no-repeat scroll center 50% / cover;">
+  <div class="slider-area" id="home"
+    style="background: rgba(0, 0, 0, 0) url(<?php bloginfo('template_url');
+    ?>/assets/img/carousel/2.jpg) no-repeat scroll center 50% / cover;">
     <div class="container-fluid">
       <div class="">
         <div class="col-lg-12">
           <div class="slider-content-wrapper row text-center">
             <a href="/grafik/" class="btn btn-lg btn-success animated fadeInDown btn-callToAction"
-               style="top:
+              style="top:
                             50vh;margin: 0 auto;font-size: 24px;
                             position: relative;
                             ">PRZEJDŹ DO GRAFIKU</a>
@@ -21,7 +22,7 @@
       <div class="container">
         <div class="row promotion-row">
 
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <a href="/grafik/" class="thumbnail">
               <img src="/wp-content/uploads/2017/08/grafik.png" alt="Grafik zajęć tanecznych">
               <div class="caption text-center">
@@ -29,7 +30,7 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <a href="/partner-do-tanca-wroclaw" class="thumbnail">
               <img src="/wp-content/uploads/2017/08/partner.png" alt="Szukam partnera do
               tańca Wrocław">
@@ -39,7 +40,7 @@
             </a>
           </div>
         </div>
-        <h1>Aktualności</h1>
+        <!--        <h1>Aktualności</h1>-->
         <div class="row">
           <div class="col-sm-8">
             <noscript>
@@ -56,14 +57,14 @@
             <div class="panel panel-default col-xs-12" style="padding: 0">
               <div class="panel-body">
                 <div class="fb-page"
-                     data-href="https://www.facebook.com/setenta.taniec/"
-                     data-tabs="timeline"
-                     data-small-header="false"
-                     data-adapt-container-width="true"
-                     data-hide-cover="false"
-                     data-show-facepile="true">
+                  data-href="https://www.facebook.com/setenta.taniec/"
+                  data-tabs="timeline"
+                  data-small-header="false"
+                  data-adapt-container-width="true"
+                  data-hide-cover="false"
+                  data-show-facepile="true">
                   <blockquote cite="https://www.facebook.com/setenta.taniec/"
-                              class="fb-xfbml-parse-ignore">
+                    class="fb-xfbml-parse-ignore">
                     <a href="https://www.facebook.com/setenta.taniec/">Szkoła tańca Setenta</a>
                   </blockquote>
                 </div>
