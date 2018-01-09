@@ -4,6 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>"/>
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="google-site-verification" content="MPLJsxzNFg28xjkRSp4rfxuRRg2DyruYt-XtjYJSGco" />
   <title><?php wp_title('|', true, 'right'); ?></title>
 
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>

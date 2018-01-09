@@ -26,7 +26,7 @@
             <a href="/grafik/" class="thumbnail">
               <img src="/wp-content/uploads/2017/08/grafik.png" alt="Grafik zajęć tanecznych">
               <div class="caption text-center">
-                <h3>Nowy grafik 2017/18</h3>
+                <h3>Grafik zajęć tanecznych</h3>
               </div>
             </a>
           </div>
