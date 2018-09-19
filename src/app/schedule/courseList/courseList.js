@@ -6,7 +6,7 @@ export default {
     day: '<',
     courses: '<'
   },
-  controller() {
+  controller($uibModal, notificationService) {
     'ngInject';
 
     this.toggleOpen = (course) => {
@@ -24,6 +24,17 @@ export default {
         INT: {label: 'Średniozaawansowany'},
         ADV: {label: 'Zaawansowany'}
       };
-    }
+    };
+
+    this.register = (course) => {
+      $uibModal.open({
+        component: 'registerToCourse',
+        resolve: {
+          course: () => course
+        }
+      }).result.then(() => {
+        notificationService.success("Pomyślnie zapisano na kurs. Na Twojego maila wysłaliśmy potwierdzenie rezerwacji");
+      });
+    };
   }
 };

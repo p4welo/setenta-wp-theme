@@ -10,13 +10,17 @@
         <span class="label label-striped" ng-bind="$ctrl.levels[course.level].label"></span>
         <span class="label label-primary" ng-if="::course.state=='REGISTRATION'">NOWA GRUPA</span>
         <small ng-bind="::course.shortDescription"></small>
+        <button class="btn btn-sm btn-primary pull-right"
+            ng-if="::course.isRegistrationOpen"
+            ng-click="$ctrl.register(course, $event)">Zapisz się</button>
+        <div class="clearfix"></div>
       </h4>
     </div>
   </a>
   <div class="list-group-item course-list__item--description"
        ng-class="{'opened': course.opened}" ng-repeat-end>
     <div class="panel panel-default">
-      <course-details course="course"></course-details>
+      <course-details course="course" register="$ctrl.register($event)"></course-details>
     </div>
   </div>
   <p ng-if="results.length < 1">Brak kursów w podanym dniu</p>
