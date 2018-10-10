@@ -26,7 +26,10 @@ export default {
       };
     };
 
-    this.register = (course) => {
+    this.register = (course, event) => {
+      if (event) {
+        event.stopPropagation();
+      }
       $uibModal.open({
         component: 'registerToCourse',
         resolve: {

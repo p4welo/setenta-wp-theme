@@ -166,8 +166,5 @@ Template Name: NEW Instruktorzy
       </div>
     </div>
   </div>
-  <div id="application">
-    <chat></chat>
-  </div>
 </div>
 <?php get_footer(); ?>

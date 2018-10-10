@@ -12,6 +12,8 @@
 <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
 <script src="<?php bloginfo('template_url'); ?>/app.js?@@version"></script>
 <script async>
+  lozad().observe();
+
   (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;

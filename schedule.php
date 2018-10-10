@@ -10,7 +10,6 @@ Template Name: NEW Grafik
       <div class="container" id="application">
         <h1>Grafik zajęć</h1>
         <schedule></schedule>
-        <chat></chat>
         <noscript>
           <div class="alert alert-danger">Do prawidłowego działanie potrzebna jest
             włączona obsługa JavaScript w przeglądarce!

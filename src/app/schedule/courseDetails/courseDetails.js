@@ -7,18 +7,8 @@ export default {
     register: '&'
   },
   controller() {
-    'ngInject';
-
-    this.register = (course) => {
-      // $uibModal.open({
-      //   component: 'registerToCourse',
-      //   resolve: {
-      //     course: () => course
-      //   }
-      // }).result.then((result) => {
-      //   notificationService.success("Pomyślnie zapisano na kurs. Na Twojego maila wysłaliśmy potwierdzenie rezerwacji");
-      // });
-      this.register({$value: course});
+    this.registerToCourse = (course) => {
+      this.register({$event: course});
     };
 
     this.$onInit = () => {
