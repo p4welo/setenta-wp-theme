@@ -64,6 +64,14 @@
             </div>
 
             <div class="panel panel-default col-xs-12">
+              <div class="panel-body text-center">
+                <a href="http://tanecznykalendarz.pl">
+                  <img src="http://setenta.wroclaw.pl/wp-content/uploads/2019/02/logo.png" alt="Taneczny kalendarz">
+                </a>
+              </div>
+            </div>
+
+            <div class="panel panel-default col-xs-12">
               <h3 class="col-sm-12">Honorujemy</h3>
               <div class="col-sm-12">
                 <span class="fitflex thumbnail">
