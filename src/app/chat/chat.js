@@ -16,7 +16,7 @@ export default {
             ip: result.data.ip,
             resolution: `${width}x${height}`
           };
-          return $http.post(`http://p4welo.usermd.net/api/clients/${clientId}/visitors`, visitorData);
+          return $http.post(`https://p4welo.usermd.net/api/clients/${clientId}/visitors`, visitorData);
         })
         .then((result) => {
           $window.localStorage.setItem(COOKIE_KEY, result.data.userKey)

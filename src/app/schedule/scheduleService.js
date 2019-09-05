@@ -23,17 +23,17 @@ class ScheduleService {
 
   getByDay() {
     const deferred = this.$q.defer();
-    this.$http.get('http://p4welo.usermd.net/api/course')
+    this.$http.get('https://p4welo.usermd.net/api/course')
         .then((result) => deferred.resolve(_.groupBy(result.data, 'day')));
     return deferred.promise;
   }
 
   findAll() {
-    return this.$http.get('http://p4welo.usermd.net/api/course');
+    return this.$http.get('https://p4welo.usermd.net/api/course');
   }
 
   registerToCourse(courseId, customerData) {
-    return this.$http.post('http://p4welo.usermd.net/api/course/' + courseId + '/register', customerData);
+    return this.$http.post('https://p4welo.usermd.net/api/course/' + courseId + '/register', customerData);
   }
 }
 export default ScheduleService;

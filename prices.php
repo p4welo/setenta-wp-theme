@@ -9,7 +9,7 @@ Template Name: NEW  Cennik
     <div class="container">
       <h1>Cennik zajęć tanecznych</h1>
       <div class="row">
-        <div class="col-sm-8 col-xs-12">
+        <div class="col-sm-8">
           <div class="alert alert-danger animated shake">Niewykorzystaną lekcję można odrobić w ciągu <u>dwóch
               tygodni</u>
             podczas
@@ -41,7 +41,7 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Dzieci</legend>
               <dl class="dl-horizontal">
-                <dt>20 zł</dt>
+                <dt>24 zł</dt>
                 <dd>Pojedyncze wejście (45min)</dd>
               </dl>
               <dl class="dl-horizontal">
@@ -116,27 +116,7 @@ Template Name: NEW  Cennik
           </div>
         </div>
         <div class="col-sm-4 search-container">
-          <div class="panel panel-default col-xs-12">
-
-            <h3 class="col-sm-12">Honorujemy</h3>
-
-            <div class="col-sm-12">
-              <a class="fitflex thumbnail" target="_blank" href="http://www.fitflex.pl">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
-              </a>
-            </div>
-            <div class="col-sm-12">
-              <a class="oksystem thumbnail" target="_blank" href="http://www.oksystem.pl">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
-              </a>
-            </div>
-            <div class="col-sm-12">
-              <a class="foryoucard thumbnail" target="_blank" href="https://www.4youcard.pl/">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
-              </a>
-            </div>
-
-          </div>
+          <?php get_template_part('sidebar'); ?>
         </div>
       </div>
     </div>

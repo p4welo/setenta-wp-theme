@@ -76,10 +76,4 @@ Template Name: NEW Grafik
       </div>
     </div>
   </div>
-  <!--    <iframe src="http://p4welo.usermd.net/plugin.html" frameborder="0" width="100%" height="100%"></iframe>-->
-  <!--    <style>-->
-  <!--        html, body {-->
-  <!--            margin: 0;-->
-  <!--        }-->
-  <!--    </style>-->
 <?php get_footer(); ?>

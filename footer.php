@@ -1,12 +1,16 @@
 <footer>
-  <div class="second-line text-center">
-    &copy;
+  <p class="text-center">
+    ©
     <a href="http://setenta.wroclaw.pl">
       Szkoła tańca Wrocław
     </a>
-    <span id="year-copy"></span>
-  </div>
+    <span id="year-copy">2013-2019</span>
+  </p>
+  <p  class="text-center">
+    <a href="http://setenta.wroclaw.pl/sekretariat" target="_blank">Sekretariat</a>
+  </p>
 </footer>
+
 </div>
 <div id="fb-root"></div>
 <script src="<?php bloginfo('template_url'); ?>/bundle.js?@@version"></script>
@@ -24,21 +28,6 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 <script src="//code.tidio.co/b5iw1ynzgcwhmfnzbr47twkdj4wrrsab.js"></script>
-<!--<script type="text/javascript" async>-->
-<!--  window.smartlook || (function (d) {-->
-<!--    var o = smartlook = function () {-->
-<!--      o.api.push(arguments)-->
-<!--    }, h = d.getElementsByTagName('head')[0];-->
-<!--    var c = d.createElement('script');-->
-<!--    o.api = new Array();-->
-<!--    c.async = true;-->
-<!--    c.type = 'text/javascript';-->
-<!--    c.charset = 'utf-8';-->
-<!--    c.src = '//rec.smartlook.com/recorder.js';-->
-<!--    h.appendChild(c);-->
-<!--  })(document);-->
-<!--  smartlook('init', 'd221c4ce9b13e155a23ed6904778ff7b521195b7');-->
-<!--</script>-->
 <script async>
   (function (window, document, o, g, r, scriptElement, firstScriptElement) {
     window['GoogleAnalyticsObject'] = 'ga';

@@ -18,7 +18,7 @@ export default {
     };
     this.send = () => {
       this.step++;
-      $http.post('http://p4welo.usermd.net/api/partner', this.advertisement)
+      $http.post('https://p4welo.usermd.net/api/partner', this.advertisement)
           .then((response) => (this.done = true))
           .catch(console.log);
     };

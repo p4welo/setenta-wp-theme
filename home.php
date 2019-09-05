@@ -46,49 +46,7 @@
             <?php endwhile; endif; ?>
           </div>
           <div class="col-sm-4 search-container">
-            <div class="panel panel-default col-xs-12" style="padding: 0">
-              <div class="panel-body">
-                <div class="fb-page"
-                    data-href="https://www.facebook.com/setenta.taniec/"
-                    data-tabs="timeline"
-                    data-small-header="false"
-                    data-adapt-container-width="true"
-                    data-hide-cover="false"
-                    data-show-facepile="true">
-                  <blockquote cite="https://www.facebook.com/setenta.taniec/"
-                      class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/setenta.taniec/">Szkoła tańca Setenta</a>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default col-xs-12">
-              <div class="panel-body text-center">
-                <a href="http://tanecznykalendarz.pl">
-                  <img src="http://setenta.wroclaw.pl/wp-content/uploads/2019/02/logo.png" alt="Taneczny kalendarz">
-                </a>
-              </div>
-            </div>
-
-            <div class="panel panel-default col-xs-12">
-              <h3 class="col-sm-12">Honorujemy</h3>
-              <div class="col-sm-12">
-                <span class="fitflex thumbnail">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/fitflex.jpg"/>
-                </span>
-              </div>
-              <div class="col-sm-12">
-                <span class="oksystem thumbnail">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/oksystem.png"/>
-                </span>
-              </div>
-              <div class="col-sm-12">
-                <span class="foryoucard thumbnail">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/sys/4ucard.png"/>
-                </span>
-              </div>
-            </div>
+            <?php get_template_part('sidebar'); ?>
           </div>
         </div>
       </div>
