@@ -76,7 +76,7 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Studenci / doktoranci (za okazaniem legitymacji)</legend>
               <dl class="dl-horizontal">
-                <dt>20 zł</dt>
+                <dt>24 zł</dt>
                 <dd>Pojedyncze wejście (1h)</dd>
               </dl>
               <dl class="dl-horizontal">

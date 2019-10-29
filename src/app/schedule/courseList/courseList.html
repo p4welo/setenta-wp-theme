@@ -10,9 +10,9 @@
         <span class="label label-striped" ng-bind="$ctrl.levels[course.level].label"></span>
         <span class="label label-primary" ng-if="::course.state=='REGISTRATION'">NOWA GRUPA</span>
         <small ng-bind="::course.shortDescription"></small>
-        <button class="btn btn-sm btn-primary pull-right"
+        <span class="btn btn-sm btn-primary pull-right"
             ng-if="::course.isRegistrationOpen"
-            ng-click="$ctrl.register(course, $event)">Zapisz się</button>
+            ng-click="$ctrl.register(course)">Zapisz się</span>
         <div class="clearfix"></div>
       </h4>
     </div>
