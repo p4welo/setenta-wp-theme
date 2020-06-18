@@ -45,7 +45,7 @@
     "webpack": "^3.0.0"
   },
   "dependencies": {
-    "angular": "^1.6.4",
+    "angular": "^1.8.0",
     "angular-animate": "^1.6.4",
     "angular-cookies": "^1.6.4",
     "angular-facebook": "0.0.2",
