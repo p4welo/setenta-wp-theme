@@ -34,8 +34,10 @@ Template Name: Kontakt
             </h3>
 
             <div>
-              <strong>23 1050 1575 1000 0091 4397 2439</strong>
-              <p>ING Bank Śląski</p>
+              <strong>39 1140 2004 0000 3802 7807 7899</strong>
+              <p>mBank</p>
+<!--              <strong>23 1050 1575 1000 0091 4397 2439</strong>-->
+<!--              <p>ING Bank Śląski</p>-->
             </div>
           </div>
           <div class="col-sm-6 col-xs-12 pull-right right-container">
