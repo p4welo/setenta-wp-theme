@@ -55,7 +55,7 @@
     "angular-translate": "^2.15.2",
     "angular-ui-bootstrap": "^2.5.0",
     "fb": "^2.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "notyf": "^2.0.1"
   }
 }
