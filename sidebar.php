@@ -18,9 +18,9 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <h3 style="margin-top: 0;margin-bottom: 30px;">Honorujemy</h3>
-    <a class="oksystem thumbnail" target="_blank" href="http://www.oksystem.pl">
+    <a class="medicover thumbnail" target="_blank" href="https://medicoversport.pl/">
       <img style="width: 100%"
-        src="<?php bloginfo('template_url'); ?>/assets/img/sys/logo_oksystem.svg"/>
+        src="<?php bloginfo('template_url'); ?>/assets/img/sys/medicover.jpg"/>
     </a>
   </div>
 </div>

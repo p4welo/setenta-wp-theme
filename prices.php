@@ -19,19 +19,19 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Dorośli</legend>
               <dl class="dl-horizontal">
-                <dt>25 zł</dt>
+                <dt>30 zł</dt>
                 <dd>Pojedyncze wejście (1h)</dd>
               </dl>
               <dl class="dl-horizontal emphasize">
-                <dt>80 zł</dt>
+                <dt>90 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> STANDARD na 4 zajęcia (4 x 1h)</dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt>135 zł</dt>
+                <dt>150 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x 1h)</dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt>200 zł</dt>
+                <dt>280 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> OPEN na wszystkie zajęcia</dd>
               </dl>
             </div>
@@ -41,21 +41,27 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Dzieci</legend>
               <dl class="dl-horizontal">
-                <dt>25 zł</dt>
+                <dt>30 zł</dt>
                 <dd>Pojedyncze wejście (45min)</dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt>76 zł</dt>
+                <dt>80 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> na 4 zajęcia (4 x <strong>45min</strong>)
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt>125 zł</dt>
+                <dt>135 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>45min</strong>)</dd>
               </dl>
               <dl class="dl-horizontal">
                 <dt>150 zł</dt>
                 <dd>Karnet <strong>miesięczny</strong> na 8 zajęć (8 x <strong>1h</strong>) - formacja
+                  taneczna
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt>200 zł</dt>
+                <dd>Karnet <strong>miesięczny</strong> na 16 zajęć (16 x <strong>1h</strong>) - formacja
                   taneczna
                 </dd>
               </dl>
@@ -66,7 +72,7 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Studenci / doktoranci (za okazaniem legitymacji)</legend>
               <dl class="dl-horizontal">
-                <dt>25 zł</dt>
+                <dt>30 zł</dt>
                 <dd>Pojedyncze wejście (1h)</dd>
               </dl>
               <dl class="dl-horizontal">
@@ -94,14 +100,14 @@ Template Name: NEW  Cennik
             <div class="panel-body">
               <legend>Zajęcia indywidualne</legend>
               <dl class="dl-horizontal">
-                <dt>95 zł</dt>
+                <dt>110 zł</dt>
                 <dd>Lekcja indywidualna (1h)</dd>
               </dl>
-              <dl class="dl-horizontal">
-                <dt>310 zł</dt>
-                <dd>Pierwszy taniec - karnet na 4 wejścia (4 x 1h) do wykorzystania w dowolnym okresie
-                </dd>
-              </dl>
+<!--              <dl class="dl-horizontal">-->
+<!--                <dt>310 zł</dt>-->
+<!--                <dd>Pierwszy taniec - karnet na 4 wejścia (4 x 1h) do wykorzystania w dowolnym okresie-->
+<!--                </dd>-->
+<!--              </dl>-->
             </div>
           </div>
         </div>
